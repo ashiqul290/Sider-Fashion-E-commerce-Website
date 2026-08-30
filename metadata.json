@@ -1,0 +1,6 @@
+{
+  "name": "Sider Fashion",
+  "description": "Bangladeshi clothing brand offering premium retail & wholesale Men's Shirts, Katua, and apparel directly from own manufacturing in Ashulia, Savar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
