@@ -65,7 +65,7 @@ export class NotificationService {
       // Future real API integration point
       try {
         if (this.provider.sendSMS) {
-          const smsText = `Sikder Fashion: Your order ${payload.orderId} of BDT ${payload.totalAmount} has been placed. Status: ${payload.orderStatus}. Helpline: 01712773063`;
+          const smsText = `Sikder Fashion: Your order ${payload.orderId} of BDT ${payload.totalAmount} has been placed. Status: ${payload.orderStatus}. Helpline: 01922241112`;
           await this.provider.sendSMS(payload.phone, smsText);
         }
         return { success: true, dispatched: true };
@@ -117,7 +117,7 @@ export class NotificationService {
       `• *Total Payable:* ৳${order.total}\n` +
       `---------------------------------------\n` +
       (order.customerNote ? `• *Customer Note:* ${order.customerNote}\n\n` : '\n') +
-      `*Factory Hotline:* 01712773063 / 01612241112\n` +
+      `*Factory Hotline:* 01922241112 / 01612241112\n` +
       `Ashulia, Savar, Dhaka, Bangladesh.`
     );
   }

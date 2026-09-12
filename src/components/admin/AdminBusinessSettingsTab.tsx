@@ -739,7 +739,7 @@ export const AdminBusinessSettingsTab: React.FC<AdminBusinessSettingsTabProps> =
                   required
                   value={contactValue}
                   onChange={(e) => setContactValue(e.target.value)}
-                  placeholder="e.g. 01712773063 or Ashulia, Savar"
+                  placeholder="e.g. 01922241112 or Ashulia, Savar"
                   className="w-full px-3 py-2 border border-stone-200 rounded-xl text-xs font-mono font-bold"
                 />
               </div>

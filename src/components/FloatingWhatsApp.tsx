@@ -119,7 +119,7 @@ export const FloatingWhatsApp: React.FC = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="relative w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white flex items-center justify-center shadow-2xl transition-transform cursor-pointer group"
           aria-label="Open WhatsApp Chat Support"
-          title="WhatsApp Support (01712773063 / 01612241112)"
+          title="WhatsApp Support (01922241112 / 01612241112)"
         >
           {isOpen ? (
             <X className="w-6 h-6" />

@@ -259,7 +259,7 @@ export class OrderService {
 
     const cleanPhone = normalizeBdPhone(params.phone);
     if (!isValidBdPhone(cleanPhone)) {
-      return { success: false, error: 'Please enter a valid 11-digit Bangladeshi mobile number (e.g. 01712773063).' };
+      return { success: false, error: 'Please enter a valid 11-digit Bangladeshi mobile number (e.g. 01922241112).' };
     }
 
     if (!params.area.trim()) {

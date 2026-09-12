@@ -67,7 +67,7 @@ export const DEFAULT_BUSINESS_SETTINGS: BusinessSettings = {
   brandName: 'Sikder Fashion',
   tagline: 'Quality Fashion, Directly from Our Own Manufacturing',
   taglineBn: 'নিজস্ব কারখানায় তৈরি — পাইকারি ও খুচরা বিক্রি',
-  primaryPhone: '01712773063',
+  primaryPhone: '01922241112',
   secondaryPhone: '01612241112',
   wholesalePhone: '01612241112',
   email: 'sikderfashion.bd@gmail.com',
@@ -91,7 +91,7 @@ export const DEFAULT_CONTACTS: ContactItem[] = [
     type: 'hotline',
     label: 'Customer Care Hotline',
     labelBn: 'কাস্টমার কেয়ার হটলাইন',
-    value: '01712773063',
+    value: '01922241112',
     isPrimary: true,
     isActive: true,
     displayOrder: 1
@@ -101,7 +101,7 @@ export const DEFAULT_CONTACTS: ContactItem[] = [
     type: 'whatsapp',
     label: 'WhatsApp Live Chat',
     labelBn: 'হোয়াটসঅ্যাপ লাইভ চ্যাট',
-    value: '01712773063',
+    value: '01922241112',
     isPrimary: true,
     isActive: true,
     displayOrder: 2
@@ -152,7 +152,7 @@ export const DEFAULT_SOCIAL_LINKS: SocialLinkItem[] = [
     id: 'social-wa',
     platform: 'whatsapp',
     displayName: 'WhatsApp Official',
-    url: 'https://wa.me/8801712773063',
+    url: 'https://wa.me/8801922241112',
     icon: 'whatsapp',
     isActive: true,
     displayOrder: 2
@@ -253,8 +253,8 @@ export const DEFAULT_COUPONS: Coupon[] = [
 export const DEFAULT_POLICIES: PolicyContent = {
   returnPolicy: 'At Sikder Fashion, we manufacture in our own Savar factory with rigorous 3-step quality checks. You have the full right to check your package in front of the delivery person before payment. If there is any defect or mismatch, you can immediately return it without penalty.',
   returnPolicyBn: 'সাইডার ফ্যাশন নিজস্ব কারখানায় মান নিয়ন্ত্রণ করে পোশাক তৈরি করে। ডেলিভারিম্যানের সামনে পার্সেল খুলে ফেব্রিক ও কোয়ালিটি দেখে নেওয়ার সুযোগ রয়েছে। কোনো সমস্যা থাকলে তাৎক্ষণিক ডেলিভারিম্যানকে রিটার্ন দিতে পারেন।',
-  exchangePolicy: 'Wrong size or color? We offer a hassle-free 7-day exchange warranty. Keep the original tags intact and contact our hotline or WhatsApp at 01712773063.',
-  exchangePolicyBn: 'সাইজ অথবা রঙের পরিবর্তনে আমরা ৭ দিনের সহজ এক্সচেঞ্জ সুবিধা প্রদান করি। হটলাইন 01712773063 এ মেসেজ দিন।',
+  exchangePolicy: 'Wrong size or color? We offer a hassle-free 7-day exchange warranty. Keep the original tags intact and contact our hotline or WhatsApp at 01922241112.',
+  exchangePolicyBn: 'সাইজ অথবা রঙের পরিবর্তনে আমরা ৭ দিনের সহজ এক্সচেঞ্জ সুবিধা প্রদান করি। হটলাইন 01922241112 এ মেসেজ দিন।',
   deliveryPolicy: 'Inside Dhaka: Delivery fee ৳70 within 24 to 48 hours. Outside Dhaka: Delivery fee ৳120 within 48 to 72 hours via leading courier services (Steadfast, Pathao).',
   deliveryPolicyBn: 'ঢাকার ভেতরে ডেলিভারি চার্জ মাত্র ৭০ টাকা (২৪-৪৮ ঘণ্টায়)। ঢাকার বাইরে সারা দেশে ডেলিভারি চার্জ ১২০ টাকা (৪৮-৭২ ঘণ্টায়)।',
   shippingInfo: 'All orders are dispatched directly from our Savar & Ashulia manufacturing and fulfillment hub in secure weather-resistant packaging.',

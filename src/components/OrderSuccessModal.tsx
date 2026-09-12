@@ -246,7 +246,7 @@ export const OrderSuccessModal: React.FC = () => {
           </div>
 
           <div className="pt-2 text-center text-[11px] text-zinc-400">
-            Factory Hotline: <a href="tel:01712773063" className="font-bold text-amber-400 hover:underline">01712773063</a> / <a href="tel:01612241112" className="font-bold text-amber-400 hover:underline">01612241112</a>
+            Factory Hotline: <a href="tel:01922241112" className="font-bold text-amber-400 hover:underline">01922241112</a> / <a href="tel:01612241112" className="font-bold text-amber-400 hover:underline">01612241112</a>
           </div>
         </div>
 

@@ -102,7 +102,7 @@ export const CheckoutModal: React.FC = () => {
     }
 
     if (!isValidBdPhone(phone)) {
-      setErrorMessage('Please enter a valid 11-digit Bangladeshi phone number (e.g., 01712773063).');
+      setErrorMessage('Please enter a valid 11-digit Bangladeshi phone number (e.g., 01922241112).');
       return;
     }
 
@@ -766,7 +766,7 @@ export const CheckoutModal: React.FC = () => {
               </button>
 
               <p className="text-[11px] text-zinc-400 text-center">
-                Need help? Call our Savar factory helpline: <a href="tel:01712773063" className="font-bold underline text-amber-400">01712773063</a>
+                Need help? Call our Savar factory helpline: <a href="tel:01922241112" className="font-bold underline text-amber-400">01922241112</a>
               </p>
 
             </div>

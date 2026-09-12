@@ -144,7 +144,7 @@ export const OrderTrackingModal: React.FC = () => {
             <div className="space-y-1">
               <div className="font-bold">{errorMessage}</div>
               <p className="text-[11px] text-zinc-400">
-                Please double check your Order ID and registered mobile number, or call our factory hotline: <strong className="text-amber-400">01712773063</strong>
+                Please double check your Order ID and registered mobile number, or call our factory hotline: <strong className="text-amber-400">01922241112</strong>
               </p>
             </div>
           </div>

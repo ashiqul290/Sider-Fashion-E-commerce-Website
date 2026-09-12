@@ -338,7 +338,7 @@ export const SIDER_FAQS: FAQItem[] = [
     question: 'What is your Return & Exchange Policy if the size doesn\'t fit?',
     questionBn: 'সাইজ না মিললে বা কোনো ত্রুটি থাকলে এক্সচেঞ্জ করার নিয়ম কী?',
     answer: 'We provide a hassle-free 7-Day Exchange Guarantee. If the size does not fit after trying it on, simply notify us via WhatsApp or Phone within 7 days. We will arrange a replacement size delivered to your address. (Product must be unused with original tags).',
-    answerBn: 'আমাদের রয়েছে সহজ ৭ দিনের এক্সচেঞ্জ সুবিধা। ট্রায়াল দেওয়ার পর সাইজ ছোট বা বড় হলে আমাদের হোয়াটসঅ্যাপ (01712773063) এ জানালেই আমরা সঠিক সাইজ এক্সচেঞ্জ করে পাঠিয়ে দেব।'
+    answerBn: 'আমাদের রয়েছে সহজ ৭ দিনের এক্সচেঞ্জ সুবিধা। ট্রায়াল দেওয়ার পর সাইজ ছোট বা বড় হলে আমাদের হোয়াটসঅ্যাপ (01922241112) এ জানালেই আমরা সঠিক সাইজ এক্সচেঞ্জ করে পাঠিয়ে দেব।'
   },
   {
     id: 'faq-wholesale-moq',
