@@ -33,6 +33,7 @@ import {
 import { Product, OrderDetails, WholesaleInquiry } from '../../types';
 import { MarketingCampaign, AdminLanguage } from '../../types/adminTypes';
 import { AdminStoreService } from '../../services/adminStoreService';
+import { adminJsonHeaders } from '../../services/authHeaders';
 
 interface AdminAIDashboardProps {
   products: Product[];
@@ -86,7 +87,7 @@ export const AdminAIDashboard: React.FC<AdminAIDashboardProps> = ({
       sender: 'ai',
       text: isBn 
         ? 'আসসালামু আলাইকুম! আমি সাইডার এআই (Sider AI) — সাইডার ফ্যাশনের ডেডিকেটেড বিজনেস ও অ্যাডস ইন্টেলিজেন্স অ্যাসিস্ট্যান্ট। সাভার কারখানার উৎপাদন, স্টক পূর্বাভাস, সেরা বিক্রীত পণ্য, ফেসবুক অ্যাডের ROAS বা যেকোনো ব্যবসায়িক প্রশ্ন করতে পারেন।'
-        : 'Welcome! I am Sider AI — your Chief eCommerce & Ads Intelligence Assistant for Sider Fashion. Ask me anything about real-time sales velocity, Savar factory restocking, ad ROAS, or customer risk analysis.',
+        : 'Welcome! I am Sider AI — your Chief eCommerce & Ads Intelligence Assistant for Sikder Fashion. Ask me anything about real-time sales velocity, Savar factory restocking, ad ROAS, or customer risk analysis.',
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     }
   ]);
@@ -106,7 +107,7 @@ export const AdminAIDashboard: React.FC<AdminAIDashboardProps> = ({
     try {
       const res = await fetch('/api/ai/intelligence', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({ lang: adminLang })
       });
       const data = await res.json();
@@ -154,7 +155,7 @@ export const AdminAIDashboard: React.FC<AdminAIDashboardProps> = ({
 
       const res = await fetch('/api/ai/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({
           message: text,
           lang: adminLang,
@@ -200,7 +201,7 @@ export const AdminAIDashboard: React.FC<AdminAIDashboardProps> = ({
     try {
       const res = await fetch('/api/ai/ad-copy', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({ productCode: selectedAdProduct, platform: 'facebook' })
       });
       const data = await res.json();

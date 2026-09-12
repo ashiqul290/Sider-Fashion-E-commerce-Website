@@ -9,7 +9,7 @@ export const FloatingWhatsApp: React.FC = () => {
 
   const handleOpenDirect = (phoneNumber?: string) => {
     openWhatsAppChat(
-      "Hello Sider Fashion! I am browsing your website and would like to inquire about products/orders.",
+      "Hello Sikder Fashion! I am browsing your website and would like to inquire about products/orders.",
       phoneNumber
     );
   };
@@ -30,7 +30,7 @@ export const FloatingWhatsApp: React.FC = () => {
                 <MessageSquare className="w-4 h-4 fill-white" />
               </div>
               <div>
-                <h4 className="text-xs font-bold text-stone-900 leading-tight">Sider Fashion WhatsApp</h4>
+                <h4 className="text-xs font-bold text-stone-900 leading-tight">Sikder Fashion WhatsApp</h4>
                 <span className="flex items-center gap-1 text-[10px] text-emerald-600 font-semibold">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                   Online • Typically replies instantly

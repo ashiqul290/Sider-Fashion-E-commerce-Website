@@ -76,7 +76,7 @@ const ProductDetailsModalContent: React.FC<ProductDetailsModalContentProps> = ({
   };
 
   const handleWhatsAppInquiry = () => {
-    const msg = `Hello Sider Fashion!\nI want to order:\n• Product: ${product.name} (${product.code})\n• Color: ${selectedColor.name} (${selectedColor.nameBn})\n• Size: ${selectedSize || 'Not selected'}\n• Quantity: ${quantity}\n• Retail Price: ৳${product.retailPrice * quantity}\n\nPlease let me know the delivery schedule for my area.`;
+    const msg = `Hello Sikder Fashion!\nI want to order:\n• Product: ${product.name} (${product.code})\n• Color: ${selectedColor.name} (${selectedColor.nameBn})\n• Size: ${selectedSize || 'Not selected'}\n• Quantity: ${quantity}\n• Retail Price: ৳${product.retailPrice * quantity}\n\nPlease let me know the delivery schedule for my area.`;
     openWhatsAppChat(msg);
   };
 
@@ -337,13 +337,15 @@ const ProductDetailsModalContent: React.FC<ProductDetailsModalContentProps> = ({
                     <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                     <span>Not sure which size fits you?</span>
                   </span>
-                  <button
-                    type="button"
-                    onClick={() => openSizeGuide(product)}
-                    className="text-amber-400 font-bold hover:underline cursor-pointer"
-                  >
-                    Calculate Recommended Size &rarr;
-                  </button>
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      onClick={() => openSizeGuide(product)}
+                      className="text-amber-400 font-bold hover:underline cursor-pointer"
+                    >
+                      Calculate Recommended Size &rarr;
+                    </button>
+                  </div>
                 </div>
               </div>
 

@@ -161,7 +161,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
 
             <div className="text-xs sm:text-sm space-y-3 text-zinc-300 leading-relaxed">
               <p>
-                At Sider Fashion, we respect and safeguard our customers' personal information. We collect only necessary details to process your apparel orders safely and reliably.
+                At Sikder Fashion, we respect and safeguard our customers' personal information. We collect only necessary details to process your apparel orders safely and reliably.
               </p>
 
               <h4 className="font-bold text-white">1. Information We Collect</h4>
@@ -171,7 +171,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
 
               <h4 className="font-bold text-white">2. We Never Request Sensitive Financial Data</h4>
               <p className="font-semibold text-rose-400">
-                Sider Fashion will NEVER ask for your bKash/Nagad PIN, bank passwords, or OTPs. Please keep your personal credentials strictly confidential.
+                Sikder Fashion will NEVER ask for your bKash/Nagad PIN, bank passwords, or OTPs. Please keep your personal credentials strictly confidential.
               </p>
 
               <h4 className="font-bold text-white">3. Data Protection</h4>
@@ -194,7 +194,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
             <div className="text-xs sm:text-sm space-y-3 text-zinc-300 leading-relaxed">
               <h4 className="font-bold text-white">1. Product Authenticity</h4>
               <p className="text-zinc-400">
-                All men's shirts and katua listed on Sider Fashion are manufactured directly at our Savar, Ashulia factory using premium fabrics and professional stitching.
+                All men's shirts and katua listed on Sikder Fashion are manufactured directly at our Savar, Ashulia factory using premium fabrics and professional stitching.
               </p>
 
               <h4 className="font-bold text-white">2. Pricing &amp; Orders</h4>

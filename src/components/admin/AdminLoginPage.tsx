@@ -43,7 +43,7 @@ export const AdminLoginPage: React.FC<AdminLoginPageProps> = ({
 
   // Intelligent Back/Close navigation:
   // If user came from within the website -> returns to previous page
-  // If no previous page or external direct URL -> navigates to Sider Fashion home
+  // If no previous page or external direct URL -> navigates to Sikder Fashion home
   const handleBackOrClose = () => {
     if (typeof window !== 'undefined') {
       const hasPreviousInternalPage = 
@@ -186,7 +186,7 @@ export const AdminLoginPage: React.FC<AdminLoginPageProps> = ({
               S
             </div>
             <div>
-              <span className="font-black text-white text-base tracking-tight font-sans">Sider Fashion</span>
+              <span className="font-black text-white text-base tracking-tight font-sans">Sikder Fashion</span>
               <span className="text-[11px] text-amber-400 font-semibold ml-2.5 px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20">
                 Staff &amp; Admin Portal
               </span>
@@ -645,7 +645,7 @@ export const AdminLoginPage: React.FC<AdminLoginPageProps> = ({
 
       {/* Footer */}
       <footer className="border-t border-stone-800/80 py-4 px-4 text-center text-xs text-stone-400">
-        &copy; {new Date().getFullYear()} Sider Fashion Master Administration. Own Manufacturing Hub — Ashulia, Savar.
+        &copy; {new Date().getFullYear()} Sikder Fashion Master Administration. Own Manufacturing Hub — Ashulia, Savar.
       </footer>
 
     </div>

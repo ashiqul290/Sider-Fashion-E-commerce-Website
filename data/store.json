@@ -1,5 +1,5 @@
 {
-  "version": 1788015329221,
+  "version": 1789209482468,
   "products": [
     {
       "id": "sf-prod-1787774899538",
@@ -334,7 +334,7 @@
       "sizes": [
         {
           "size": "S",
-          "stock": 15,
+          "stock": 14,
           "chestInches": 36,
           "lengthInches": 27,
           "sleeveInches": 23.5,
@@ -373,7 +373,7 @@
           "shoulderInches": 20.5
         }
       ],
-      "stock": 137,
+      "stock": 136,
       "colors": [
         {
           "hex": "#800020",
@@ -443,7 +443,7 @@
       "sizes": [
         {
           "size": "S",
-          "stock": 10,
+          "stock": 9,
           "chestInches": 36,
           "lengthInches": 27,
           "sleeveInches": 23.5,
@@ -482,7 +482,7 @@
           "shoulderInches": 20.5
         }
       ],
-      "stock": 100,
+      "stock": 99,
       "colors": [
         {
           "hex": "#556b2f",
@@ -1237,7 +1237,7 @@
   "heroSlides": [
     {
       "slideId": "slide-store-flagship",
-      "title": "SIDER FASHION STORE",
+      "title": "SIKDER FASHION STORE",
       "titleBn": "সেরা ফ্যাশনের আধুনিক ঠিকানা — সাইডার ফ্যাশন",
       "subtitle": "Modern Garment Manufacturing & Premium Menswear Collection",
       "subtitleBn": "নিজস্ব কারখানায় প্রস্তুত — ১০০% মানসম্মত ফেব্রিক ও এক্সপোর্ট ফিনিশিং",
@@ -1245,7 +1245,7 @@
       "badgeBn": "সাভার ও আশুলিয়ায় নিজস্ব কারখানা — সরাসরি উৎপাদন",
       "image": "/src/assets/images/hero_store_flagship_1788006333464.jpg",
       "mobileImage": "/src/assets/images/hero_store_flagship_1788006333464.jpg",
-      "imageAlt": "Sider Fashion Luxury Menswear Flagship Store & Collection",
+      "imageAlt": "Sikder Fashion Luxury Menswear Flagship Store & Collection",
       "buttons": [
         {
           "id": "hero-btn-store-shop",
@@ -1276,7 +1276,7 @@
       "badgeBn": "১০০% কম্বড কটন • কালার ও ফেব্রিক গ্যারান্টি",
       "image": "/src/assets/images/hero_hanging_shirt_1788006362811.jpg",
       "mobileImage": "/src/assets/images/hero_hanging_shirt_1788006362811.jpg",
-      "imageAlt": "Sider Fashion Premium Cotton Oxford Hanging Shirt Studio Shoot",
+      "imageAlt": "Sikder Fashion Premium Cotton Oxford Hanging Shirt Studio Shoot",
       "buttons": [
         {
           "id": "hero-btn-shirt-shop",
@@ -1308,7 +1308,7 @@
       "badgeBn": "এক্সক্লুসিভ জ্যাকার্ড ও সুতি কতুয়া কালেকশন",
       "image": "/src/assets/images/hero_model_katua_1788006377967.jpg",
       "mobileImage": "/src/assets/images/hero_model_katua_1788006377967.jpg",
-      "imageAlt": "Sider Fashion Male Model Wearing Signature Katua in Studio Shoot",
+      "imageAlt": "Sikder Fashion Male Model Wearing Signature Katua in Studio Shoot",
       "buttons": [
         {
           "id": "hero-btn-katua-shop",
@@ -1340,7 +1340,7 @@
       "badgeBn": "উন্নত ড্রপ শোল্ডার ও ড্রাই-ফিট স্পোর্টস জার্সি",
       "image": "/src/assets/images/hero_product_display_1788006395796.jpg",
       "mobileImage": "/src/assets/images/hero_product_display_1788006395796.jpg",
-      "imageAlt": "Sider Fashion T-Shirts, Polo Shirts and Jerseys Curated Display",
+      "imageAlt": "Sikder Fashion T-Shirts, Polo Shirts and Jerseys Curated Display",
       "buttons": [
         {
           "id": "hero-btn-tees-shop",
@@ -1372,7 +1372,7 @@
       "badgeBn": "স্মার্ট ক্যাজুয়াল • ১০০% কালার ও ফেব্রিক গ্যারান্টি",
       "image": "/src/assets/images/hero_lifestyle_man_1788006418142.jpg",
       "mobileImage": "/src/assets/images/hero_lifestyle_man_1788006418142.jpg",
-      "imageAlt": "Sider Fashion Male Model in Urban Lifestyle Environment",
+      "imageAlt": "Sikder Fashion Male Model in Urban Lifestyle Environment",
       "buttons": [
         {
           "id": "hero-btn-lifestyle-shop",
@@ -1398,7 +1398,7 @@
     {
       "id": "faq-size-finder",
       "category": "size",
-      "question": "How do I choose the correct size for Sider Fashion shirts or Katua?",
+      "question": "How do I choose the correct size for Sikder Fashion shirts or Katua?",
       "questionBn": "আমি কীভাবে সঠিক সাইজ নির্বাচন করব?",
       "answer": "You can use our interactive Size Finder tool located on every product page and in the main menu. Simply input your Height, Weight, and Fit Preference (Slim, Regular, or Relaxed) to see your calculated recommended size. You can also view our detailed Size Chart table with chest, shoulder, length, and sleeve measurements in inches and cm.",
       "answerBn": "আমাদের প্রতিটি প্রোডাক্টের পাশে এবং ওয়েবসাইটের \"সাইজ গাইড\" অপশনে একটি স্মার্ট সাইজ ফাইন্ডার আছে। আপনার উচ্চতা, ওজন এবং ফিটিং পছন্দ দিলেই সিস্টেম আপনাকে সঠিক সাইজ (M, L, XL, XXL) সাজেস্ট করবে। এছাড়াও মেজারমেন্ট টেবিল দেখে ইঞ্চি বা সেন্টিমিটারে মাপ মিলিয়ে নিতে পারেন।"
@@ -1408,7 +1408,7 @@
       "category": "delivery",
       "question": "Can I open and check the clothing before paying the delivery person?",
       "questionBn": "ডেলিভারি পাওয়ার পর কি পার্সেল খুলে চেক করে দেখা যাবে?",
-      "answer": "Yes, absolutely! At Sider Fashion, we encourage you to inspect the fabric, color, stitching, and size in front of the courier delivery executive. If there is any discrepancy or you are not fully satisfied, you may return it immediately right on the spot.",
+      "answer": "Yes, absolutely! At Sikder Fashion, we encourage you to inspect the fabric, color, stitching, and size in front of the courier delivery executive. If there is any discrepancy or you are not fully satisfied, you may return it immediately right on the spot.",
       "answerBn": "হ্যাঁ, অবশ্যই! ডেলিভারিম্যানের সামনে পার্সেলটি খুলে কাপড়ের কোয়ালিটি, কালার, সাইজ ও সেলাই দেখে নিতে পারবেন। পছন্দ না হলে বা কোনো সমস্যা থাকলে সাথে সাথে রিটার্ন করতে পারবেন।"
     },
     {
@@ -1591,7 +1591,7 @@
     {
       "id": "sec-why-us",
       "key": "why-choose-us",
-      "title": "Why Choose Sider Fashion",
+      "title": "Why Choose Sikder Fashion",
       "titleBn": "কেন সাইডার ফ্যাশন সেরা",
       "subtitle": "Factory-direct value propositions",
       "isVisible": true,
@@ -1635,7 +1635,7 @@
     }
   ],
   "settings": {
-    "brandName": "Sider Fashion",
+    "brandName": "Sikder Fashion",
     "tagline": "Quality Fashion, Directly from Our Own Manufacturing",
     "taglineBn": "নিজস্ব কারখানায় তৈরি — পাইকারি ও খুচরা বিক্রি",
     "primaryPhone": "01712773063",
@@ -1656,7 +1656,7 @@
     "enableAutoSuspiciousFlag": true
   },
   "policies": {
-    "returnPolicy": "At Sider Fashion, we manufacture in our own Savar factory with rigorous 3-step quality checks. You have the full right to check your package in front of the delivery person before payment. If there is any defect or mismatch, you can immediately return it without penalty.",
+    "returnPolicy": "At Sikder Fashion, we manufacture in our own Savar factory with rigorous 3-step quality checks. You have the full right to check your package in front of the delivery person before payment. If there is any defect or mismatch, you can immediately return it without penalty.",
     "returnPolicyBn": "সাইডার ফ্যাশন নিজস্ব কারখানায় মান নিয়ন্ত্রণ করে পোশাক তৈরি করে। ডেলিভারিম্যানের সামনে পার্সেল খুলে ফেব্রিক ও কোয়ালিটি দেখে নেওয়ার সুযোগ রয়েছে। কোনো সমস্যা থাকলে তাৎক্ষণিক ডেলিভারিম্যানকে রিটার্ন দিতে পারেন।",
     "exchangePolicy": "Wrong size or color? We offer a hassle-free 7-day exchange warranty. Keep the original tags intact and contact our hotline or WhatsApp at 01712773063.",
     "exchangePolicyBn": "সাইজ অথবা রঙের পরিবর্তনে আমরা ৭ দিনের সহজ এক্সচেঞ্জ সুবিধা প্রদান করি। হটলাইন 01712773063 এ যোগাযোগ করুন।",
@@ -1664,11 +1664,11 @@
     "deliveryPolicyBn": "ঢাকার ভেতরে ডেলিভারি চার্জ মাত্র ৭০ টাকা (২৪-৪৮ ঘণ্টায়)। ঢাকার বাইরে সারা দেশে ডেলিভারি চার্জ ১২০ টাকা (৪৮-৭২ ঘণ্টায়)।",
     "shippingInfo": "All orders are dispatched directly from our Savar & Ashulia manufacturing and fulfillment hub in secure weather-resistant packaging.",
     "shippingInfoBn": "সাভার ও আশুলিয়া কারখানা হাব থেকে সরাসরি সিকিউর প্যাকেজিংয়ে পার্সেল পাঠানো হয়।",
-    "privacyPolicy": "We respect your privacy. Sider Fashion only collects your name, phone number, and delivery address to fulfill and dispatch your orders. We never sell or share your information with third parties.",
+    "privacyPolicy": "We respect your privacy. Sikder Fashion only collects your name, phone number, and delivery address to fulfill and dispatch your orders. We never sell or share your information with third parties.",
     "privacyPolicyBn": "আমরা আপনার তথ্যের গোপনীয়তা রক্ষা করি। আপনার নাম, মোবাইল নম্বর ও ঠিকানা শুধুমাত্র পার্সেল প্রেরণের কাজে ব্যবহার করা হয়।",
-    "termsConditions": "By placing an order on Sider Fashion, you agree to our fair delivery terms. Cash on delivery orders must be received at customer address.",
+    "termsConditions": "By placing an order on Sikder Fashion, you agree to our fair delivery terms. Cash on delivery orders must be received at customer address.",
     "termsConditionsBn": "সাইডার ফ্যাশনে অর্ডার করার মাধ্যমে আপনি আমাদের শর্তাবলীর সাথে সম্মত হচ্ছেন। ক্যাশ অন ডেলিভারি পার্সেল সঠিক ঠিকানায় রিসিভ করার অনুরোধ করা হচ্ছে।",
-    "aboutUs": "Sider Fashion is a premier garment manufacturer located in Savar & Ashulia, Dhaka. We produce high-grade casual shirts, executive formal shirts, festive katua, and modern menswear with factory-direct pricing for retail shoppers and wholesale retailers nationwide.",
+    "aboutUs": "Sikder Fashion is a premier garment manufacturer located in Savar & Ashulia, Dhaka. We produce high-grade casual shirts, executive formal shirts, festive katua, and modern menswear with factory-direct pricing for retail shoppers and wholesale retailers nationwide.",
     "aboutUsBn": "সাইডার ফ্যাশন ঢাকা সাভার ও আশুলিয়া ভিত্তিক পোশাক প্রস্তুতকারক ব্র্যান্ড। আমরা নিজস্ব কারখানায় সেরা ফেব্রিকে শার্ট, কতুয়া ও মেন্সওয়্যার তৈরি করে সরাসরি পাইকারি ও খুচরা ক্রেতাদের কাছে সাশ্রয়ী মূল্যে পৌঁছে দিই।"
   },
   "paymentAccounts": {
@@ -1686,7 +1686,7 @@
       "instructionsEn": [
         "Open your bKash App or dial *247#",
         "Select \"Send Money\" (or \"Payment\" if using merchant account)",
-        "Enter Sider Fashion bKash Number: 01712773063",
+        "Enter Sikder Fashion bKash Number: 01712773063",
         "Enter the exact Total Order Amount",
         "Use your Phone Number or Order Reference in reference (optional)",
         "Enter your bKash PIN in your mobile app to confirm payment",
@@ -1707,7 +1707,7 @@
       "instructionsEn": [
         "Open your Nagad App or dial *167#",
         "Select \"Send Money\"",
-        "Enter Sider Fashion Nagad Number: 01712773063",
+        "Enter Sikder Fashion Nagad Number: 01712773063",
         "Enter the exact Total Order Amount",
         "Use your Phone Number or Order Reference in reference (optional)",
         "Enter your Nagad PIN in your mobile app to confirm payment",
@@ -1778,6 +1778,345 @@
     }
   ],
   "orders": [
+    {
+      "orderId": "SF-2026-000008",
+      "createdAt": "2026-09-12T10:37:01.029Z",
+      "customerName": "ashikul islam",
+      "phone": "01557465474",
+      "whatsappNumber": "01557465474",
+      "district": "Chattogram",
+      "area": "adsf",
+      "fullAddress": "adsfad",
+      "deliveryZone": "outside_dhaka",
+      "deliveryFee": 120,
+      "subtotal": 890,
+      "discount": 0,
+      "membershipCode": "455014",
+      "total": 1010,
+      "paymentMethod": "cod",
+      "paymentStatus": "Pending",
+      "transactionId": null,
+      "senderLast4": null,
+      "paymentAmount": 0,
+      "paymentTimestamp": null,
+      "orderStatus": "Confirmed",
+      "items": [
+        {
+          "product": {
+            "id": "sf-sh-103",
+            "code": "SF-SH-103",
+            "name": "Smart Casual Micro Check Shirt",
+            "tags": [
+              "Check",
+              "Smart Casual",
+              "Everyday"
+            ],
+            "sizes": [
+              {
+                "size": "S",
+                "stock": 15,
+                "chestInches": 36,
+                "lengthInches": 27,
+                "sleeveInches": 23.5,
+                "shoulderInches": 16.5
+              },
+              {
+                "size": "M",
+                "stock": 35,
+                "chestInches": 38,
+                "lengthInches": 28,
+                "sleeveInches": 24,
+                "shoulderInches": 17.5
+              },
+              {
+                "size": "L",
+                "stock": 45,
+                "chestInches": 40,
+                "lengthInches": 29,
+                "sleeveInches": 24.5,
+                "shoulderInches": 18.5
+              },
+              {
+                "size": "XL",
+                "stock": 30,
+                "chestInches": 42,
+                "lengthInches": 30,
+                "sleeveInches": 25,
+                "shoulderInches": 19.5
+              },
+              {
+                "size": "XXL",
+                "stock": 12,
+                "chestInches": 44,
+                "lengthInches": 31,
+                "sleeveInches": 25.5,
+                "shoulderInches": 20.5
+              }
+            ],
+            "stock": 137,
+            "colors": [
+              {
+                "hex": "#800020",
+                "name": "Maroon & Navy Grid",
+                "nameBn": "মেরুন ও নেভি"
+              },
+              {
+                "hex": "#2d5a27",
+                "name": "Forest Green Plaid",
+                "nameBn": "ফরেস্ট গ্রিন"
+              },
+              {
+                "hex": "#708090",
+                "name": "Slate Grey Box",
+                "nameBn": "গ্রে চেক"
+              }
+            ],
+            "fabric": "100% Pure Twill Cotton",
+            "images": [
+              "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "স্মার্ট ক্যাজুয়াল মাইক্রো চেক শার্ট",
+            "rating": 4.7,
+            "category": "mens-shirts",
+            "fabricBn": "১০০% পিওর টুইল কটন",
+            "isFeatured": false,
+            "description": "Modern woven yarn-dyed micro check pattern. Washed for extra softness with double-needle tailoring for durable daily wear.",
+            "retailPrice": 890,
+            "categoryName": "Men's Shirts",
+            "isNewArrival": true,
+            "reviewsCount": 19,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "আকর্ষণীয় মাইক্রো চেক ডিজাইনের কটন শার্ট। ১০০% কালার গ্যারান্টি ও প্রি-শ্রাংক ফ্যাব্রিক।",
+            "categoryNameBn": "পুরুষদের শার্ট",
+            "wholesalePrice": 490,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 490
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 460
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 430
+              }
+            ],
+            "originalRetailPrice": 1100
+          },
+          "selectedColor": {
+            "hex": "#800020",
+            "name": "Maroon & Navy Grid",
+            "nameBn": "মেরুন ও নেভি"
+          },
+          "selectedSize": "S",
+          "quantity": 1,
+          "isWholesale": false
+        }
+      ],
+      "itemRecords": [
+        {
+          "productId": "sf-sh-103",
+          "productCode": "SF-SH-103",
+          "productName": "Smart Casual Micro Check Shirt",
+          "productNameBn": "স্মার্ট ক্যাজুয়াল মাইক্রো চেক শার্ট",
+          "category": "mens-shirts",
+          "selectedSize": "S",
+          "selectedColor": {
+            "name": "Maroon & Navy Grid",
+            "nameBn": "মেরুন ও নেভি",
+            "hex": "#800020"
+          },
+          "quantity": 1,
+          "unitPrice": 890,
+          "subtotal": 890,
+          "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+          "isWholesale": false
+        }
+      ],
+      "orderType": "retail",
+      "isVerificationRequired": false,
+      "trafficSource": "direct",
+      "productCost": 490,
+      "estimatedProfit": 400,
+      "status": "Confirmed"
+    },
+    {
+      "orderId": "SF-2026-000007",
+      "createdAt": "2026-09-12T09:07:20.218Z",
+      "customerName": "roy",
+      "phone": "01618532116",
+      "whatsappNumber": "01618532116",
+      "district": "Dhaka City (North / South)",
+      "area": "dhanmondi",
+      "fullAddress": "Monuar bila jigatola Dhanmondi\nMonuar bila jigatola Dhanmondi",
+      "deliveryZone": "inside_dhaka",
+      "deliveryFee": 80,
+      "subtotal": 950,
+      "discount": 0,
+      "membershipCode": "455014",
+      "total": 1030,
+      "paymentMethod": "cod",
+      "paymentStatus": "Pending",
+      "transactionId": null,
+      "senderLast4": null,
+      "paymentAmount": 0,
+      "paymentTimestamp": null,
+      "orderStatus": "Confirmed",
+      "items": [
+        {
+          "product": {
+            "id": "sf-sh-104",
+            "code": "SF-SH-104",
+            "name": "Summer Breeze Linen-Cotton Shirt",
+            "tags": [
+              "Linen",
+              "Summer",
+              "Breathable"
+            ],
+            "sizes": [
+              {
+                "size": "S",
+                "stock": 10,
+                "chestInches": 36,
+                "lengthInches": 27,
+                "sleeveInches": 23.5,
+                "shoulderInches": 16.5
+              },
+              {
+                "size": "M",
+                "stock": 25,
+                "chestInches": 38,
+                "lengthInches": 28,
+                "sleeveInches": 24,
+                "shoulderInches": 17.5
+              },
+              {
+                "size": "L",
+                "stock": 35,
+                "chestInches": 40,
+                "lengthInches": 29,
+                "sleeveInches": 24.5,
+                "shoulderInches": 18.5
+              },
+              {
+                "size": "XL",
+                "stock": 20,
+                "chestInches": 42,
+                "lengthInches": 30,
+                "sleeveInches": 25,
+                "shoulderInches": 19.5
+              },
+              {
+                "size": "XXL",
+                "stock": 10,
+                "chestInches": 44,
+                "lengthInches": 31,
+                "sleeveInches": 25.5,
+                "shoulderInches": 20.5
+              }
+            ],
+            "stock": 100,
+            "colors": [
+              {
+                "hex": "#556b2f",
+                "name": "Olive Green",
+                "nameBn": "অলিভ গ্রিন"
+              },
+              {
+                "hex": "#d2b48c",
+                "name": "Sand Beige",
+                "nameBn": "স্যান্ড বেইজ"
+              },
+              {
+                "hex": "#ffdab9",
+                "name": "Pastel Peach",
+                "nameBn": "পিচ"
+              }
+            ],
+            "fabric": "Linen-Cotton Blend (160 GSM)",
+            "images": [
+              "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "সামার ব্রিজ লিনেন-কটন ক্যাজুয়াল শার্ট",
+            "rating": 4.9,
+            "category": "mens-shirts",
+            "fabricBn": "লিনেন-কটন ব্লেন্ড (১৬০ জিএসএম)",
+            "isFeatured": true,
+            "description": "Designed specifically for Bangladesh warm climate. Blend of 60% linen and 40% organic cotton for superior sweat-wicking and breezy breathability.",
+            "retailPrice": 950,
+            "categoryName": "Men's Shirts",
+            "reviewsCount": 42,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "বাংলাদেশের আবহাওয়ার উপযোগী ৬০% লিনেন ও ৪০% অর্গানিক কটন শার্ট। গরমে পরার জন্য অত্যন্ত উপযোগী।",
+            "categoryNameBn": "পুরুষদের শার্ট",
+            "wholesalePrice": 550,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 550
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 510
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 480
+              }
+            ],
+            "originalRetailPrice": 1200
+          },
+          "selectedColor": {
+            "hex": "#556b2f",
+            "name": "Olive Green",
+            "nameBn": "অলিভ গ্রিন"
+          },
+          "selectedSize": "S",
+          "quantity": 1,
+          "isWholesale": false
+        }
+      ],
+      "itemRecords": [
+        {
+          "productId": "sf-sh-104",
+          "productCode": "SF-SH-104",
+          "productName": "Summer Breeze Linen-Cotton Shirt",
+          "productNameBn": "সামার ব্রিজ লিনেন-কটন ক্যাজুয়াল শার্ট",
+          "category": "mens-shirts",
+          "selectedSize": "S",
+          "selectedColor": {
+            "name": "Olive Green",
+            "nameBn": "অলিভ গ্রিন",
+            "hex": "#556b2f"
+          },
+          "quantity": 1,
+          "unitPrice": 950,
+          "subtotal": 950,
+          "image": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80",
+          "isWholesale": false
+        }
+      ],
+      "orderType": "retail",
+      "isVerificationRequired": false,
+      "trafficSource": "direct",
+      "productCost": 523,
+      "estimatedProfit": 428,
+      "status": "Confirmed"
+    },
     {
       "area": "netrokona",
       "items": [
@@ -2938,6 +3277,33 @@
   ],
   "auditLogs": [
     {
+      "id": "log-1789209482468-mpzn2",
+      "timestamp": "2026-09-12T10:38:02.468Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "owner",
+      "action": "ADMIN_LOGIN",
+      "category": "auth",
+      "details": "Admin Abir Hosen Saon (abirhosensaon@gmail.com, Founder & Managing Director) logged in from IP 127.0.0.1."
+    },
+    {
+      "id": "log-1789206365017-47t2o",
+      "timestamp": "2026-09-12T09:46:05.017Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "owner",
+      "action": "ADMIN_LOGIN",
+      "category": "auth",
+      "details": "Admin Abir Hosen Saon (abirhosensaon@gmail.com, Founder & Managing Director) logged in from IP 127.0.0.1."
+    },
+    {
+      "id": "log-1789201332579-ld7px",
+      "timestamp": "2026-09-12T08:22:12.579Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "owner",
+      "action": "ADMIN_LOGIN",
+      "category": "auth",
+      "details": "Admin Abir Hosen Saon (abirhosensaon@gmail.com, Founder & Managing Director) logged in from IP 127.0.0.1."
+    },
+    {
       "id": "log-1788015329193-598",
       "timestamp": "2026-08-29T14:55:29.193Z",
       "adminName": "Abir Hosen Saon",
@@ -3194,64 +3560,88 @@
       "adminRole": "super_admin",
       "action": "DATABASE_INITIALIZED",
       "category": "setting",
-      "details": "Sider Fashion Database successfully initialized."
+      "details": "Sikder Fashion Database successfully initialized."
     }
   ],
   "media": [],
   "adminUsers": [
     {
       "id": "admin-saon",
-      "name": "Abir Hosen Saon",
-      "role": "owner",
-      "email": "abirhosensaon@gmail.com",
-      "status": "active",
       "username": "saon",
-      "createdAt": "2026-01-01T00:00:00.000Z",
-      "lastLogin": "2026-08-29T14:54:40.526Z",
+      "name": "Abir Hosen Saon",
+      "email": "abirhosensaon@gmail.com",
+      "role": "owner",
       "roleTitle": "Founder & Managing Director",
+      "status": "active",
+      "passwordHash": "0437ae5f515bf7c9b6ba8b5a06348f94e916ae1f5ce7b1defe0b4311114deae9ddfc841ccadc21297c9e61ecaa3d29a7f534d94be02d2808528370559dfd64f8",
+      "passwordSalt": "84579dce57d31013b9006af654df0f52",
+      "lastLogin": "2026-09-12T10:38:02.468Z",
       "lastLogout": "2026-08-29T14:55:28.924Z",
       "lastLoginIp": "127.0.0.1",
-      "passwordHash": "0437ae5f515bf7c9b6ba8b5a06348f94e916ae1f5ce7b1defe0b4311114deae9ddfc841ccadc21297c9e61ecaa3d29a7f534d94be02d2808528370559dfd64f8",
-      "passwordSalt": "84579dce57d31013b9006af654df0f52"
+      "createdAt": "2026-01-01T00:00:00.000Z"
     },
     {
       "id": "admin-sider",
-      "name": "Sider Executive Head",
-      "role": "owner",
-      "email": "siderfashion.bd@gmail.com",
-      "status": "active",
       "username": "sider",
-      "createdAt": "2026-01-01T00:00:00.000Z",
+      "name": "Sider Executive Head",
+      "email": "siderfashion.bd@gmail.com",
+      "role": "owner",
       "roleTitle": "Store Director",
+      "status": "active",
       "passwordHash": "80a21ee753c336cdc5af1a556273e71abe745dae5f03a0a0a4f113f66c6e3aac7cc3748732c045a39dcb34c988cf131ec69235190f2c76a87f323106f5ceb027",
-      "passwordSalt": "ad5468f34bc09c9b7961e9cf6083c28d"
+      "passwordSalt": "ad5468f34bc09c9b7961e9cf6083c28d",
+      "createdAt": "2026-01-01T00:00:00.000Z"
     },
     {
       "id": "admin-ops",
-      "name": "Savar Dispatch & Factory Lead",
-      "role": "admin",
-      "email": "factory@siderfashion.com",
-      "status": "active",
       "username": "operations",
-      "createdAt": "2026-01-01T00:00:00.000Z",
+      "name": "Savar Dispatch & Factory Lead",
+      "email": "factory@siderfashion.com",
+      "role": "admin",
       "roleTitle": "Operations & Dispatch Manager",
+      "status": "active",
       "passwordHash": "dd70d6e734316fdd4057f55afd7f19fbf9542a4bba2aac6ae816f2a01a2894c307a823fc4f559e80ee0e46bd5f7fd2ecd7dcc2079c3258deacb65de59713ded8",
-      "passwordSalt": "c7033b4096738967ebec79bec438de47"
+      "passwordSalt": "c7033b4096738967ebec79bec438de47",
+      "createdAt": "2026-01-01T00:00:00.000Z"
     },
     {
       "id": "usr-admin-1787945045383",
-      "name": "AMADUL HAQE",
-      "role": "admin",
-      "email": "md.abirgazi2006@gmail.com",
-      "status": "active",
       "username": "mdabirgazi2006",
-      "createdAt": "2026-08-28T19:24:05.383Z",
+      "name": "AMADUL HAQE",
+      "email": "md.abirgazi2006@gmail.com",
+      "role": "admin",
       "roleTitle": "Order & Inventory Admin",
+      "status": "active",
       "passwordHash": "afcd58e3d9f465eabb0b3012eb8644abf988da0b61e60785af4299bf08153a5e9355a85cc1cd1d7955bab547b10b65efe7082fab265119ee135591d007cee0ae",
-      "passwordSalt": "86357fcf8b488e504ea6040f83d4bc81"
+      "passwordSalt": "86357fcf8b488e504ea6040f83d4bc81",
+      "createdAt": "2026-08-28T19:24:05.383Z"
     }
   ],
   "events": [
+    {
+      "id": "ev-1789209421031-mj21f",
+      "type": "order_placed",
+      "timestamp": "2026-09-12T10:37:01.031Z",
+      "value": 1010,
+      "quantity": 1,
+      "utmData": {
+        "trafficSource": "direct",
+        "landingPage": "/",
+        "capturedAt": "2026-09-12T09:08:33.515Z"
+      }
+    },
+    {
+      "id": "ev-1789204040218-8y44i",
+      "type": "order_placed",
+      "timestamp": "2026-09-12T09:07:20.218Z",
+      "value": 1030,
+      "quantity": 1,
+      "utmData": {
+        "trafficSource": "direct",
+        "landingPage": "/",
+        "capturedAt": "2026-09-12T08:21:42.393Z"
+      }
+    },
     {
       "id": "ev-1788014781639-djwvz",
       "type": "order_placed",

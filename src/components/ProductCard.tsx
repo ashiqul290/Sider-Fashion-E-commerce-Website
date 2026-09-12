@@ -50,7 +50,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   const handleWhatsAppOrder = (e: React.MouseEvent) => {
     e.stopPropagation();
-    const msg = `Hello Sider Fashion! I want to order this item (Retail):\n• Product: ${product.name} (${product.code})\n• Color: ${selectedColor.name}\n• Selected Size: ${selectedSize}\n• Retail Price: ৳${product.retailPrice}\n\nPlease confirm availability and delivery to my address.`;
+    const msg = `Hello Sikder Fashion! I want to order this item (Retail):\n• Product: ${product.name} (${product.code})\n• Color: ${selectedColor.name}\n• Selected Size: ${selectedSize}\n• Retail Price: ৳${product.retailPrice}\n\nPlease confirm availability and delivery to my address.`;
     openWhatsAppChat(msg);
   };
 
@@ -213,7 +213,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
         </div>
 
-        {/* Action Buttons: Add to Cart & Buy Now */}
+        {/* Action Buttons: Add to Cart & Order Now */}
         <div className="grid grid-cols-2 gap-2 pt-1" onClick={(e) => e.stopPropagation()}>
           <button
             id={`add-to-cart-btn-${product.id}`}
@@ -232,7 +232,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             className="flex items-center justify-center gap-1.5 bg-amber-500 hover:bg-amber-400 text-black py-2.5 px-2 rounded-xl text-xs font-bold transition-all shadow-xs cursor-pointer active:scale-98"
           >
             <Zap className="w-3.5 h-3.5 fill-current" />
-            <span>Buy Now</span>
+            <span>Order Now</span>
           </button>
         </div>
 

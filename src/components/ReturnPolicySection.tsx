@@ -22,7 +22,7 @@ export const ReturnPolicySection: React.FC<ReturnPolicySectionProps> = ({ asModa
       <div className="bg-amber-950/40 border border-amber-800/60 rounded-xl p-5 space-y-2">
         <div className="flex items-center gap-2 text-amber-400 font-bold text-base sm:text-lg">
           <ShieldCheck className="w-6 h-6 text-amber-400 shrink-0" />
-          <span>Sider Fashion Return &amp; Exchange Policy (রিটার্ন ও এক্সচেঞ্জ নীতি)</span>
+          <span>Sikder Fashion Return &amp; Exchange Policy (রিটার্ন ও এক্সচেঞ্জ নীতি)</span>
         </div>
         <p className="text-xs sm:text-sm text-zinc-300 font-bangla leading-relaxed">
           গ্রাহকদের শতভাগ সন্তুষ্টি নিশ্চিত করতে আমরা উন্মুক্তভাবে ডেলিভারিম্যানের সামনে পণ্য চেক করার সুবিধা প্রদান করি।

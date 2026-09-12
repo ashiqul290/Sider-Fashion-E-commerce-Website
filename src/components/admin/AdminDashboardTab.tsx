@@ -148,7 +148,7 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
             <h2 className="text-xl font-black text-stone-950 font-sans">Live Production &amp; Store Overview</h2>
           </div>
           <p className="text-xs text-stone-500 mt-0.5">
-            Real-time analytics connected directly to Sider Fashion Savar manufacturing and retail store.
+            Real-time analytics connected directly to Sikder Fashion Savar manufacturing and retail store.
           </p>
         </div>
 

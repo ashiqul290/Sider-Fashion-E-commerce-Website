@@ -146,7 +146,7 @@ export interface CategoryInfo {
   description: string;
   descriptionBn: string;
   image: string;
-  isActive: boolean; // active in Sider Fashion current catalog vs upcoming
+  isActive: boolean; // active in Sikder Fashion current catalog vs upcoming
   isUpcoming?: boolean;
   itemCount: number;
   badge?: string;
@@ -222,6 +222,7 @@ export interface OrderDetails {
   subtotal: number;
   discount: number;
   couponCode?: string;
+  membershipCode?: string;
   total: number;
   paymentMethod: PaymentMethod;
   paymentStatus: PaymentStatus;

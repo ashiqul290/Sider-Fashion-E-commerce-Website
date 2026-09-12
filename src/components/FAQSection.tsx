@@ -225,7 +225,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ asModal = false, onClose
             </a>
 
             <button
-              onClick={() => openWhatsAppChat("Hello Sider Fashion! I have a question regarding an order/products.")}
+              onClick={() => openWhatsAppChat("Hello Sikder Fashion! I have a question regarding an order/products.")}
               className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-colors shadow-xs cursor-pointer"
             >
               <MessageSquare className="w-4 h-4" />

@@ -1,4 +1,5 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
+import { adminHeaders } from '../services/authHeaders';
 
 export const SUPABASE_URL = (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_SUPABASE_URL) || 'https://ojhwesigpdhpfptkzntl.supabase.co';
 export const SUPABASE_ANON_KEY = (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_SUPABASE_ANON_KEY) || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9qaHdlc2lncGRocGZwdGt6bnRsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc5MjczNzQsImV4cCI6MjEwMzUwMzM3NH0.g0RUSM-1I8e-R0Ou7gUOoyGt6zBJqGKHbYdefKAvcAI';
@@ -49,7 +50,11 @@ export async function fetchSupabaseStatus(): Promise<SupabaseStatusResponse> {
 
 export async function triggerSupabaseManualSync(): Promise<{ success: boolean; message: string }> {
   try {
-    const res = await fetch('/api/supabase/sync-now', { method: 'POST' });
+    // Manual cloud sync is an admin operation and requires the session token.
+    const res = await fetch('/api/supabase/sync-now', {
+      method: 'POST',
+      headers: adminHeaders()
+    });
     return await res.json();
   } catch (e: any) {
     return { success: false, message: e.message || 'Sync failed' };

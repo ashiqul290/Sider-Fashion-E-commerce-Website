@@ -155,7 +155,7 @@ export const DEFAULT_HOMEPAGE_SECTIONS = [
   { id: 'sec-portals', key: 'portals', title: 'Dual Shopping Choice (Retail vs Wholesale)', titleBn: 'খুচরা ও পাইকারি শপিং পোর্টাল', subtitle: 'Instant portal switcher', isVisible: true, displayOrder: 2 },
   { id: 'sec-categories', key: 'categories', title: 'Featured Categories', titleBn: 'জনপ্রিয় ক্যাটাগরি সমূহ', subtitle: 'Category navigation cards', isVisible: true, displayOrder: 3 },
   { id: 'sec-products', key: 'featured-products', title: 'Featured & Catalog Products', titleBn: 'সেরা নির্বাচিত কালেকশন', subtitle: 'Curated retail products grid', isVisible: true, displayOrder: 4 },
-  { id: 'sec-why-us', key: 'why-choose-us', title: 'Why Choose Sider Fashion', titleBn: 'কেন সাইডার ফ্যাশন সেরা', subtitle: 'Factory-direct value propositions', isVisible: true, displayOrder: 5 },
+  { id: 'sec-why-us', key: 'why-choose-us', title: 'Why Choose Sikder Fashion', titleBn: 'কেন সাইডার ফ্যাশন সেরা', subtitle: 'Factory-direct value propositions', isVisible: true, displayOrder: 5 },
   { id: 'sec-wholesale', key: 'wholesale-highlight', title: 'Wholesale & B2B Portal Section', titleBn: 'পাইকারি ও কর্পোরেট সুযোগ', subtitle: 'Factory MOQ & bulk manufacturing', isVisible: true, displayOrder: 6 },
   { id: 'sec-social', key: 'social-community', title: 'Social Community & Live Reviews', titleBn: 'সোশ্যাল মিডিয়া ও রিভিউ', subtitle: 'Facebook group & customer community', isVisible: true, displayOrder: 7 },
   { id: 'sec-faqs', key: 'faqs', title: 'Frequently Asked Questions', titleBn: 'সাধারণ প্রশ্নোত্তর (FAQ)', subtitle: 'Customer service queries', isVisible: true, displayOrder: 8 },
@@ -178,7 +178,7 @@ export const DEFAULT_COLORS = [
 ];
 
 export const DEFAULT_BUSINESS_SETTINGS = {
-  brandName: 'Sider Fashion',
+  brandName: 'Sikder Fashion',
   tagline: 'Quality Fashion, Directly from Our Own Manufacturing',
   taglineBn: 'নিজস্ব কারখানায় তৈরি — পাইকারি ও খুচরা বিক্রি',
   primaryPhone: '01712773063',
@@ -200,7 +200,7 @@ export const DEFAULT_BUSINESS_SETTINGS = {
 };
 
 export const DEFAULT_POLICIES = {
-  returnPolicy: 'At Sider Fashion, we manufacture in our own Savar factory with rigorous 3-step quality checks. You have the full right to check your package in front of the delivery person before payment. If there is any defect or mismatch, you can immediately return it without penalty.',
+  returnPolicy: 'At Sikder Fashion, we manufacture in our own Savar factory with rigorous 3-step quality checks. You have the full right to check your package in front of the delivery person before payment. If there is any defect or mismatch, you can immediately return it without penalty.',
   returnPolicyBn: 'সাইডার ফ্যাশন নিজস্ব কারখানায় মান নিয়ন্ত্রণ করে পোশাক তৈরি করে। ডেলিভারিম্যানের সামনে পার্সেল খুলে ফেব্রিক ও কোয়ালিটি দেখে নেওয়ার সুযোগ রয়েছে। কোনো সমস্যা থাকলে তাৎক্ষণিক ডেলিভারিম্যানকে রিটার্ন দিতে পারেন।',
   exchangePolicy: 'Wrong size or color? We offer a hassle-free 7-day exchange warranty. Keep the original tags intact and contact our hotline or WhatsApp at 01712773063.',
   exchangePolicyBn: 'সাইজ অথবা রঙের পরিবর্তনে আমরা ৭ দিনের সহজ এক্সচেঞ্জ সুবিধা প্রদান করি। হটলাইন 01712773063 এ যোগাযোগ করুন।',
@@ -208,11 +208,11 @@ export const DEFAULT_POLICIES = {
   deliveryPolicyBn: 'ঢাকার ভেতরে ডেলিভারি চার্জ মাত্র ৭০ টাকা (২৪-৪৮ ঘণ্টায়)। ঢাকার বাইরে সারা দেশে ডেলিভারি চার্জ ১২০ টাকা (৪৮-৭২ ঘণ্টায়)।',
   shippingInfo: 'All orders are dispatched directly from our Savar & Ashulia manufacturing and fulfillment hub in secure weather-resistant packaging.',
   shippingInfoBn: 'সাভার ও আশুলিয়া কারখানা হাব থেকে সরাসরি সিকিউর প্যাকেজিংয়ে পার্সেল পাঠানো হয়।',
-  privacyPolicy: 'We respect your privacy. Sider Fashion only collects your name, phone number, and delivery address to fulfill and dispatch your orders. We never sell or share your information with third parties.',
+  privacyPolicy: 'We respect your privacy. Sikder Fashion only collects your name, phone number, and delivery address to fulfill and dispatch your orders. We never sell or share your information with third parties.',
   privacyPolicyBn: 'আমরা আপনার তথ্যের গোপনীয়তা রক্ষা করি। আপনার নাম, মোবাইল নম্বর ও ঠিকানা শুধুমাত্র পার্সেল প্রেরণের কাজে ব্যবহার করা হয়।',
-  termsConditions: 'By placing an order on Sider Fashion, you agree to our fair delivery terms. Cash on delivery orders must be received at customer address.',
+  termsConditions: 'By placing an order on Sikder Fashion, you agree to our fair delivery terms. Cash on delivery orders must be received at customer address.',
   termsConditionsBn: 'সাইডার ফ্যাশনে অর্ডার করার মাধ্যমে আপনি আমাদের শর্তাবলীর সাথে সম্মত হচ্ছেন। ক্যাশ অন ডেলিভারি পার্সেল সঠিক ঠিকানায় রিসিভ করার অনুরোধ করা হচ্ছে।',
-  aboutUs: 'Sider Fashion is a premier garment manufacturer located in Savar & Ashulia, Dhaka. We produce high-grade casual shirts, executive formal shirts, festive katua, and modern menswear with factory-direct pricing for retail shoppers and wholesale retailers nationwide.',
+  aboutUs: 'Sikder Fashion is a premier garment manufacturer located in Savar & Ashulia, Dhaka. We produce high-grade casual shirts, executive formal shirts, festive katua, and modern menswear with factory-direct pricing for retail shoppers and wholesale retailers nationwide.',
   aboutUsBn: 'সাইডার ফ্যাশন ঢাকা সাভার ও আশুলিয়া ভিত্তিক পোশাক প্রস্তুতকারক ব্র্যান্ড। আমরা নিজস্ব কারখানায় সেরা ফেব্রিকে শার্ট, কতুয়া ও মেন্সওয়্যার তৈরি করে সরাসরি পাইকারি ও খুচরা ক্রেতাদের কাছে সাশ্রয়ী মূল্যে পৌঁছে দিই।'
 };
 
@@ -237,6 +237,111 @@ export function sanitizeAdminUser(user: any) {
   if (!user) return null;
   const { passwordHash, passwordSalt, ...sanitized } = user;
   return sanitized;
+}
+
+// Public-facing projection of an admin user: strips credentials *and* the
+// operational metadata (last login IP) that must never leave the server.
+export function publicAdminUser(user: any) {
+  const sanitized = sanitizeAdminUser(user);
+  if (!sanitized) return null;
+  const { lastLoginIp, ...safe } = sanitized;
+  return safe;
+}
+
+// ==========================================
+// Request Payload Validation Helpers
+// ==========================================
+
+// True only for plain JSON objects. Arrays, null and primitives are rejected so
+// that `{ ...record, ...payload }` merges can never corrupt a stored entity.
+function isPlainObject(value: any): boolean {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+// Returns a trimmed string, or null when the value is not a usable string.
+// Guards every `.trim()` / `.toLowerCase()` / `.replace()` call on request input.
+function asString(value: any, maxLength = 5000): string | null {
+  if (typeof value !== 'string') return null;
+  const trimmed = value.trim();
+  if (!trimmed || trimmed.length > maxLength) return null;
+  return trimmed;
+}
+
+// Basic structural email check: exactly one @, non-empty local part, and a
+// dotted domain. Replaces the previous `includes('@')` test which accepted
+// values like "@" or "a@b".
+function isValidEmail(value: string): boolean {
+  return /^[^\s@]+@[^\s@.]+(\.[^\s@.]+)+$/.test(value) && value.length <= 254;
+}
+
+// Only http(s) URLs may be stored for links the storefront renders as an
+// anchor href. `javascript:` and `data:` URLs would otherwise run script in a
+// visitor's browser when clicked.
+function isSafeHttpUrl(value: string): boolean {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+  } catch {
+    return false;
+  }
+}
+
+// Allocates the next free sequence id for a `PREFIX-000001` style identifier.
+// Deriving it from `list.length + 1` (the previous approach) reuses an id as
+// soon as any record is deleted, and duplicate ids make the `findIndex` lookups
+// in the update/delete routes resolve to the wrong record.
+function nextSequentialId(list: any[], prefix: string, idField: string): string {
+  const pattern = new RegExp(`^${prefix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(\\d+)$`);
+  let maxSeq = 0;
+  const taken = new Set<string>();
+  for (const record of list) {
+    const value = record && record[idField];
+    if (typeof value !== 'string') continue;
+    taken.add(value);
+    const match = pattern.exec(value);
+    if (match) {
+      const seq = parseInt(match[1], 10);
+      if (Number.isFinite(seq) && seq > maxSeq) maxSeq = seq;
+    }
+  }
+  let seq = maxSeq + 1;
+  let candidate = `${prefix}${seq.toString().padStart(6, '0')}`;
+  while (taken.has(candidate)) {
+    seq += 1;
+    candidate = `${prefix}${seq.toString().padStart(6, '0')}`;
+  }
+  return candidate;
+}
+
+// Non-negative safe integer, used for quantities and counters coming from clients.
+function asNonNegativeInt(value: any, fallback = 0): number {
+  const num = Number(value);
+  if (!Number.isFinite(num) || num < 0) return fallback;
+  return Math.floor(num);
+}
+
+// Constant-time comparison for short secrets (OTP codes, tokens).
+function safeCompare(a: string, b: string): boolean {
+  const bufA = Buffer.from(String(a));
+  const bufB = Buffer.from(String(b));
+  if (bufA.length !== bufB.length) return false;
+  return crypto.timingSafeEqual(bufA, bufB);
+}
+
+// Resolves the client IP. `X-Forwarded-For` is attacker-controlled unless the
+// app really sits behind a trusted reverse proxy, so it is only honoured when
+// TRUST_PROXY is explicitly enabled. Otherwise brute-force rate limiting could
+// be bypassed by simply rotating a spoofed header value.
+const TRUST_PROXY = process.env.TRUST_PROXY === 'true' || process.env.TRUST_PROXY === '1';
+
+function getClientIp(req: Request): string {
+  if (TRUST_PROXY) {
+    const forwarded = req.headers['x-forwarded-for'];
+    const raw = Array.isArray(forwarded) ? forwarded[0] : forwarded;
+    const first = typeof raw === 'string' ? raw.split(',')[0].trim() : '';
+    if (first) return first;
+  }
+  return req.socket.remoteAddress || '127.0.0.1';
 }
 
 // Initial Admin Users (1 Owner, 1 General Admin, 2 available slots, max 4 accounts total)
@@ -283,6 +388,59 @@ function revokeUserSessions(userId: string) {
   }
 }
 
+// Drops expired sessions / reset codes so the in-memory maps stay bounded.
+function purgeExpiredAuthState() {
+  const now = Date.now();
+  for (const [token, s] of activeAdminSessions.entries()) {
+    if (s.expiresAt <= now) activeAdminSessions.delete(token);
+  }
+  for (const [email, record] of passwordResetCodes.entries()) {
+    if (record.expiresAt <= now) passwordResetCodes.delete(email);
+  }
+  for (const [key, record] of failedLoginAttempts.entries()) {
+    const staleAfter = record.blockedUntil ?? (record.lastAttempt + 60 * 60 * 1000);
+    if (staleAfter <= now) failedLoginAttempts.delete(key);
+  }
+}
+
+// Extracts the bearer session token from the standard header or, for the legacy
+// call sites that pass it in the body/query, from those locations.
+function extractSessionToken(req: Request): string | null {
+  const header = req.headers.authorization;
+  if (typeof header === 'string' && header.toLowerCase().startsWith('bearer ')) {
+    const value = header.slice(7).trim();
+    if (value) return value;
+  }
+  const headerToken = req.headers['x-admin-token'];
+  if (typeof headerToken === 'string' && headerToken.trim()) return headerToken.trim();
+  const bodyToken = isPlainObject(req.body) ? req.body.token : undefined;
+  if (typeof bodyToken === 'string' && bodyToken.trim()) return bodyToken.trim();
+  const queryToken = req.query?.token;
+  if (typeof queryToken === 'string' && queryToken.trim()) return queryToken.trim();
+  return null;
+}
+
+// Resolves an *authenticated* admin from the server-side session store.
+// Never trusts a client-supplied user id: that was the escalation path where
+// any caller could act as the Store Owner by naming the owner's id.
+function resolveSessionUser(req: Request): { user: any; token: string } | null {
+  purgeExpiredAuthState();
+  const token = extractSessionToken(req);
+  if (!token) return null;
+  const session = activeAdminSessions.get(token);
+  if (!session) return null;
+  if (session.expiresAt <= Date.now()) {
+    activeAdminSessions.delete(token);
+    return null;
+  }
+  const user = db.adminUsers.find((u: any) => u.id === session.userId);
+  if (!user || user.status === 'disabled') {
+    activeAdminSessions.delete(token);
+    return null;
+  }
+  return { user, token };
+}
+
 // In-Memory Database Structure
 interface DatabaseSchema {
   version: number;
@@ -310,6 +468,42 @@ interface DatabaseSchema {
 }
 
 let db: DatabaseSchema;
+
+// Guarantees every collection the routes iterate over actually exists and has
+// the expected type. Applied to any state that arrives from outside this
+// process (Supabase) so a malformed remote document cannot crash every route.
+function normalizeDatabaseShape(state: any): DatabaseSchema {
+  const arrayKeys: (keyof DatabaseSchema)[] = [
+    'products', 'categories', 'colors', 'sizeCharts', 'heroSlides', 'faqs',
+    'contacts', 'socialLinks', 'homepageSections', 'coupons', 'campaigns',
+    'orders', 'wholesaleInquiries', 'auditLogs', 'media', 'adminUsers', 'events'
+  ];
+  const normalized: any = { ...state };
+
+  arrayKeys.forEach(key => {
+    if (!Array.isArray(normalized[key])) normalized[key] = [];
+  });
+  if (!Array.isArray(normalized.sizes)) normalized.sizes = DEFAULT_MASTER_SIZES;
+  if (!isPlainObject(normalized.settings)) normalized.settings = DEFAULT_BUSINESS_SETTINGS;
+  if (!isPlainObject(normalized.policies)) normalized.policies = DEFAULT_POLICIES;
+  if (!isPlainObject(normalized.paymentAccounts)) normalized.paymentAccounts = PAYMENT_ACCOUNTS_CONFIG;
+  if (typeof normalized.version !== 'number') normalized.version = Date.now();
+
+  // Every admin record must carry the identity fields the login lookup reads,
+  // otherwise `u.email.toLowerCase()` throws for the whole collection.
+  normalized.adminUsers = normalized.adminUsers
+    .filter((u: any) => isPlainObject(u))
+    .map((u: any) => ({
+      ...u,
+      id: typeof u.id === 'string' ? u.id : `usr-admin-${Date.now()}`,
+      email: typeof u.email === 'string' ? u.email : '',
+      username: typeof u.username === 'string' ? u.username : '',
+      role: u.role === 'owner' || u.role === 'super_admin' ? u.role : 'admin',
+      status: u.status === 'disabled' ? 'disabled' : 'active'
+    }));
+
+  return normalized as DatabaseSchema;
+}
 
 // Ensure data folder and load or init DB
 function initDatabase(): DatabaseSchema {
@@ -462,7 +656,7 @@ function initDatabase(): DatabaseSchema {
         adminRole: 'super_admin',
         action: 'DATABASE_INITIALIZED',
         category: 'setting',
-        details: 'Sider Fashion Database successfully initialized.'
+        details: 'Sikder Fashion Database successfully initialized.'
       }
     ],
     media: [],
@@ -549,7 +743,9 @@ async function startServer() {
         db.paymentAccounts = remoteState.paymentAccounts;
       }
       if (Array.isArray(remoteState.adminUsers) && remoteState.adminUsers.length > 0) {
-        db.adminUsers = remoteState.adminUsers;
+        // Normalize before trusting: remote records missing email/username/role
+        // would otherwise throw inside the login lookup on every attempt.
+        db.adminUsers = normalizeDatabaseShape({ ...db, adminUsers: remoteState.adminUsers }).adminUsers;
       }
       if (remoteState.version) {
         db.version = remoteState.version;
@@ -564,20 +760,84 @@ async function startServer() {
   }
 
   const app = express();
+  app.disable('x-powered-by');
   app.use(express.json({ limit: '50mb' }));
   app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
+  // Malformed JSON must produce a JSON 400, not an HTML stack trace.
+  app.use((err: any, _req: Request, res: Response, next: any) => {
+    if (err && (err.type === 'entity.parse.failed' || err instanceof SyntaxError)) {
+      res.status(400).json({ success: false, error: 'Malformed JSON request body.' });
+      return;
+    }
+    if (err && err.type === 'entity.too.large') {
+      res.status(413).json({ success: false, error: 'Request payload is too large.' });
+      return;
+    }
+    next(err);
+  });
+
+  // Origins permitted to call this API cross-site. The storefront and the admin
+  // panel are served from the same origin as the API, so same-origin requests
+  // are unaffected; only third-party sites lose access.
+  const allowedOrigins = (process.env.CORS_ALLOWED_ORIGINS || '')
+    .split(',')
+    .map(o => o.trim())
+    .filter(Boolean);
+
   // CORS / Security headers
   app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    const origin = req.headers.origin;
+    // A wildcard ACAO let any website on the internet read this API's responses
+    // (orders, admin metadata) from a victim's browser. Only echo back origins
+    // that were explicitly allow-listed.
+    if (typeof origin === 'string' && allowedOrigins.includes(origin)) {
+      res.setHeader('Access-Control-Allow-Origin', origin);
+      res.setHeader('Vary', 'Origin');
+    }
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Admin-Token');
+
+    // Baseline hardening headers
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+    res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+    res.setHeader('X-Permitted-Cross-Domain-Policies', 'none');
+
+    if (req.path.startsWith('/api/')) {
+      // API responses are per-request state and must never be cached by
+      // browsers or intermediary proxies.
+      res.setHeader('Cache-Control', 'no-store');
+    }
+
     if (req.method === 'OPTIONS') {
-      res.sendStatus(200);
+      res.sendStatus(204);
       return;
     }
     next();
   });
+
+  // Guard for endpoints that require a valid admin session. Responds 401 and
+  // returns null when the caller is not authenticated.
+  function requireAdmin(req: Request, res: Response): any | null {
+    const session = resolveSessionUser(req);
+    if (!session) {
+      res.status(401).json({ success: false, error: 'Authentication required. Please sign in again.' });
+      return null;
+    }
+    return session.user;
+  }
+
+  // Guard for owner-only operations.
+  function requireOwner(req: Request, res: Response): any | null {
+    const user = requireAdmin(req, res);
+    if (!user) return null;
+    if (user.role !== 'owner' && user.role !== 'super_admin') {
+      res.status(403).json({ success: false, error: 'Only the Store Owner can perform this action.' });
+      return null;
+    }
+    return user;
+  }
 
   // ==========================================
   // API ROUTES
@@ -589,10 +849,16 @@ async function startServer() {
   });
 
   app.get('/api/sync', (_req: Request, res: Response) => {
+    // The full snapshot is public to the storefront, so admin credential
+    // material (PBKDF2 hash + salt) and last-login IPs must be projected out.
+    // Nothing on the client reads adminUsers from this payload.
     res.json({
       success: true,
       version: db.version,
-      data: db
+      data: {
+        ...db,
+        adminUsers: (db.adminUsers || []).map(publicAdminUser)
+      }
     });
   });
 
@@ -612,7 +878,8 @@ async function startServer() {
     });
   });
 
-  app.post('/api/supabase/sync-now', (_req: Request, res: Response) => {
+  app.post('/api/supabase/sync-now', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     try {
       persistStateToSupabase(db);
       res.json({ 
@@ -626,14 +893,25 @@ async function startServer() {
     }
   });
 
-  app.post('/api/supabase/pull-now', async (_req: Request, res: Response) => {
+  app.post('/api/supabase/pull-now', async (req: Request, res: Response) => {
+    if (!requireOwner(req, res)) return;
     try {
       const remoteState = await loadStateFromSupabase();
       if (!remoteState) {
         res.status(404).json({ success: false, error: 'No remote state found in Supabase.' });
         return;
       }
-      db = remoteState;
+      // Replacing `db` wholesale with an unvalidated remote document could drop
+      // adminUsers/products entirely, which then made every later request throw
+      // (`db.adminUsers.find` on undefined) and locked admins out permanently.
+      if (!isPlainObject(remoteState) || !Array.isArray(remoteState.adminUsers) || remoteState.adminUsers.length === 0) {
+        res.status(422).json({
+          success: false,
+          error: 'Remote Supabase state is incomplete (missing admin accounts). Pull aborted to protect the local database.'
+        });
+        return;
+      }
+      db = normalizeDatabaseShape(remoteState);
       saveDatabase(db);
       res.json({ success: true, message: 'Pulled and applied database state from Supabase Cloud.', version: db.version });
     } catch (e: any) {
@@ -695,11 +973,16 @@ async function startServer() {
 
   // Admin Login
   app.post('/api/admin/login', (req: Request, res: Response) => {
-    const clientIp = (req.headers['x-forwarded-for'] as string) || req.socket.remoteAddress || '127.0.0.1';
-    const { email, usernameOrEmail, password, pinOrPassword, expectedRole } = req.body;
-    const inputEmailOrUser = ((email || usernameOrEmail || '') as string).trim().toLowerCase();
-    const inputPassword = ((password || pinOrPassword || '') as string).trim();
-    const roleRequirement = expectedRole ? String(expectedRole).toLowerCase().trim() : undefined;
+    const clientIp = getClientIp(req);
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { email, usernameOrEmail, password, pinOrPassword, expectedRole } = body;
+    // Credentials must be strings. Previously an array/object was coerced via
+    // `String(...)`/`.length`, letting malformed payloads reach pbkdf2 and throw.
+    const rawIdentifier = typeof email === 'string' ? email : (typeof usernameOrEmail === 'string' ? usernameOrEmail : '');
+    const rawPassword = typeof password === 'string' ? password : (typeof pinOrPassword === 'string' ? pinOrPassword : '');
+    const inputEmailOrUser = rawIdentifier.trim().toLowerCase();
+    const inputPassword = rawPassword.trim();
+    const roleRequirement = typeof expectedRole === 'string' ? expectedRole.toLowerCase().trim() : undefined;
 
     const rateKey = `${clientIp}_${inputEmailOrUser}`;
     const rateCheck = checkRateLimit(rateKey);
@@ -716,10 +999,12 @@ async function startServer() {
       return;
     }
 
+    // Field-level guards: a single admin record missing email/username/id used
+    // to throw here and turn the login endpoint into a 500 for everyone.
     const user = db.adminUsers.find(
-      u => u.email.toLowerCase() === inputEmailOrUser || 
-           u.username.toLowerCase() === inputEmailOrUser || 
-           u.id.toLowerCase() === inputEmailOrUser
+      u => String(u.email || '').toLowerCase() === inputEmailOrUser ||
+           String(u.username || '').toLowerCase() === inputEmailOrUser ||
+           String(u.id || '').toLowerCase() === inputEmailOrUser
     );
 
     if (!user) {
@@ -738,12 +1023,15 @@ async function startServer() {
       return;
     }
 
-    // Verify Password (with fallback for default passcodes during first setup)
+    // Verify Password.
+    // The previous shared-passcode fallback ('admin123', '2026', ...) was a
+    // hardcoded backdoor: any account that reached this route without a stored
+    // hash could be signed into with a publicly known string. Records without a
+    // hash are re-hashed to their role default during database load, so removing
+    // the fallback costs no legitimate access path.
     const isPasswordValid = verifyPassword(inputPassword, user.passwordHash, user.passwordSalt);
-    const legacyPasscodes = ['2026', 'sider2026', 'admin123', 'sideradmin', '773063', '111222', 'Sider@2026', 'Admin@2026'];
-    const isLegacyPassValid = !user.passwordHash && legacyPasscodes.includes(inputPassword);
 
-    if (!isPasswordValid && !isLegacyPassValid) {
+    if (!isPasswordValid) {
       recordFailedLogin(rateKey);
       logAction(user.name, user.role, 'FAILED_PASSWORD_ATTEMPT', 'auth', `Failed password attempt for ${user.email} (IP: ${clientIp})`);
       saveDatabase(db);
@@ -767,13 +1055,6 @@ async function startServer() {
         error: 'Access Denied: This account is the Store Owner account. Please switch to the "Store Owner" login option.'
       });
       return;
-    }
-
-    // Transparently upgrade legacy passwords to PBKDF2 hash if needed
-    if (!user.passwordHash || isLegacyPassValid) {
-      const hashed = hashPassword(inputPassword);
-      user.passwordHash = hashed.hash;
-      user.passwordSalt = hashed.salt;
     }
 
     // Successful login: clear rate limit, update last login
@@ -819,41 +1100,36 @@ async function startServer() {
 
   // Verify Active Session
   app.post('/api/admin/session/verify', (req: Request, res: Response) => {
-    const { token, userId } = req.body;
-    if (!token && !userId) {
-      res.json({ valid: false });
+    // A session is only valid if it is backed by a live server-side token.
+    // The previous `session?.userId || userId` fallback meant any anonymous
+    // caller could post {"userId":"usr-owner-saon"} and be told the session was
+    // valid, receiving the Store Owner's record in return.
+    const session = resolveSessionUser(req);
+    if (!session) {
+      res.json({ valid: false, error: 'Session expired or invalid. Please sign in again.' });
       return;
     }
 
-    const session = token ? activeAdminSessions.get(token) : null;
-    const targetUserId = session?.userId || userId;
-    const user = db.adminUsers.find(u => u.id === targetUserId);
-
-    if (!user || user.status === 'disabled') {
-      if (token) activeAdminSessions.delete(token);
-      res.json({ valid: false, error: 'Account disabled or not found' });
-      return;
-    }
-
-    if (session && session.expiresAt < Date.now()) {
-      activeAdminSessions.delete(token);
-      res.json({ valid: false, error: 'Session expired' });
-      return;
-    }
-
-    res.json({ valid: true, user: sanitizeAdminUser(user) });
+    res.json({ valid: true, user: sanitizeAdminUser(session.user) });
   });
 
   // Get Admin Accounts (All admins, 1 Owner + up to 3 General Admins, max 4 accounts)
   // Owner email is strictly masked when requested by non-owners (Staff)
   app.get('/api/admin/users', (req: Request, res: Response) => {
-    const requesterId = (req.query.requesterId as string) || (req.query.currentAdminId as string);
-    const requester = db.adminUsers.find(u => u.id === requesterId);
-    const isOwnerRequester = requester && (requester.role === 'owner' || requester.role === 'super_admin');
+    // The account roster (names, emails, roles, last-login IPs) was readable by
+    // anyone. It now requires an authenticated admin, and the "am I the owner?"
+    // decision comes from the session rather than a query parameter the caller
+    // chooses for themselves.
+    const requester = requireAdmin(req, res);
+    if (!requester) return;
+    const isOwnerRequester = requester.role === 'owner' || requester.role === 'super_admin';
 
     const sanitizedList = db.adminUsers.map(u => {
-      const sanitized = sanitizeAdminUser(u);
       const isTargetOwner = u.role === 'owner' || u.role === 'super_admin';
+      const isSelf = u.id === requester.id;
+      // Last-login IP is operational data; only the owner (or the account
+      // holder themselves) may see it.
+      const sanitized = (isOwnerRequester || isSelf) ? sanitizeAdminUser(u) : publicAdminUser(u);
       // If requester is not the Owner, mask the Owner's email address for privacy and security
       if (!isOwnerRequester && isTargetOwner) {
         return {
@@ -886,14 +1162,16 @@ async function startServer() {
 
   // Create New General Admin (Owner Only, Max 4 accounts total, max 3 General Admins)
   app.post('/api/admin/users', (req: Request, res: Response) => {
-    const { name, email, password, roleTitle, currentAdminId } = req.body;
+    // Verify caller is Owner.
+    // The old lookup was `find(u => u.id === currentAdminId || u.role === 'owner')`:
+    // the `|| u.role === 'owner'` arm matched the Store Owner for *any* request,
+    // so an unauthenticated caller passed this check and could mint admin
+    // accounts. The caller is now the authenticated session user.
+    const caller = requireOwner(req, res);
+    if (!caller) return;
 
-    // Verify caller is Owner
-    const caller = db.adminUsers.find(u => u.id === currentAdminId || u.role === 'owner');
-    if (!caller || (caller.role !== 'owner' && caller.role !== 'super_admin')) {
-      res.status(403).json({ success: false, error: 'Only the Store Owner can create General Admin accounts.' });
-      return;
-    }
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { name, email, password, roleTitle } = body;
 
     // Account limits check (Strict: 1 Owner, max 3 General Admins, max 4 total)
     if (db.adminUsers.length >= 4) {
@@ -913,25 +1191,28 @@ async function startServer() {
       return;
     }
 
-    if (!name || !name.trim()) {
+    const cleanName = asString(name, 120);
+    if (!cleanName) {
       res.status(400).json({ success: false, error: 'Admin full name is required.' });
       return;
     }
 
-    const cleanEmail = (email || '').trim().toLowerCase();
-    if (!cleanEmail || !cleanEmail.includes('@')) {
+    const cleanEmail = (asString(email, 254) || '').toLowerCase();
+    if (!cleanEmail || !isValidEmail(cleanEmail)) {
       res.status(400).json({ success: false, error: 'A valid email address is required.' });
       return;
     }
 
     // Check unique email
-    const existing = db.adminUsers.find(u => u.email.toLowerCase() === cleanEmail);
+    const existing = db.adminUsers.find(u => String(u.email || '').toLowerCase() === cleanEmail);
     if (existing) {
       res.status(400).json({ success: false, error: 'An admin account with this email already exists.' });
       return;
     }
 
-    if (!password || password.length < 6) {
+    // `password.length >= 6` also passed for arrays such as [1,2,3,4,5,6],
+    // which then threw inside pbkdf2. Require an actual string.
+    if (typeof password !== 'string' || password.length < 6 || password.length > 200) {
       res.status(400).json({ success: false, error: 'Password must be at least 6 characters.' });
       return;
     }
@@ -941,10 +1222,10 @@ async function startServer() {
     const newUser = {
       id: newAdminId,
       username: cleanEmail.split('@')[0].replace(/[^a-z0-9]/g, '') || `admin${db.adminUsers.length}`,
-      name: name.trim(),
+      name: cleanName,
       email: cleanEmail,
       role: 'admin',
-      roleTitle: (roleTitle || 'General Admin').trim(),
+      roleTitle: asString(roleTitle, 120) || 'General Admin',
       status: 'active',
       passwordHash: hashed.hash,
       passwordSalt: hashed.salt,
@@ -964,8 +1245,14 @@ async function startServer() {
 
   // Update Admin Details / Status / Password (Owner only, or self name update)
   app.put('/api/admin/users/:id', (req: Request, res: Response) => {
+    // `currentAdminId` came straight from the request body, so any caller could
+    // claim to be the owner. Identity is now taken from the session.
+    const caller = requireAdmin(req, res);
+    if (!caller) return;
+
     const { id } = req.params;
-    const { name, roleTitle, status, newPassword, currentAdminId } = req.body;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { name, roleTitle, status, newPassword } = body;
 
     const user = db.adminUsers.find(u => u.id === id);
     if (!user) {
@@ -973,9 +1260,8 @@ async function startServer() {
       return;
     }
 
-    const caller = db.adminUsers.find(u => u.id === currentAdminId);
-    const isOwnerCaller = caller && (caller.role === 'owner' || caller.role === 'super_admin');
-    const isSelf = caller && caller.id === user.id;
+    const isOwnerCaller = caller.role === 'owner' || caller.role === 'super_admin';
+    const isSelf = caller.id === user.id;
 
     if (!isOwnerCaller && !isSelf) {
       res.status(403).json({ success: false, error: 'Unauthorized to modify this admin account.' });
@@ -989,8 +1275,23 @@ async function startServer() {
       return;
     }
 
-    if (name) user.name = name.trim();
-    if (roleTitle && !isTargetOwner) user.roleTitle = roleTitle.trim();
+    // `name.trim()` / `roleTitle.trim()` threw on non-string input.
+    if (name !== undefined) {
+      const cleanName = asString(name, 120);
+      if (!cleanName) {
+        res.status(400).json({ success: false, error: 'Admin name must be a non-empty text value.' });
+        return;
+      }
+      user.name = cleanName;
+    }
+    if (roleTitle !== undefined && !isTargetOwner) {
+      const cleanRoleTitle = asString(roleTitle, 120);
+      if (!cleanRoleTitle) {
+        res.status(400).json({ success: false, error: 'Role title must be a non-empty text value.' });
+        return;
+      }
+      user.roleTitle = cleanRoleTitle;
+    }
 
     // Status change (Only Owner can change status)
     if (status && isOwnerCaller && !isTargetOwner) {
@@ -1003,8 +1304,8 @@ async function startServer() {
     }
 
     // Password reset by Owner
-    if (newPassword && isOwnerCaller) {
-      if (newPassword.length < 6) {
+    if (newPassword !== undefined && isOwnerCaller) {
+      if (typeof newPassword !== 'string' || newPassword.length < 6 || newPassword.length > 200) {
         res.status(400).json({ success: false, error: 'Password must be at least 6 characters.' });
         return;
       }
@@ -1025,15 +1326,13 @@ async function startServer() {
 
   // Delete Admin Account (Owner Only, Cannot delete Owner)
   app.delete('/api/admin/users/:id', (req: Request, res: Response) => {
+    // Same `|| u.role === 'owner'` escalation as the create route: an
+    // unauthenticated DELETE resolved to the Store Owner as caller and could
+    // remove any admin account.
+    const caller = requireOwner(req, res);
+    if (!caller) return;
+
     const { id } = req.params;
-    const currentAdminId = req.query.currentAdminId as string;
-
-    const caller = db.adminUsers.find(u => u.id === currentAdminId || u.role === 'owner');
-    if (!caller || (caller.role !== 'owner' && caller.role !== 'super_admin')) {
-      res.status(403).json({ success: false, error: 'Only the Store Owner can remove Admin accounts.' });
-      return;
-    }
-
     const user = db.adminUsers.find(u => u.id === id);
     if (!user) {
       res.status(404).json({ success: false, error: 'Admin user not found.' });
@@ -1059,7 +1358,7 @@ async function startServer() {
     const smtpPort = parseInt(process.env.SMTP_PORT || '587', 10);
     const smtpUser = process.env.SMTP_USER;
     const smtpPass = process.env.SMTP_PASS || process.env.SMTP_PASSWORD;
-    const smtpFrom = process.env.SMTP_FROM || `"Sider Fashion Security" <${smtpUser || 'security@siderfashion.com'}>`;
+    const smtpFrom = process.env.SMTP_FROM || `"Sikder Fashion Security" <${smtpUser || 'security@siderfashion.com'}>`;
 
     if (smtpHost && smtpUser && smtpPass) {
       try {
@@ -1076,17 +1375,17 @@ async function startServer() {
         await transporter.sendMail({
           from: smtpFrom,
           to: toEmail,
-          subject: `[Sider Fashion Security] Admin Password Reset Code: ${otpCode}`,
-          text: `Hello ${adminName},\n\nYour 6-digit password reset verification code is:\n\n${otpCode}\n\nThis single-use code will expire in 10 minutes.\nIf you did not request this reset, please ignore this email or notify the store owner immediately.\n\nSider Fashion Security Team`,
+          subject: `[Sikder Fashion Security] Admin Password Reset Code: ${otpCode}`,
+          text: `Hello ${adminName},\n\nYour 6-digit password reset verification code is:\n\n${otpCode}\n\nThis single-use code will expire in 10 minutes.\nIf you did not request this reset, please ignore this email or notify the store owner immediately.\n\nSikder Fashion Security Team`,
           html: `
             <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 540px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e7e5e4; border-radius: 16px; padding: 32px; color: #1c1917;">
               <div style="text-align: center; margin-bottom: 24px;">
                 <div style="display: inline-block; width: 48px; height: 48px; line-height: 48px; background-color: #f59e0b; color: #0c0a09; font-weight: 900; font-size: 24px; border-radius: 12px;">S</div>
-                <h2 style="margin: 12px 0 4px; font-size: 20px; font-weight: 800; color: #0c0a09;">Sider Fashion Security</h2>
+                <h2 style="margin: 12px 0 4px; font-size: 20px; font-weight: 800; color: #0c0a09;">Sikder Fashion Security</h2>
                 <p style="margin: 0; font-size: 13px; color: #78716c;">Admin Account Password Recovery</p>
               </div>
               <p style="font-size: 14px; line-height: 1.6; color: #44403c;">Hello <strong>${adminName}</strong>,</p>
-              <p style="font-size: 14px; line-height: 1.6; color: #44403c;">A password reset request was initiated for your Sider Fashion Admin account (<strong>${toEmail}</strong>).</p>
+              <p style="font-size: 14px; line-height: 1.6; color: #44403c;">A password reset request was initiated for your Sikder Fashion Admin account (<strong>${toEmail}</strong>).</p>
               <div style="background-color: #fef3c7; border: 1px solid #fde68a; border-radius: 12px; padding: 20px; text-align: center; margin: 24px 0;">
                 <div style="font-size: 11px; text-transform: uppercase; font-weight: 700; color: #92400e; letter-spacing: 1px; margin-bottom: 6px;">Your 6-Digit Verification Code</div>
                 <div style="font-size: 32px; font-weight: 900; letter-spacing: 8px; font-family: monospace; color: #78350f;">${otpCode}</div>
@@ -1094,7 +1393,7 @@ async function startServer() {
               </div>
               <p style="font-size: 12px; color: #78716c; line-height: 1.5;">If you did not request a password reset, please ignore this email. No password changes can be made without this code.</p>
               <hr style="border: none; border-top: 1px solid #e7e5e4; margin: 24px 0;" />
-              <div style="font-size: 11px; color: #a8a29e; text-align: center;">Sider Fashion Store Management • Automated Security Alert</div>
+              <div style="font-size: 11px; color: #a8a29e; text-align: center;">Sikder Fashion Store Management • Automated Security Alert</div>
             </div>
           `
         });
@@ -1113,17 +1412,18 @@ async function startServer() {
   // Forgot Password: Step 1 - Request 6-digit Verification Code
   // Strictly verifies active admin existence. NEVER returns verification code in API response.
   app.post('/api/admin/forgot-password/request', async (req: Request, res: Response) => {
-    const clientIp = (req.headers['x-forwarded-for'] as string) || req.socket.remoteAddress || '127.0.0.1';
-    const { email } = req.body;
-    const cleanEmail = (email || '').trim().toLowerCase();
+    const clientIp = getClientIp(req);
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { email } = body;
+    const cleanEmail = (asString(email, 254) || '').toLowerCase();
 
-    if (!cleanEmail || !cleanEmail.includes('@')) {
+    if (!cleanEmail || !isValidEmail(cleanEmail)) {
       res.status(400).json({ success: false, error: 'অনুগ্রহ করে একটি সঠিক ইমেইল ঠিকানা প্রদান করুন।' });
       return;
     }
 
     // Strict validation: Only registered active admin accounts can request OTP
-    const user = db.adminUsers.find(u => u.email.toLowerCase() === cleanEmail);
+    const user = db.adminUsers.find(u => String(u.email || '').toLowerCase() === cleanEmail);
     if (!user) {
       logAction('Unknown', 'admin', 'UNAUTHORIZED_RESET_ATTEMPT', 'auth', `Unauthorized password reset attempted for non-admin email: ${cleanEmail} (IP: ${clientIp})`);
       saveDatabase(db);
@@ -1153,8 +1453,10 @@ async function startServer() {
       return;
     }
 
-    // Generate cryptographically random 6-digit numeric verification code
-    const verificationCode = Math.floor(100000 + Math.random() * 900000).toString();
+    // Generate cryptographically random 6-digit numeric verification code.
+    // `Math.random()` is not a CSPRNG: its output is predictable from observed
+    // values, which would let an attacker derive another admin's reset code.
+    const verificationCode = crypto.randomInt(100000, 1000000).toString();
     const expiresAt = Date.now() + 10 * 60 * 1000; // 10 minutes expiry
 
     passwordResetCodes.set(cleanEmail, {
@@ -1184,10 +1486,11 @@ async function startServer() {
 
   // Forgot Password: Step 2 - Verify Code and Reset Password
   app.post('/api/admin/forgot-password/verify-and-reset', (req: Request, res: Response) => {
-    const clientIp = (req.headers['x-forwarded-for'] as string) || req.socket.remoteAddress || '127.0.0.1';
-    const { email, code, newPassword, confirmPassword } = req.body;
-    const cleanEmail = (email || '').trim().toLowerCase();
-    const cleanCode = (code || '').trim();
+    const clientIp = getClientIp(req);
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { email, code, newPassword, confirmPassword } = body;
+    const cleanEmail = (asString(email, 254) || '').toLowerCase();
+    const cleanCode = asString(code, 32) || '';
 
     if (!cleanEmail || !cleanCode) {
       res.status(400).json({ success: false, error: 'ইমেইল এবং ৬-সংখ্যার সিকিউরিটি কোড প্রদান করা আবশ্যক।' });
@@ -1211,7 +1514,8 @@ async function startServer() {
       return;
     }
 
-    if (resetRecord.code !== cleanCode) {
+    // Constant-time compare so response timing cannot leak the code digit by digit.
+    if (!safeCompare(resetRecord.code, cleanCode)) {
       resetRecord.failedAttempts = (resetRecord.failedAttempts || 0) + 1;
       if (resetRecord.failedAttempts >= 3) {
         passwordResetCodes.delete(cleanEmail);
@@ -1225,7 +1529,7 @@ async function startServer() {
       return;
     }
 
-    if (!newPassword || newPassword.length < 6) {
+    if (typeof newPassword !== 'string' || newPassword.length < 6 || newPassword.length > 200) {
       res.status(400).json({ success: false, error: 'নতুন পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে।' });
       return;
     }
@@ -1235,7 +1539,7 @@ async function startServer() {
       return;
     }
 
-    const user = db.adminUsers.find(u => u.email.toLowerCase() === cleanEmail);
+    const user = db.adminUsers.find(u => String(u.email || '').toLowerCase() === cleanEmail);
     if (!user) {
       res.status(404).json({ success: false, error: 'অ্যাডমিন অ্যাকাউন্ট খুঁজে পাওয়া যায়নি।' });
       return;
@@ -1265,17 +1569,29 @@ async function startServer() {
   });
 
   app.post('/api/products', (req: Request, res: Response) => {
-    const product = req.body.product;
-    const adminName = req.body.adminName || 'Admin';
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const product = body.product;
+    const adminName = asString(body.adminName, 120) || 'Admin';
 
-    if (!product || !product.name || !product.code) {
+    // `!product.name` also passed for `{}` and `[]`; `product.code.toLowerCase()`
+    // then threw a 500 for any non-string code.
+    if (!isPlainObject(product)) {
+      res.status(400).json({ success: false, error: 'Product payload must be an object.' });
+      return;
+    }
+    const productName = asString(product.name, 300);
+    const productCode = asString(product.code, 120);
+    if (!productName || !productCode) {
       res.status(400).json({ success: false, error: 'Product name and code/SKU are required.' });
       return;
     }
+    product.name = productName;
+    product.code = productCode;
 
     // Ensure Unique ID
-    if (!product.id) {
-      product.id = `sf-${product.code.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${Date.now()}`;
+    if (!asString(product.id, 200)) {
+      product.id = `sf-${productCode.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${Date.now()}`;
     }
 
     // Default values if missing
@@ -1300,9 +1616,19 @@ async function startServer() {
   });
 
   app.put('/api/products/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const updated = req.body.product;
-    const adminName = req.body.adminName || 'Admin';
+    const body = isPlainObject(req.body) ? req.body : {};
+    const updated = body.product;
+    const adminName = asString(body.adminName, 120) || 'Admin';
+
+    // Without this guard an array or string payload spread numeric/character
+    // keys into the stored product, and a missing payload reported success
+    // while writing nothing.
+    if (!isPlainObject(updated)) {
+      res.status(400).json({ success: false, error: 'Product payload must be an object.' });
+      return;
+    }
 
     const idx = db.products.findIndex(p => p.id === id || p.code === id);
     if (idx === -1) {
@@ -1317,8 +1643,9 @@ async function startServer() {
   });
 
   app.delete('/api/products/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const adminName = (req.query.adminName as string) || 'Admin';
+    const adminName = asString(req.query.adminName, 120) || 'Admin';
 
     const idx = db.products.findIndex(p => p.id === id || p.code === id);
     if (idx === -1) {
@@ -1338,16 +1665,26 @@ async function startServer() {
   });
 
   app.post('/api/categories', (req: Request, res: Response) => {
-    const cat = req.body.category;
-    const adminName = req.body.adminName || 'Admin';
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const cat = body.category;
+    const adminName = asString(body.adminName, 120) || 'Admin';
 
-    if (!cat || !cat.name || !cat.key) {
+    if (!isPlainObject(cat)) {
+      res.status(400).json({ success: false, error: 'Category payload must be an object.' });
+      return;
+    }
+    const catName = asString(cat.name, 200);
+    const catKey = asString(cat.key, 120);
+    if (!catName || !catKey) {
       res.status(400).json({ success: false, error: 'Category name and slug/key are required.' });
       return;
     }
+    cat.name = catName;
+    cat.key = catKey;
 
-    if (!cat.id) {
-      cat.id = `cat-${cat.key.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${Date.now()}`;
+    if (!asString(cat.id, 200)) {
+      cat.id = `cat-${catKey.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${Date.now()}`;
     }
 
     const existingIdx = db.categories.findIndex(c => c.id === cat.id || c.key === cat.key);
@@ -1364,9 +1701,16 @@ async function startServer() {
   });
 
   app.put('/api/categories/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const updated = req.body.category;
-    const adminName = req.body.adminName || 'Admin';
+    const body = isPlainObject(req.body) ? req.body : {};
+    const updated = body.category;
+    const adminName = asString(body.adminName, 120) || 'Admin';
+
+    if (!isPlainObject(updated)) {
+      res.status(400).json({ success: false, error: 'Category payload must be an object.' });
+      return;
+    }
 
     const idx = db.categories.findIndex(c => c.id === id || c.key === id);
     if (idx === -1) {
@@ -1381,9 +1725,10 @@ async function startServer() {
   });
 
   app.delete('/api/categories/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const adminName = (req.query.adminName as string) || 'Admin';
-    const moveProductsTo = (req.query.moveTo as string) || 'all';
+    const adminName = asString(req.query.adminName, 120) || 'Admin';
+    const moveProductsTo = asString(req.query.moveTo, 120) || 'all';
 
     const idx = db.categories.findIndex(c => c.id === id || c.key === id);
     if (idx === -1) {
@@ -1413,23 +1758,28 @@ async function startServer() {
   });
 
   app.post('/api/sizes', (req: Request, res: Response) => {
-    const { size, adminName } = req.body;
-    if (!size || !size.trim()) {
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { size, adminName } = body;
+    // `size.trim()` threw a 500 whenever `size` was a number or object.
+    const cleanSizeInput = asString(size, 32);
+    if (!cleanSizeInput) {
       res.status(400).json({ success: false, error: 'Size name is required.' });
       return;
     }
-    const cleanSize = size.trim().toUpperCase();
+    const cleanSize = cleanSizeInput.toUpperCase();
     if (!db.sizes.includes(cleanSize)) {
       db.sizes.push(cleanSize);
-      logAction(adminName || 'Admin', 'super_admin', 'SIZE_ADDED', 'inventory', `Added size ${cleanSize}`);
+      logAction(asString(adminName, 120) || 'Admin', 'super_admin', 'SIZE_ADDED', 'inventory', `Added size ${cleanSize}`);
       saveDatabase(db);
     }
     res.json({ success: true, sizes: db.sizes, message: `Size ${cleanSize} saved.` });
   });
 
   app.delete('/api/sizes/:size', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { size } = req.params;
-    const adminName = (req.query.adminName as string) || 'Admin';
+    const adminName = asString(req.query.adminName, 120) || 'Admin';
     db.sizes = db.sizes.filter(s => s.toUpperCase() !== size.toUpperCase());
     logAction(adminName, 'super_admin', 'SIZE_REMOVED', 'inventory', `Removed size ${size}`);
     saveDatabase(db);
@@ -1441,31 +1791,41 @@ async function startServer() {
   });
 
   app.post('/api/colors', (req: Request, res: Response) => {
-    const { color, adminName } = req.body;
-    if (!color || !color.name) {
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { color, adminName } = body;
+    if (!isPlainObject(color)) {
+      res.status(400).json({ success: false, error: 'Color payload must be an object.' });
+      return;
+    }
+    const colorName = asString(color.name, 120);
+    if (!colorName) {
       res.status(400).json({ success: false, error: 'Color name is required.' });
       return;
     }
+    color.name = colorName;
 
-    if (!color.id) {
+    if (!asString(color.id, 200)) {
       color.id = `col-${Date.now()}`;
     }
 
-    const idx = db.colors.findIndex(c => c.id === color.id || c.name.toLowerCase() === color.name.toLowerCase());
+    // `c.name.toLowerCase()` threw for any stored swatch missing a name.
+    const idx = db.colors.findIndex(c => c.id === color.id || String(c.name || '').toLowerCase() === colorName.toLowerCase());
     if (idx >= 0) {
       db.colors[idx] = { ...db.colors[idx], ...color };
     } else {
       db.colors.push(color);
     }
 
-    logAction(adminName || 'Admin', 'super_admin', 'COLOR_SAVED', 'inventory', `Saved color swatch ${color.name}`);
+    logAction(asString(adminName, 120) || 'Admin', 'super_admin', 'COLOR_SAVED', 'inventory', `Saved color swatch ${color.name}`);
     saveDatabase(db);
     res.json({ success: true, colors: db.colors, message: `Color ${color.name} saved.` });
   });
 
   app.delete('/api/colors/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const adminName = (req.query.adminName as string) || 'Admin';
+    const adminName = asString(req.query.adminName, 120) || 'Admin';
     db.colors = db.colors.filter(c => c.id !== id && c.name !== id);
     logAction(adminName, 'super_admin', 'COLOR_REMOVED', 'inventory', `Removed color swatch ${id}`);
     saveDatabase(db);
@@ -1478,13 +1838,15 @@ async function startServer() {
   });
 
   app.post('/api/contacts', (req: Request, res: Response) => {
-    const { contact, adminName } = req.body;
-    if (!contact || !contact.value) {
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { contact, adminName } = body;
+    if (!isPlainObject(contact) || !asString(contact.value, 500)) {
       res.status(400).json({ success: false, error: 'Contact value is required.' });
       return;
     }
 
-    if (!contact.id) {
+    if (!asString(contact.id, 200)) {
       contact.id = `contact-${Date.now()}`;
     }
 
@@ -1502,8 +1864,14 @@ async function startServer() {
   });
 
   app.put('/api/contacts/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const { contact, adminName } = req.body;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { contact, adminName } = body;
+    if (!isPlainObject(contact)) {
+      res.status(400).json({ success: false, error: 'Contact payload must be an object.' });
+      return;
+    }
     const idx = db.contacts.findIndex(c => c.id === id);
     if (idx === -1) {
       res.status(404).json({ success: false, error: 'Contact not found.' });
@@ -1516,8 +1884,9 @@ async function startServer() {
   });
 
   app.delete('/api/contacts/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const adminName = (req.query.adminName as string) || 'Admin';
+    const adminName = asString(req.query.adminName, 120) || 'Admin';
     db.contacts = db.contacts.filter(c => c.id !== id);
     logAction(adminName, 'super_admin', 'CONTACT_DELETED', 'cms', `Deleted contact ${id}`);
     saveDatabase(db);
@@ -1530,14 +1899,24 @@ async function startServer() {
   });
 
   app.post('/api/social-links', (req: Request, res: Response) => {
-    const { socialLink, adminName } = req.body;
-    if (!socialLink || !socialLink.url) {
-      res.status(400).json({ success: false, error: 'Social media URL is required.' });
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { socialLink, adminName } = body;
+    if (!isPlainObject(socialLink)) {
+      res.status(400).json({ success: false, error: 'Social link payload must be an object.' });
       return;
     }
+    const linkUrl = asString(socialLink.url, 2000);
+    // Rendered as an anchor href in the storefront footer: reject
+    // `javascript:` / `data:` URLs which would execute in a visitor's browser.
+    if (!linkUrl || !isSafeHttpUrl(linkUrl)) {
+      res.status(400).json({ success: false, error: 'A valid http(s) social media URL is required.' });
+      return;
+    }
+    socialLink.url = linkUrl;
 
-    if (!socialLink.id) {
-      socialLink.id = `social-${socialLink.platform || 'link'}-${Date.now()}`;
+    if (!asString(socialLink.id, 200)) {
+      socialLink.id = `social-${asString(socialLink.platform, 60) || 'link'}-${Date.now()}`;
     }
 
     const idx = db.socialLinks.findIndex(s => s.id === socialLink.id);
@@ -1554,8 +1933,9 @@ async function startServer() {
   });
 
   app.delete('/api/social-links/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const adminName = (req.query.adminName as string) || 'Admin';
+    const adminName = asString(req.query.adminName, 120) || 'Admin';
     db.socialLinks = db.socialLinks.filter(s => s.id !== id);
     logAction(adminName, 'super_admin', 'SOCIAL_DELETED', 'cms', `Deleted social link ${id}`);
     saveDatabase(db);
@@ -1568,13 +1948,15 @@ async function startServer() {
   });
 
   app.post('/api/hero-slides', (req: Request, res: Response) => {
-    const { slide, adminName } = req.body;
-    if (!slide || !slide.title) {
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { slide, adminName } = body;
+    if (!isPlainObject(slide) || !asString(slide.title, 300)) {
       res.status(400).json({ success: false, error: 'Slide title is required.' });
       return;
     }
 
-    if (!slide.slideId) {
+    if (!asString(slide.slideId, 200)) {
       slide.slideId = `slide-${Date.now()}`;
     }
 
@@ -1592,8 +1974,9 @@ async function startServer() {
   });
 
   app.delete('/api/hero-slides/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const adminName = (req.query.adminName as string) || 'Admin';
+    const adminName = asString(req.query.adminName, 120) || 'Admin';
     db.heroSlides = db.heroSlides.filter(s => s.slideId !== id);
     logAction(adminName, 'super_admin', 'HERO_SLIDE_DELETED', 'cms', `Deleted hero banner ${id}`);
     saveDatabase(db);
@@ -1606,13 +1989,15 @@ async function startServer() {
   });
 
   app.post('/api/faqs', (req: Request, res: Response) => {
-    const { faq, adminName } = req.body;
-    if (!faq || !faq.question) {
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { faq, adminName } = body;
+    if (!isPlainObject(faq) || !asString(faq.question, 1000)) {
       res.status(400).json({ success: false, error: 'FAQ question is required.' });
       return;
     }
 
-    if (!faq.id) {
+    if (!asString(faq.id, 200)) {
       faq.id = `faq-${Date.now()}`;
     }
 
@@ -1630,8 +2015,9 @@ async function startServer() {
   });
 
   app.delete('/api/faqs/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const adminName = (req.query.adminName as string) || 'Admin';
+    const adminName = asString(req.query.adminName, 120) || 'Admin';
     db.faqs = db.faqs.filter(f => f.id !== id);
     logAction(adminName, 'super_admin', 'FAQ_DELETED', 'cms', `Deleted FAQ: ${id}`);
     saveDatabase(db);
@@ -1644,12 +2030,23 @@ async function startServer() {
   });
 
   app.put('/api/homepage-sections', (req: Request, res: Response) => {
-    const { sections, adminName } = req.body;
-    if (Array.isArray(sections)) {
-      db.homepageSections = sections;
-      logAction(adminName || 'Admin', 'super_admin', 'HOMEPAGE_SECTIONS_UPDATED', 'cms', 'Updated homepage sections order and visibility.');
-      saveDatabase(db);
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { sections, adminName } = body;
+    // A non-array payload used to be silently discarded while still reporting
+    // `success: true`, so the admin UI showed "saved" for a write that never
+    // happened. Reject it explicitly instead.
+    if (!Array.isArray(sections)) {
+      res.status(400).json({ success: false, error: 'Homepage sections payload must be an array.' });
+      return;
     }
+    if (!sections.every(isPlainObject)) {
+      res.status(400).json({ success: false, error: 'Each homepage section must be an object.' });
+      return;
+    }
+    db.homepageSections = sections;
+    logAction(asString(adminName, 120) || 'Admin', 'super_admin', 'HOMEPAGE_SECTIONS_UPDATED', 'cms', 'Updated homepage sections order and visibility.');
+    saveDatabase(db);
     res.json({ success: true, sections: db.homepageSections, message: 'Homepage layout saved.' });
   });
 
@@ -1659,9 +2056,27 @@ async function startServer() {
   });
 
   app.put('/api/settings', (req: Request, res: Response) => {
-    const { settings, adminName } = req.body;
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { settings, adminName } = body;
+    // Spreading a non-object (array / string / null) either injected numeric
+    // keys into the settings record or silently changed nothing while still
+    // reporting success.
+    if (!isPlainObject(settings)) {
+      res.status(400).json({ success: false, error: 'Settings payload must be an object.' });
+      return;
+    }
+    // facebookUrl is rendered as an anchor href on the storefront.
+    if (settings.facebookUrl !== undefined) {
+      const fbUrl = asString(settings.facebookUrl, 2000);
+      if (!fbUrl || !isSafeHttpUrl(fbUrl)) {
+        res.status(400).json({ success: false, error: 'Facebook URL must be a valid http(s) address.' });
+        return;
+      }
+      settings.facebookUrl = fbUrl;
+    }
     db.settings = { ...db.settings, ...settings };
-    logAction(adminName || 'Admin', 'super_admin', 'SETTINGS_UPDATED', 'setting', 'Updated business settings.');
+    logAction(asString(adminName, 120) || 'Admin', 'super_admin', 'SETTINGS_UPDATED', 'setting', 'Updated business settings.');
     saveDatabase(db);
     res.json({ success: true, settings: db.settings, message: 'Settings saved.' });
   });
@@ -1671,9 +2086,15 @@ async function startServer() {
   });
 
   app.put('/api/policies', (req: Request, res: Response) => {
-    const { policies, adminName } = req.body;
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { policies, adminName } = body;
+    if (!isPlainObject(policies)) {
+      res.status(400).json({ success: false, error: 'Policies payload must be an object.' });
+      return;
+    }
     db.policies = { ...db.policies, ...policies };
-    logAction(adminName || 'Admin', 'super_admin', 'POLICIES_UPDATED', 'cms', 'Updated store legal policies and content.');
+    logAction(asString(adminName, 120) || 'Admin', 'super_admin', 'POLICIES_UPDATED', 'cms', 'Updated store legal policies and content.');
     saveDatabase(db);
     res.json({ success: true, policies: db.policies, message: 'Policies updated.' });
   });
@@ -1683,9 +2104,17 @@ async function startServer() {
   });
 
   app.put('/api/payment-accounts', (req: Request, res: Response) => {
-    const { paymentAccounts, adminName } = req.body;
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { paymentAccounts, adminName } = body;
+    // Payment destination numbers: a malformed write here would silently
+    // misdirect customer payments, so reject anything that is not an object.
+    if (!isPlainObject(paymentAccounts)) {
+      res.status(400).json({ success: false, error: 'Payment accounts payload must be an object.' });
+      return;
+    }
     db.paymentAccounts = { ...db.paymentAccounts, ...paymentAccounts };
-    logAction(adminName || 'Admin', 'super_admin', 'PAYMENT_ACCOUNTS_UPDATED', 'payment', 'Updated bKash and Nagad payment account details.');
+    logAction(asString(adminName, 120) || 'Admin', 'super_admin', 'PAYMENT_ACCOUNTS_UPDATED', 'payment', 'Updated bKash and Nagad payment account details.');
     saveDatabase(db);
     res.json({ success: true, paymentAccounts: db.paymentAccounts, message: 'Payment accounts updated.' });
   });
@@ -1696,12 +2125,20 @@ async function startServer() {
   });
 
   app.post('/api/coupons', (req: Request, res: Response) => {
-    const { coupon, adminName } = req.body;
-    if (!coupon || !coupon.code) {
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { coupon, adminName } = body;
+    if (!isPlainObject(coupon)) {
+      res.status(400).json({ success: false, error: 'Coupon payload must be an object.' });
+      return;
+    }
+    const couponCode = asString(coupon.code, 64);
+    if (!couponCode) {
       res.status(400).json({ success: false, error: 'Coupon code is required.' });
       return;
     }
-    if (!coupon.id) {
+    coupon.code = couponCode;
+    if (!asString(coupon.id, 200)) {
       coupon.id = `cpn-${Date.now()}`;
     }
     const idx = db.coupons.findIndex(c => c.id === coupon.id || c.code === coupon.code);
@@ -1710,14 +2147,17 @@ async function startServer() {
     } else {
       db.coupons.unshift(coupon);
     }
-    logAction(adminName || 'Admin', 'super_admin', 'COUPON_SAVED', 'coupon', `Saved coupon ${coupon.code}`);
+    logAction(asString(adminName, 120) || 'Admin', 'super_admin', 'COUPON_SAVED', 'coupon', `Saved coupon ${coupon.code}`);
     saveDatabase(db);
     res.json({ success: true, coupons: db.coupons });
   });
 
   app.delete('/api/coupons/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
+    const adminName = asString(req.query.adminName, 120) || 'Admin';
     db.coupons = db.coupons.filter(c => c.id !== id);
+    logAction(adminName, 'super_admin', 'COUPON_DELETED', 'coupon', `Deleted coupon ${id}`);
     saveDatabase(db);
     res.json({ success: true, coupons: db.coupons });
   });
@@ -1727,12 +2167,14 @@ async function startServer() {
   });
 
   app.post('/api/campaigns', (req: Request, res: Response) => {
-    const { campaign, adminName } = req.body;
-    if (!campaign || !campaign.campaignName) {
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { campaign, adminName } = body;
+    if (!isPlainObject(campaign) || !asString(campaign.campaignName, 300)) {
       res.status(400).json({ success: false, error: 'Campaign name is required.' });
       return;
     }
-    if (!campaign.id) {
+    if (!asString(campaign.id, 200)) {
       campaign.id = `cmp-${Date.now()}`;
     }
     const idx = db.campaigns.findIndex(c => c.id === campaign.id);
@@ -1741,22 +2183,36 @@ async function startServer() {
     } else {
       db.campaigns.unshift(campaign);
     }
-    logAction(adminName || 'Admin', 'super_admin', 'CAMPAIGN_SAVED', 'cms', `Saved marketing campaign ${campaign.campaignName}`);
+    logAction(asString(adminName, 120) || 'Admin', 'super_admin', 'CAMPAIGN_SAVED', 'cms', `Saved marketing campaign ${campaign.campaignName}`);
     saveDatabase(db);
     res.json({ success: true, campaigns: db.campaigns });
   });
 
   // 13. ORDERS & WHOLESALE INQUIRIES
-  app.get('/api/orders', (_req: Request, res: Response) => {
+  // Customer PII (names, phone numbers, addresses). Admin session required.
+  app.get('/api/orders', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     res.json({ success: true, orders: db.orders });
   });
 
   app.post('/api/orders', (req: Request, res: Response) => {
-    const order = req.body.order;
-    if (!order || !order.customerName || !order.phone) {
+    const body = isPlainObject(req.body) ? req.body : {};
+    const order = body.order;
+
+    // `!order.customerName` also passed for objects/arrays, which then reached
+    // storage and broke every consumer that expects strings.
+    if (!isPlainObject(order)) {
+      res.status(400).json({ success: false, error: 'Order payload must be an object.' });
+      return;
+    }
+    const customerName = asString(order.customerName, 200);
+    const phone = asString(order.phone, 32);
+    if (!customerName || !phone) {
       res.status(400).json({ success: false, error: 'Customer name and phone number are required.' });
       return;
     }
+    order.customerName = customerName;
+    order.phone = phone;
 
     if ((order.paymentMethod === 'bkash' || order.paymentMethod === 'nagad') &&
         String(order.transactionId || '').trim().length > 10) {
@@ -1764,9 +2220,23 @@ async function startServer() {
       return;
     }
 
-    if (!order.orderId) {
-      const padNum = (db.orders.length + 1).toString().padStart(6, '0');
-      order.orderId = `SF-2026-${padNum}`;
+    // A non-string orderId (object/array) would never match in later
+    // findIndex lookups, making the order impossible to update or delete.
+    const providedOrderId = asString(order.orderId, 64);
+    if (order.orderId !== undefined && order.orderId !== null && order.orderId !== '' && !providedOrderId) {
+      res.status(400).json({ success: false, error: 'Order ID must be a text value.' });
+      return;
+    }
+    if (!providedOrderId) {
+      order.orderId = nextSequentialId(db.orders, 'SF-2026-', 'orderId');
+    } else if (db.orders.some(o => o.orderId === providedOrderId)) {
+      // A colliding id would make PUT/DELETE /api/orders/:id act on somebody
+      // else's order, so re-issue a unique one rather than storing a duplicate.
+      const reassigned = nextSequentialId(db.orders, 'SF-2026-', 'orderId');
+      console.warn(`[Orders] Duplicate order id "${providedOrderId}" received; re-issued as "${reassigned}".`);
+      order.orderId = reassigned;
+    } else {
+      order.orderId = providedOrderId;
     }
     order.createdAt = order.createdAt || new Date().toISOString();
     order.status = order.orderStatus || order.status || 'Pending';
@@ -1774,14 +2244,20 @@ async function startServer() {
     // Deduct stock for ordered items
     if (Array.isArray(order.items)) {
       order.items.forEach((item: any) => {
+        if (!isPlainObject(item)) return;
         const pId = item.product?.id || item.productId;
         const p = db.products.find(prod => prod.id === pId || prod.code === item.product?.code);
         if (p) {
-          p.stock = Math.max(0, (p.stock || 0) - (Number(item.quantity) || 1));
+          // A negative `quantity` made `stock - (-n)` *increase* stock, so a
+          // crafted order could inflate inventory instead of consuming it.
+          // Clamp to a non-negative integer, defaulting to 1 as before.
+          const rawQuantity = Number(item.quantity);
+          const quantity = Number.isFinite(rawQuantity) && rawQuantity > 0 ? Math.floor(rawQuantity) : 1;
+          p.stock = Math.max(0, asNonNegativeInt(p.stock) - quantity);
           if (Array.isArray(p.sizes)) {
             const szObj = p.sizes.find((s: any) => s.size === item.selectedSize);
             if (szObj) {
-              szObj.stock = Math.max(0, (szObj.stock || 0) - (Number(item.quantity) || 1));
+              szObj.stock = Math.max(0, asNonNegativeInt(szObj.stock) - quantity);
             }
           }
         }
@@ -1794,9 +2270,16 @@ async function startServer() {
   });
 
   app.put('/api/orders/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const updated = req.body.order;
-    const adminName = req.body.adminName || 'Admin';
+    const body = isPlainObject(req.body) ? req.body : {};
+    const updated = body.order;
+    const adminName = asString(body.adminName, 120) || 'Admin';
+
+    if (!isPlainObject(updated)) {
+      res.status(400).json({ success: false, error: 'Order payload must be an object.' });
+      return;
+    }
 
     const idx = db.orders.findIndex(o => o.orderId === id);
     if (idx === -1) {
@@ -1811,8 +2294,11 @@ async function startServer() {
   });
 
   app.delete('/api/orders/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const adminName = (req.query.adminName as string) || (req.body && req.body.adminName) || 'Admin';
+    const adminName = asString(req.query.adminName, 120)
+      || (isPlainObject(req.body) ? asString(req.body.adminName, 120) : null)
+      || 'Admin';
 
     const idx = db.orders.findIndex(o => o.orderId === id);
     if (idx === -1) {
@@ -1826,20 +2312,41 @@ async function startServer() {
     res.json({ success: true, message: `Order ${id} removed successfully.` });
   });
 
-  app.get('/api/wholesale', (_req: Request, res: Response) => {
+  // B2B contact details. Admin session required.
+  app.get('/api/wholesale', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     res.json({ success: true, wholesaleInquiries: db.wholesaleInquiries });
   });
 
   app.post('/api/wholesale', (req: Request, res: Response) => {
-    const inquiry = req.body.inquiry;
-    if (!inquiry || !inquiry.customerName || !inquiry.phone) {
+    const body = isPlainObject(req.body) ? req.body : {};
+    const inquiry = body.inquiry;
+    if (!isPlainObject(inquiry)) {
+      res.status(400).json({ success: false, error: 'Wholesale inquiry payload must be an object.' });
+      return;
+    }
+    const inquiryName = asString(inquiry.customerName, 200);
+    const inquiryPhone = asString(inquiry.phone, 32);
+    if (!inquiryName || !inquiryPhone) {
       res.status(400).json({ success: false, error: 'Wholesale inquiry details required.' });
       return;
     }
+    inquiry.customerName = inquiryName;
+    inquiry.phone = inquiryPhone;
 
-    if (!inquiry.id) {
-      const padNum = (db.wholesaleInquiries.length + 1).toString().padStart(6, '0');
-      inquiry.id = `SF-WS-2026-${padNum}`;
+    const providedInquiryId = asString(inquiry.id, 64);
+    if (inquiry.id !== undefined && inquiry.id !== null && inquiry.id !== '' && !providedInquiryId) {
+      res.status(400).json({ success: false, error: 'Inquiry ID must be a text value.' });
+      return;
+    }
+    if (!providedInquiryId) {
+      inquiry.id = nextSequentialId(db.wholesaleInquiries, 'SF-WS-2026-', 'id');
+    } else if (db.wholesaleInquiries.some(w => w.id === providedInquiryId)) {
+      const reassigned = nextSequentialId(db.wholesaleInquiries, 'SF-WS-2026-', 'id');
+      console.warn(`[Wholesale] Duplicate inquiry id "${providedInquiryId}" received; re-issued as "${reassigned}".`);
+      inquiry.id = reassigned;
+    } else {
+      inquiry.id = providedInquiryId;
     }
     inquiry.createdAt = inquiry.createdAt || new Date().toISOString();
     inquiry.orderStatus = inquiry.orderStatus || 'Pending';
@@ -1850,9 +2357,16 @@ async function startServer() {
   });
 
   app.put('/api/wholesale/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const updated = req.body.inquiry;
-    const adminName = req.body.adminName || 'Admin';
+    const body = isPlainObject(req.body) ? req.body : {};
+    const updated = body.inquiry;
+    const adminName = asString(body.adminName, 120) || 'Admin';
+
+    if (!isPlainObject(updated)) {
+      res.status(400).json({ success: false, error: 'Wholesale inquiry payload must be an object.' });
+      return;
+    }
 
     const idx = db.wholesaleInquiries.findIndex(w => w.id === id);
     if (idx === -1) {
@@ -1867,8 +2381,11 @@ async function startServer() {
   });
 
   app.delete('/api/wholesale/:id', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     const { id } = req.params;
-    const adminName = (req.query.adminName as string) || (req.body && req.body.adminName) || 'Admin';
+    const adminName = asString(req.query.adminName, 120)
+      || (isPlainObject(req.body) ? asString(req.body.adminName, 120) : null)
+      || 'Admin';
 
     const idx = db.wholesaleInquiries.findIndex(w => w.id === id);
     if (idx === -1) {
@@ -1883,18 +2400,42 @@ async function startServer() {
   });
 
   // 14. AUDIT LOGS
-  app.get('/api/audit-logs', (_req: Request, res: Response) => {
+  // Audit trail records admin identities and actions. Admin session required.
+  app.get('/api/audit-logs', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     res.json({ success: true, logs: db.auditLogs });
   });
 
   app.post('/api/audit-logs', (req: Request, res: Response) => {
-    const { log } = req.body;
-    if (log) {
-      log.id = log.id || `log-${Date.now()}`;
-      log.timestamp = log.timestamp || new Date().toISOString();
-      db.auditLogs.unshift(log);
-      saveDatabase(db);
+    if (!requireAdmin(req, res)) return;
+    const body = isPlainObject(req.body) ? req.body : {};
+    const { log } = body;
+    if (!isPlainObject(log)) {
+      res.status(400).json({ success: false, error: 'Audit log payload must be an object.' });
+      return;
     }
+
+    // Only known fields are persisted, each length-capped. Previously the raw
+    // client object was stored verbatim and this path applied no 500-entry cap
+    // (unlike logAction), so repeated posts grew store.json without bound.
+    const entry = {
+      id: asString(log.id, 128) || `log-${Date.now()}-${crypto.randomBytes(3).toString('hex')}`,
+      timestamp: asString(log.timestamp, 64) || new Date().toISOString(),
+      adminName: asString(log.adminName, 120) || 'Sider Admin',
+      adminRole: asString(log.adminRole, 60) || 'admin',
+      action: asString(log.action, 200) || 'UNSPECIFIED_ACTION',
+      category: asString(log.category, 60) || 'setting',
+      details: asString(log.details, 2000) || '',
+      targetId: asString(log.targetId, 200) || undefined,
+      targetName: asString(log.targetName, 300) || undefined,
+      newValue: asString(log.newValue, 2000) || undefined
+    };
+
+    db.auditLogs.unshift(entry);
+    if (db.auditLogs.length > 500) {
+      db.auditLogs = db.auditLogs.slice(0, 500);
+    }
+    saveDatabase(db);
     res.json({ success: true, logs: db.auditLogs });
   });
 
@@ -1905,10 +2446,42 @@ async function startServer() {
   // Endpoint to log client-side analytics funnel events
   app.post('/api/analytics/events', (req: Request, res: Response) => {
     try {
-      const { event } = req.body;
-      if (event && event.type) {
+      const body = isPlainObject(req.body) ? req.body : {};
+      const { event } = body;
+      // This endpoint is public (storefront funnel tracking), so the stored
+      // shape is pinned to known, length-capped fields rather than whatever
+      // JSON the caller sends. Without this, arbitrary attacker-controlled
+      // documents were persisted into store.json 2000 at a time.
+      if (isPlainObject(event) && asString(event.type, 64)) {
         db.events = Array.isArray(db.events) ? db.events : [];
-        db.events.unshift(event);
+        const utm = isPlainObject(event.utmData) ? event.utmData : {};
+        db.events.unshift({
+          id: asString(event.id, 128) || `ev-${Date.now()}-${crypto.randomBytes(3).toString('hex')}`,
+          type: asString(event.type, 64),
+          timestamp: asString(event.timestamp, 64) || new Date().toISOString(),
+          sessionId: asString(event.sessionId, 128) || undefined,
+          productId: asString(event.productId, 200) || undefined,
+          productCode: asString(event.productCode, 120) || undefined,
+          productName: asString(event.productName, 300) || undefined,
+          category: asString(event.category, 120) || undefined,
+          value: Number.isFinite(Number(event.value)) ? Number(event.value) : undefined,
+          quantity: Number.isFinite(Number(event.quantity)) ? asNonNegativeInt(event.quantity) : undefined,
+          trafficSource: asString(event.trafficSource, 120) || undefined,
+          utmSource: asString(event.utmSource, 200) || undefined,
+          utmMedium: asString(event.utmMedium, 200) || undefined,
+          utmCampaign: asString(event.utmCampaign, 200) || undefined,
+          utmData: {
+            trafficSource: asString(utm.trafficSource, 120) || undefined,
+            utmSource: asString(utm.utmSource, 200) || undefined,
+            utmMedium: asString(utm.utmMedium, 200) || undefined,
+            utmCampaign: asString(utm.utmCampaign, 200) || undefined,
+            utmContent: asString(utm.utmContent, 200) || undefined,
+            utmTerm: asString(utm.utmTerm, 200) || undefined,
+            landingPage: asString(utm.landingPage, 500) || undefined,
+            capturedAt: asString(utm.capturedAt, 64) || undefined
+          },
+          path: asString(event.path, 500) || undefined
+        });
         if (db.events.length > 2000) db.events.length = 2000;
         // Non-blocking save
         saveDatabase(db);
@@ -1919,7 +2492,9 @@ async function startServer() {
     }
   });
 
-  app.get('/api/analytics/events', (_req: Request, res: Response) => {
+  // Funnel data is business intelligence. Admin session required.
+  app.get('/api/analytics/events', (req: Request, res: Response) => {
+    if (!requireAdmin(req, res)) return;
     res.json({ success: true, events: db.events || [] });
   });
 
@@ -2530,7 +3105,7 @@ async function startServer() {
 
     // 12. Pre-formatted Daily & Weekly AI Reports
     const dailyReport = {
-      title: `Sider Fashion Daily Intelligence Report — ${now.toLocaleDateString('en-GB')}`,
+      title: `Sikder Fashion Daily Intelligence Report — ${now.toLocaleDateString('en-GB')}`,
       date: now.toLocaleDateString('en-GB'),
       summary: `Today's revenue: ৳${retailTotal.toLocaleString()} from ${orderCount} orders. Best performing SKU: ${mostOrdered[0]?.name || 'Premium Katua'}.`,
       orders: orderCount,
@@ -2541,7 +3116,7 @@ async function startServer() {
     };
 
     const weeklyReport = {
-      title: `Sider Fashion 7-Day Performance & Factory Outlook`,
+      title: `Sikder Fashion 7-Day Performance & Factory Outlook`,
       date: `${new Date(now.getTime() - 7 * 86400000).toLocaleDateString('en-GB')} – ${now.toLocaleDateString('en-GB')}`,
       summary: `7-day revenue: ৳${retailTotal.toLocaleString()} across ${orderCount} orders with ${repeatRate}% customer retention and ৳${totalAdSpend.toLocaleString()} ad spend.`,
       orders: orderCount,
@@ -2672,8 +3247,12 @@ async function startServer() {
 
   // POST /api/ai/intelligence - Generates complete structured AI Business Intelligence
   app.post('/api/ai/intelligence', async (req: Request, res: Response) => {
+    // Returns revenue, profit margins, ad spend and customer counts.
+    if (!requireAdmin(req, res)) return;
     try {
-      const { lang = 'bn', filters = {} } = req.body;
+      const body = isPlainObject(req.body) ? req.body : {};
+      const lang = body.lang === 'en' ? 'en' : 'bn';
+      const filters = isPlainObject(body.filters) ? body.filters : {};
       const analytics = computeStoreAnalytics(db, filters);
       const isBn = lang === 'bn';
 
@@ -2685,9 +3264,9 @@ async function startServer() {
         try {
           const ai = new GoogleGenAI({ apiKey });
           const prompt = `
-You are the Chief AI Business & Ads Intelligence Officer for "Sider Fashion", a premier Bangladeshi clothing brand that operates its own ready-made garments factory in Ashulia, Savar, Dhaka, specializing in Men's Premium Shirts, Katua, and wholesale/retail manufacturing.
+You are the Chief AI Business & Ads Intelligence Officer for "Sikder Fashion", a premier Bangladeshi clothing brand that operates its own ready-made garments factory in Ashulia, Savar, Dhaka, specializing in Men's Premium Shirts, Katua, and wholesale/retail manufacturing.
 
-Here is the real, verified business snapshot from Sider Fashion's active database:
+Here is the real, verified business snapshot from Sikder Fashion's active database:
 - Date Filter: ${analytics.filtersApplied.dateRange}
 - Gross Revenue: ৳${analytics.revenue.gross.toLocaleString()} (Retail: ৳${analytics.revenue.retail.toLocaleString()} across ${analytics.revenue.orderCount} orders, Wholesale: ৳${analytics.revenue.wholesale.toLocaleString()} across ${analytics.revenue.wholesaleInquiryCount} inquiries)
 - Period Comparison: Revenue Delta: ${analytics.comparison.revenueDelta > 0 ? '+' : ''}${analytics.comparison.revenueDelta}%, Order Count Delta: ${analytics.comparison.orderCountDelta > 0 ? '+' : ''}${analytics.comparison.orderCountDelta}%, AOV Delta: ${analytics.comparison.aovDelta > 0 ? '+' : ''}${analytics.comparison.aovDelta}%
@@ -2717,7 +3296,7 @@ Rules:
 - Ground every insight strictly in the numbers above.
 - Separate FACT from OBSERVATION and RECOMMENDATION.
 - Keep the tone authoritative, concise, data-driven, and commercial.
-- Mention Sider Fashion's Savar factory advantage (direct manufacturing, custom sizing, wholesale MOQ) where relevant.
+- Mention Sikder Fashion's Savar factory advantage (direct manufacturing, custom sizing, wholesale MOQ) where relevant.
 `;
 
           const response = await ai.models.generateContent({
@@ -2811,9 +3390,16 @@ Rules:
 
   // POST /api/ai/chat - Interactive AI Query Assistant grounded strictly in real store data + General Knowledge
   app.post('/api/ai/chat', async (req: Request, res: Response) => {
+    // The system prompt embeds the full business snapshot; admin session required.
+    if (!requireAdmin(req, res)) return;
     try {
-      const { message, lang = 'bn', history = [], filters = {} } = req.body;
-      if (!message || !message.trim()) {
+      const body = isPlainObject(req.body) ? req.body : {};
+      const lang = body.lang === 'en' ? 'en' : 'bn';
+      const history = Array.isArray(body.history) ? body.history : [];
+      const filters = isPlainObject(body.filters) ? body.filters : {};
+      // `message.trim()` threw a 500 for any non-string message.
+      const message = asString(body.message, 8000);
+      if (!message) {
         res.status(400).json({ success: false, error: 'Query message is required.' });
         return;
       }
@@ -2823,11 +3409,11 @@ Rules:
       const apiKey = process.env.GEMINI_API_KEY;
 
       const systemPrompt = `
-You are "Sider AI" — the Master AI Business Intelligence, Ads Intelligence & General Assistant for "Sider Fashion" (সাভার ও আশুলিয়া কারখানা ভিত্তিক প্রিমিয়াম শার্ট ও কতুয়া প্রস্তুতকারক এবং অনলাইন ফ্যাশন ব্র্যান্ড).
+You are "Sider AI" — the Master AI Business Intelligence, Ads Intelligence & General Assistant for "Sikder Fashion" (সাভার ও আশুলিয়া কারখানা ভিত্তিক প্রিমিয়াম শার্ট ও কতুয়া প্রস্তুতকারক এবং অনলাইন ফ্যাশন ব্র্যান্ড).
 
 YOUR CAPABILITIES & PRINCIPLES:
 1. DUAL MODE INTELLIGENCE:
-   - When the user asks about Sider Fashion store data (sales, products, inventory, revenue, ads, factory, Savar, orders, customers, delivery): Ground your answers STRICTLY in the real live store snapshot below.
+   - When the user asks about Sikder Fashion store data (sales, products, inventory, revenue, ads, factory, Savar, orders, customers, delivery): Ground your answers STRICTLY in the real live store snapshot below.
    - When the user asks general-purpose questions (programming, HTML/CSS, math, English/Bangla writing, translation, general marketing strategy, brainstorming): Answer fully, intelligently, and helpfully with no artificial limits.
 2. NO HALLUCINATIONS ON STORE DATA: If a specific store metric or historical data is missing or not tracked, honestly state: "${isBn ? 'এই তথ্যটি সঠিকভাবে দেওয়ার জন্য বর্তমান সিস্টেমে পর্যাপ্ত ডাটা নেই।' : "I don't have enough data in the store records to answer that accurately."}".
 3. READ-ONLY ADVISORY: You provide actionable business insights, diagnosis, forecasts, and strategic plans, but you do not execute destructive operations.
@@ -2838,7 +3424,7 @@ YOUR CAPABILITIES & PRINCIPLES:
    - 💡 [RECOMMENDATION]: Actionable step for admin or Savar factory team.
 
 REAL LIVE STORE DATA SNAPSHOT:
-- Brand Name: ${db.settings?.brandName || 'Sider Fashion'}
+- Brand Name: ${db.settings?.brandName || 'Sikder Fashion'}
 - Factory Location: ${db.settings?.factoryAddress || 'Ashulia Industrial Zone, Savar, Dhaka'}
 - Total Catalog Products: ${db.products?.length || 0}
 - Gross Revenue: ৳${analytics.revenue.gross.toLocaleString()} (Retail: ৳${analytics.revenue.retail.toLocaleString()} across ${analytics.revenue.orderCount} orders, Wholesale: ৳${analytics.revenue.wholesale.toLocaleString()})
@@ -2862,16 +3448,16 @@ REAL LIVE STORE DATA SNAPSHOT:
           const ai = new GoogleGenAI({ apiKey });
           
           const conversationContents: any[] = [];
-          if (Array.isArray(history)) {
-            history.slice(-8).forEach((h: any) => {
-              if (h.role && h.content) {
-                conversationContents.push({
-                  role: h.role === 'user' ? 'user' : 'model',
-                  parts: [{ text: h.content }]
-                });
-              }
+          history.slice(-8).forEach((h: any) => {
+            // Only well-formed string turns are forwarded to the model.
+            if (!isPlainObject(h)) return;
+            const content = asString(h.content, 8000);
+            if (!content) return;
+            conversationContents.push({
+              role: h.role === 'user' ? 'user' : 'model',
+              parts: [{ text: content }]
             });
-          }
+          });
 
           conversationContents.push({
             role: 'user',
@@ -2903,7 +3489,7 @@ REAL LIVE STORE DATA SNAPSHOT:
             ? `📌 **[তথ্য / Fact]:** সাইডার ফ্যাশনের সর্বোচ্চ বিক্রিত টপ প্রোডাক্টসমূহ:\n` +
               topList.map((p: any, i: number) => `${i + 1}. **${p.name}** (SKU: \`${p.code}\`) — ${p.piecesSold} পিস বিক্রি (মোট আয়: ৳${p.revenue.toLocaleString()}) | বর্তমান স্টক: ${p.currentStock} পিস`).join('\n') +
               `\n\n💡 **[পরামর্শ / Recommendation]:** সাভার কারখানায় এই SKU-গুলোর ফেব্রিক ও কাটিং স্টক আগে থেকে রিজার্ভ রাখুন যাতে আউট-অফ-স্টক না হয়।`
-            : `📌 **[FACT]:** Top Selling Products at Sider Fashion:\n` +
+            : `📌 **[FACT]:** Top Selling Products at Sikder Fashion:\n` +
               topList.map((p: any, i: number) => `${i + 1}. **${p.name}** (SKU: \`${p.code}\`) — ${p.piecesSold} pcs sold (Revenue: ৳${p.revenue.toLocaleString()}) | Stock: ${p.currentStock} pcs`).join('\n') +
               `\n\n💡 **[RECOMMENDATION]:** Ensure Savar manufacturing unit maintains raw fabric reserves for these top SKUs to prevent stockouts.`;
         } else if (query.includes('ad') || query.includes('roas') || query.includes('বিজ্ঞাপন') || query.includes('facebook') || query.includes('মার্কেটিং')) {
@@ -2936,7 +3522,7 @@ REAL LIVE STORE DATA SNAPSHOT:
         } else {
           reply = isBn
             ? `📌 **[সারসংক্ষেপ / Snapshot]:** সাইডার ফ্যাশনের মোট রাজস্ব ৳${analytics.revenue.gross.toLocaleString()}, নিট লাভ ৳${analytics.revenue.netProfit.toLocaleString()} (মার্জিন ${analytics.revenue.profitMargin}%), সক্রিয় অর্ডার ${analytics.revenue.orderCount}টি, ব্লেন্ডেড অ্যাড ROAS ${analytics.ads.blendedROAS}x, এবং রিপিট কাস্টমার রেট ${analytics.customers.repeatRate}%।\n\nআপনার যেকোনো নির্দিষ্ট প্রশ্ন (যেমন: সেরা বিক্রীত পণ্য, ফেসবুক অ্যাডের পারফরম্যান্স, স্টক পূর্বাভাস, কারখানার কাটিং বা সাধারণ কোনো বিষয়) সম্পর্কে জিজ্ঞাসা করতে পারেন!`
-            : `📌 **[Snapshot]:** Sider Fashion gross revenue is ৳${analytics.revenue.gross.toLocaleString()} with net profit of ৳${analytics.revenue.netProfit.toLocaleString()} (${analytics.revenue.profitMargin}% margin), ${analytics.revenue.orderCount} orders, ${analytics.ads.blendedROAS}x ad ROAS, and ${analytics.customers.repeatRate}% repeat rate.\n\nAsk any question regarding product velocity, ad attribution, Savar factory reorders, or general topics!`;
+            : `📌 **[Snapshot]:** Sikder Fashion gross revenue is ৳${analytics.revenue.gross.toLocaleString()} with net profit of ৳${analytics.revenue.netProfit.toLocaleString()} (${analytics.revenue.profitMargin}% margin), ${analytics.revenue.orderCount} orders, ${analytics.ads.blendedROAS}x ad ROAS, and ${analytics.customers.repeatRate}% repeat rate.\n\nAsk any question regarding product velocity, ad attribution, Savar factory reorders, or general topics!`;
         }
       }
 
@@ -2953,8 +3539,11 @@ REAL LIVE STORE DATA SNAPSHOT:
 
   // POST /api/ai/ad-copy - Generates tailored Bangladeshi eCommerce ad copy
   app.post('/api/ai/ad-copy', async (req: Request, res: Response) => {
+    // Exposes wholesale pricing and margins; admin session required.
+    if (!requireAdmin(req, res)) return;
     try {
-      const { productCode, platform = 'facebook', goal = 'sales' } = req.body;
+      const body = isPlainObject(req.body) ? req.body : {};
+      const productCode = asString(body.productCode, 200);
       const prods = Array.isArray(db.products) ? db.products : [];
       const product = prods.find((p: any) => p.code === productCode || p.id === productCode) || prods[0];
 
@@ -2965,14 +3554,14 @@ REAL LIVE STORE DATA SNAPSHOT:
         try {
           const ai = new GoogleGenAI({ apiKey });
           const prompt = `
-Create 2 high-converting Facebook / Instagram ad copies (1 in authentic Bangla, 1 in English) for Sider Fashion's product:
+Create 2 high-converting Facebook / Instagram ad copies (1 in authentic Bangla, 1 in English) for Sikder Fashion's product:
 Product: ${product.name} (Code: ${product.code})
 Category: ${product.category}
 Fabric: ${product.fabric || '100% Premium Cotton'}
 Retail Price: ৳${product.retailPrice}
 Wholesale Price: ৳${product.wholesalePrice} (MOQ: ${product.wholesaleMOQ} pcs)
 Key Selling Points:
-- Manufactured in Sider Fashion's own factory in Ashulia, Savar.
+- Manufactured in Sikder Fashion's own factory in Ashulia, Savar.
 - Cash on Delivery available across Bangladesh (ঢাকার ভেতরে ৳৭০, বাইরে ৳১২০).
 - Customer can open the parcel and check fabric & stitching before paying.
 - 7-day hassle-free exchange.
@@ -3032,6 +3621,13 @@ Output structured JSON in this format:
     }
   });
 
+  // Unknown API paths previously fell through to the SPA fallback and returned
+  // an HTML document with status 200, so client `res.json()` calls threw a
+  // parse error instead of surfacing "not found". Answer with JSON 404.
+  app.all('/api/*', (req: Request, res: Response) => {
+    res.status(404).json({ success: false, error: `Unknown API endpoint: ${req.method} ${req.path}` });
+  });
+
   // ==========================================
   // VITE / STATIC SERVING
   // ==========================================
@@ -3052,6 +3648,17 @@ Output structured JSON in this format:
     });
   }
 
+  // Registered last so it catches errors from every route above.
+  // Never leak stack traces or internal messages to clients.
+  app.use((err: any, _req: Request, res: Response, _next: any) => {
+    console.error('[Unhandled Route Error]', err);
+    if (res.headersSent) return;
+    res.status(500).json({ success: false, error: 'Internal server error.' });
+  });
+
+  // Bound the in-memory session / rate-limit maps for long-running processes.
+  setInterval(purgeExpiredAuthState, 10 * 60 * 1000).unref();
+
   app.listen(httpPort, '0.0.0.0', () => {
     if (httpPort !== PORT) {
       console.warn(`[Server] Port ${PORT} is in use. Using port ${httpPort} instead.`);
@@ -3059,7 +3666,7 @@ Output structured JSON in this format:
     if (hmrPort && hmrPort !== HMR_PORT) {
       console.warn(`[Vite HMR] Port ${HMR_PORT} is in use. Using port ${hmrPort} instead.`);
     }
-    console.log(`[Sider Fashion Full-Stack Server] Running on http://localhost:${httpPort}`);
+    console.log(`[Sikder Fashion Full-Stack Server] Running on http://localhost:${httpPort}`);
   });
 }
 

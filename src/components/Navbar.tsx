@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { 
   ShoppingBag, 
   Search, 
@@ -17,14 +17,36 @@ import {
   Facebook,
   ExternalLink,
   Lock,
-  UserCheck
+  UserCheck,
+  UserRound
 } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { BRAND_CONTACTS } from '../data/products';
 import { NavigationView } from '../types';
+import { CustomerAuthModal, CustomerProfile } from './CustomerAuthModal';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [customerProfile, setCustomerProfile] = useState<CustomerProfile | null>(() => {
+    try {
+      const saved = localStorage.getItem('sider_customer_account');
+      if (!saved) return null;
+      const account = JSON.parse(saved) as CustomerProfile;
+      return account.name && account.email && account.phone
+        ? {
+            name: account.name,
+            phone: account.phone,
+            email: account.email,
+            membershipId: account.membershipId || '455014',
+            membershipApplied: account.membershipApplied
+          }
+        : null;
+    } catch {
+      return null;
+    }
+  });
+  const [isCustomerAuthOpen, setIsCustomerAuthOpen] = useState(false);
+  const [forceMembershipForm, setForceMembershipForm] = useState(false);
   const { 
     cartCount, 
     setIsCartOpen, 
@@ -41,6 +63,22 @@ export const Navbar: React.FC = () => {
     setIsAdminAuthModalOpen,
     currentAdminUser
   } = useCart();
+
+  useEffect(() => {
+    const openCustomerAuth = (event: Event) => {
+      const customEvent = event as CustomEvent<{ mode?: 'membership' }>;
+      const membershipAlreadyApplied = Boolean(customerProfile?.membershipApplied)
+        || localStorage.getItem('sider_membership_code') === '455014';
+      setForceMembershipForm(customEvent.detail?.mode === 'membership' && !membershipAlreadyApplied);
+      setIsCustomerAuthOpen(true);
+    };
+    window.addEventListener('open-customer-auth', openCustomerAuth);
+    return () => window.removeEventListener('open-customer-auth', openCustomerAuth);
+  }, []);
+
+  const handleCustomerLogin = (profile: CustomerProfile) => {
+    setCustomerProfile(profile);
+  };
 
   const handleNavClick = (view: NavigationView, categoryFilter: any = null) => {
     setCurrentView(view);
@@ -73,7 +111,7 @@ export const Navbar: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 hover:text-white transition-colors cursor-pointer"
-              title="Official Sider Fashion Facebook Page"
+              title="Official Sikder Fashion Facebook Page"
             >
               <Facebook className="w-3.5 h-3.5 text-sky-400" />
               <span className="hidden sm:inline">Facebook</span>
@@ -308,18 +346,19 @@ export const Navbar: React.FC = () => {
               <span>WhatsApp</span>
             </button>
 
-            {/* Official Facebook Page Header Icon */}
-            <a
-              id="header-facebook-btn"
-              href={BRAND_CONTACTS.facebookUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Follow Sider Fashion on Facebook"
-              aria-label="Official Sider Fashion Facebook Page"
-              className="p-2 rounded-full text-zinc-400 hover:text-blue-400 hover:bg-zinc-900 transition-colors flex items-center justify-center cursor-pointer"
+            <button
+              id="header-profile-btn"
+              type="button"
+              onClick={() => {
+                setForceMembershipForm(false);
+                setIsCustomerAuthOpen(true);
+              }}
+              title={customerProfile ? 'Open profile' : 'Login or sign up'}
+              aria-label={customerProfile ? 'Open profile' : 'Login or sign up'}
+              className="p-2 rounded-full text-zinc-400 hover:text-emerald-400 hover:bg-zinc-900 transition-colors flex items-center justify-center cursor-pointer"
             >
-              <Facebook className="w-4 h-4 text-blue-400" />
-            </a>
+              <UserRound className="w-4 h-4" />
+            </button>
 
             {/* Shopping Cart Button */}
             <button
@@ -506,6 +545,14 @@ export const Navbar: React.FC = () => {
           </div>
         </div>
       )}
+
+      <CustomerAuthModal
+        isOpen={isCustomerAuthOpen}
+        onClose={() => setIsCustomerAuthOpen(false)}
+        profile={customerProfile}
+        onLogin={handleCustomerLogin}
+        forceMembershipForm={forceMembershipForm}
+      />
     </header>
   );
 };

@@ -105,7 +105,7 @@ export const Footer: React.FC = () => {
                 S
               </div>
               <span className="text-2xl font-black tracking-tight text-white uppercase font-sans">
-                {settings.brandName || 'SIDER FASHION'}
+                {settings.brandName || 'SIKDER FASHION'}
               </span>
             </div>
 
@@ -114,7 +114,7 @@ export const Footer: React.FC = () => {
             </p>
 
             <p className="text-xs text-zinc-400 leading-relaxed">
-              {settings.tagline || "Sider Fashion is a premier Bangladeshi apparel brand producing high-quality men's shirts and katua directly from our Savar factory."}
+              {settings.tagline || "Sikder Fashion is a premier Bangladeshi apparel brand producing high-quality men's shirts and katua directly from our Savar factory."}
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-2 text-xs">
@@ -271,7 +271,7 @@ export const Footer: React.FC = () => {
               <span>Follow Us &amp; Chat</span>
             </h4>
             <p className="text-xs text-zinc-400">
-              Stay connected with Sider Fashion for new collections, wholesale updates, and live support.
+              Stay connected with Sikder Fashion for new collections, wholesale updates, and live support.
             </p>
 
             <div className="space-y-2 pt-1">
@@ -282,7 +282,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-3 p-2.5 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-blue-500/50 hover:bg-blue-950/30 transition-all cursor-pointer"
-                title="Official Sider Fashion Facebook Page"
+                title="Official Sikder Fashion Facebook Page"
               >
                 <div className="w-7 h-7 rounded-lg bg-[#1877F2] text-white flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
                   <Facebook className="w-3.5 h-3.5 fill-white" />
@@ -303,7 +303,7 @@ export const Footer: React.FC = () => {
                 id="footer-whatsapp-link"
                 onClick={() => openWhatsAppChat()}
                 className="w-full group flex items-center gap-3 p-2.5 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-emerald-500/50 hover:bg-emerald-950/30 transition-all cursor-pointer text-left"
-                title="Chat with Sider Fashion on WhatsApp"
+                title="Chat with Sikder Fashion on WhatsApp"
               >
                 <div className="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
                   <MessageSquare className="w-3.5 h-3.5 fill-white" />
@@ -348,7 +348,7 @@ export const Footer: React.FC = () => {
         {/* Bottom copyright & payment icons */}
         <div className="pt-8 border-t border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
           <div>
-            &copy; {new Date().getFullYear()} {settings.brandName || 'Sider Fashion'}. All rights reserved. Made in Ashulia, Savar, Dhaka.
+            &copy; {new Date().getFullYear()} {settings.brandName || 'Sikder Fashion'}. All rights reserved. Made in Ashulia, Savar, Dhaka.
           </div>
           <div className="flex items-center gap-4">
             <span className="text-[11px] text-zinc-400 hidden sm:inline">Payment Methods: Cash on Delivery • bKash • Nagad</span>

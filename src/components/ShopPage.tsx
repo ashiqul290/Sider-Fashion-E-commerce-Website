@@ -153,7 +153,7 @@ export const ShopPage: React.FC = () => {
         {/* Page Title & Breadcrumb */}
         <div className="space-y-2 border-b border-zinc-800 pb-6">
           <div className="flex items-center gap-2 text-xs text-zinc-400 font-sans">
-            <span className="hover:text-white cursor-pointer" onClick={() => handleCategorySelect('all')}>Sider Fashion</span>
+            <span className="hover:text-white cursor-pointer" onClick={() => handleCategorySelect('all')}>Sikder Fashion</span>
             <span>/</span>
             <span className="text-white font-bold">Retail</span>
             {selectedCategory !== 'all' && (
@@ -171,7 +171,7 @@ export const ShopPage: React.FC = () => {
                 <span>Single & Small Quantity Orders (খুচরা বিক্রয়)</span>
               </div>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white font-sans tracking-tight">
-                Sider Fashion Retail
+                Sikder Fashion Retail
               </h1>
               <p className="text-sm sm:text-base font-semibold text-zinc-300 font-sans mt-1">
                 Shop Our Latest Fashion Collection

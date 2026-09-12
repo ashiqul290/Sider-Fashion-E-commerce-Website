@@ -1,7 +1,7 @@
 import { PaymentAccountConfig } from '../types';
 
 /**
- * SIDER FASHION OFFICIAL PAYMENT ACCOUNT CONFIGURATION
+ * SIKDER FASHION OFFICIAL PAYMENT ACCOUNT CONFIGURATION
  * 
  * IMPORTANT:
  * This configuration holds editable account details for bKash and Nagad.
@@ -9,12 +9,12 @@ import { PaymentAccountConfig } from '../types';
  */
 export const PAYMENT_ACCOUNTS_CONFIG: PaymentAccountConfig = {
   bkash: {
-    accountNumber: '01712773063', // Sider Fashion Official Account Placeholder
+    accountNumber: '01712773063', // Sikder Fashion Official Account Placeholder
     accountType: 'Personal (Send Money)',
     instructionsEn: [
       'Open your bKash App or dial *247#',
       'Select "Send Money" (or "Payment" if using merchant account)',
-      'Enter Sider Fashion bKash Number: 01712773063',
+      'Enter Sikder Fashion bKash Number: 01712773063',
       'Enter the exact Total Order Amount',
       'Use your Phone Number or Order Reference in reference (optional)',
       'Enter your bKash PIN in your mobile app to confirm payment',
@@ -30,12 +30,12 @@ export const PAYMENT_ACCOUNTS_CONFIG: PaymentAccountConfig = {
     ]
   },
   nagad: {
-    accountNumber: '01712773063', // Sider Fashion Official Account Placeholder
+    accountNumber: '01712773063', // Sikder Fashion Official Account Placeholder
     accountType: 'Personal (Send Money)',
     instructionsEn: [
       'Open your Nagad App or dial *167#',
       'Select "Send Money"',
-      'Enter Sider Fashion Nagad Number: 01712773063',
+      'Enter Sikder Fashion Nagad Number: 01712773063',
       'Enter the exact Total Order Amount',
       'Use your Phone Number or Order Reference in reference (optional)',
       'Enter your Nagad PIN in your mobile app to confirm payment',

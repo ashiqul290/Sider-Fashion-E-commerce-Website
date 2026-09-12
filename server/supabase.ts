@@ -240,7 +240,7 @@ export function persistStateToSupabase(dbState: any): void {
  */
 export function getSupabaseSQLSchema(): string {
   return `-- ==========================================
--- SIDER FASHION - SUPABASE DATABASE SCHEMA
+-- SIKDER FASHION - SUPABASE DATABASE SCHEMA
 -- Project ID: ojhwesigpdhpfptkzntl
 -- Project Name: abirhosensaon-crypto's project
 -- ==========================================

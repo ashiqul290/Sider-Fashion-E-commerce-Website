@@ -1,10 +1,10 @@
 import { HeroSlide } from '../types';
 
 export const HERO_SLIDES: HeroSlide[] = [
-  // 1. SIDER FASHION STORE: Premium modern store flagship aesthetic representing the overall brand
+  // 1. SIKDER FASHION STORE: Premium modern store flagship aesthetic representing the overall brand
   {
     slideId: 'slide-store-flagship',
-    title: 'SIDER FASHION STORE',
+    title: 'SIKDER FASHION STORE',
     titleBn: 'সেরা ফ্যাশনের আধুনিক ঠিকানা — সাইডার ফ্যাশন',
     subtitle: 'Modern Garment Manufacturing & Premium Menswear Collection',
     subtitleBn: 'নিজস্ব কারখানায় প্রস্তুত — ১০০% মানসম্মত ফেব্রিক ও এক্সপোর্ট ফিনিশিং',
@@ -12,7 +12,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     badgeBn: 'সাভার ও আশুলিয়ায় নিজস্ব কারখানা — সরাসরি উৎপাদন',
     image: '/src/assets/images/hero_store_flagship_1788006333464.jpg',
     mobileImage: '/src/assets/images/hero_store_flagship_1788006333464.jpg',
-    imageAlt: 'Sider Fashion Luxury Menswear Flagship Store & Collection',
+    imageAlt: 'Sikder Fashion Luxury Menswear Flagship Store & Collection',
     buttons: [
       {
         id: 'hero-btn-store-shop',
@@ -45,7 +45,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     badgeBn: '১০০% কম্বড কটন • কালার ও ফেব্রিক গ্যারান্টি',
     image: '/src/assets/images/hero_hanging_shirt_1788006362811.jpg',
     mobileImage: '/src/assets/images/hero_hanging_shirt_1788006362811.jpg',
-    imageAlt: 'Sider Fashion Premium Cotton Oxford Hanging Shirt Studio Shoot',
+    imageAlt: 'Sikder Fashion Premium Cotton Oxford Hanging Shirt Studio Shoot',
     buttons: [
       {
         id: 'hero-btn-shirt-shop',
@@ -79,7 +79,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     badgeBn: 'এক্সক্লুসিভ জ্যাকার্ড ও সুতি কতুয়া কালেকশন',
     image: '/src/assets/images/hero_model_katua_1788006377967.jpg',
     mobileImage: '/src/assets/images/hero_model_katua_1788006377967.jpg',
-    imageAlt: 'Sider Fashion Male Model Wearing Signature Katua in Studio Shoot',
+    imageAlt: 'Sikder Fashion Male Model Wearing Signature Katua in Studio Shoot',
     buttons: [
       {
         id: 'hero-btn-katua-shop',
@@ -113,7 +113,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     badgeBn: 'উন্নত ড্রপ শোল্ডার ও ড্রাই-ফিট স্পোর্টস জার্সি',
     image: '/src/assets/images/hero_product_display_1788006395796.jpg',
     mobileImage: '/src/assets/images/hero_product_display_1788006395796.jpg',
-    imageAlt: 'Sider Fashion T-Shirts, Polo Shirts and Jerseys Curated Display',
+    imageAlt: 'Sikder Fashion T-Shirts, Polo Shirts and Jerseys Curated Display',
     buttons: [
       {
         id: 'hero-btn-tees-shop',
@@ -147,7 +147,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     badgeBn: 'স্মার্ট ক্যাজুয়াল • ১০০% কালার ও ফেব্রিক গ্যারান্টি',
     image: '/src/assets/images/hero_lifestyle_man_1788006418142.jpg',
     mobileImage: '/src/assets/images/hero_lifestyle_man_1788006418142.jpg',
-    imageAlt: 'Sider Fashion Male Model in Urban Lifestyle Environment',
+    imageAlt: 'Sikder Fashion Male Model in Urban Lifestyle Environment',
     buttons: [
       {
         id: 'hero-btn-lifestyle-shop',

@@ -26,11 +26,11 @@ export const SocialCTA: React.FC = () => {
               <div className="space-y-1.5">
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-blue-400 bg-blue-950/60 px-2.5 py-0.5 rounded-full border border-blue-800/60">
                   <Sparkles className="w-3 h-3" />
-                  <span>Connect With Sider Fashion</span>
+                  <span>Connect With Sikder Fashion</span>
                 </div>
                 
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-sans">
-                  Follow Sider Fashion
+                  Follow Sikder Fashion
                 </h3>
                 
                 <p className="text-sm sm:text-base text-zinc-300 font-normal">

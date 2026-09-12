@@ -33,7 +33,7 @@ export const ContactSection: React.FC = () => {
 
   const handleWhatsAppContact = (phoneNum: string) => {
     openWhatsAppChat(
-      `Hello Sider Fashion! I am contacting you from the website contact page regarding: ${subject}.\nName: ${name || 'Customer'}\nPhone: ${phone || 'N/A'}\nMessage: ${message || 'Please connect with me.'}`,
+      `Hello Sikder Fashion! I am contacting you from the website contact page regarding: ${subject}.\nName: ${name || 'Customer'}\nPhone: ${phone || 'N/A'}\nMessage: ${message || 'Please connect with me.'}`,
       phoneNum
     );
   };
@@ -46,7 +46,7 @@ export const ContactSection: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-14">
           <div className="inline-flex items-center gap-1.5 bg-amber-950/60 border border-amber-900/60 px-3 py-1 rounded-full text-amber-400 text-xs font-bold uppercase tracking-wider">
             <Building2 className="w-3.5 h-3.5" />
-            <span>Connect with Sider Fashion</span>
+            <span>Connect with Sikder Fashion</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-sans">
             Contact &amp; Factory Location
@@ -167,7 +167,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-white">
-                    Follow Sider Fashion on Facebook
+                    Follow Sikder Fashion on Facebook
                   </h4>
                   <p className="text-xs text-zinc-400 mt-1">
                     Stay updated with our latest products, collections and offers.

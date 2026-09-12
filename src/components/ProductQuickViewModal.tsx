@@ -40,7 +40,7 @@ const ProductQuickViewModalContent: React.FC<ProductQuickViewModalContentProps> 
   };
 
   const handleWhatsAppOrder = () => {
-    const msg = `Hello Sider Fashion!\nI want to order via WhatsApp:\n• Product: ${product.name} (${product.code})\n• Color: ${selectedColor.name}\n• Size: ${selectedSize}\n• Quantity: ${quantity}\n• Price: ৳${product.retailPrice * quantity}\n\nPlease confirm availability and delivery.`;
+    const msg = `Hello Sikder Fashion!\nI want to order via WhatsApp:\n• Product: ${product.name} (${product.code})\n• Color: ${selectedColor.name}\n• Size: ${selectedSize}\n• Quantity: ${quantity}\n• Price: ৳${product.retailPrice * quantity}\n\nPlease confirm availability and delivery.`;
     openWhatsAppChat(msg);
   };
 
@@ -168,7 +168,7 @@ const ProductQuickViewModalContent: React.FC<ProductQuickViewModalContentProps> 
                 className="flex items-center justify-center gap-1.5 bg-amber-500 hover:bg-amber-400 text-black py-2.5 rounded-lg text-xs font-bold cursor-pointer shadow-xs"
               >
                 <Zap className="w-4 h-4 fill-current" />
-                <span>Buy Now</span>
+                <span>Order Now</span>
               </button>
             </div>
 

@@ -9,6 +9,7 @@ import {
 } from '../types';
 import { DELIVERY_FEES } from '../data/bangladeshDistricts';
 import { AnalyticsTrackingService } from './analyticsTrackingService';
+import { adminHeaders, adminJsonHeaders } from './authHeaders';
 
 const ORDERS_STORAGE_KEY = 'sider_orders_v2';
 const WHOLESALE_ORDERS_KEY = 'sider_wholesale_orders_v2';
@@ -246,6 +247,7 @@ export class OrderService {
     subtotal: number;
     discount?: number;
     couponCode?: string;
+    membershipCode?: string;
     total: number;
     customerNote?: string;
   }): { success: boolean; order?: OrderDetails; error?: string } {
@@ -387,6 +389,7 @@ export class OrderService {
       subtotal: calculatedSubtotal,
       discount,
       couponCode: params.couponCode || undefined,
+      membershipCode: params.membershipCode?.trim().toUpperCase() || undefined,
       total: calculatedTotal,
       paymentMethod: params.paymentMethod,
       paymentStatus: initialPaymentStatus,
@@ -616,7 +619,7 @@ export class OrderService {
     // Call backend API
     fetch(`/api/orders/${encodeURIComponent(orderId)}`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ order: orders[index], adminName: adminName || 'Admin' })
     }).catch(e => console.error('Failed to update order status on server', e));
 
@@ -640,7 +643,7 @@ export class OrderService {
     // Call backend API
     fetch(`/api/orders/${encodeURIComponent(orderId)}`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ order: orders[index], adminName: adminName || 'Admin' })
     }).catch(e => console.error('Failed to update order payment status on server', e));
 
@@ -661,7 +664,7 @@ export class OrderService {
     // Call backend API
     fetch(`/api/wholesale/${encodeURIComponent(inquiryId)}`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ inquiry: wholesaleOrders[index], adminName: adminName || 'Admin' })
     }).catch(e => console.error('Failed to update wholesale status on server', e));
 
@@ -682,7 +685,7 @@ export class OrderService {
     // Call backend API
     fetch(`/api/wholesale/${encodeURIComponent(inquiryId)}`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ inquiry: wholesaleOrders[index], adminName: adminName || 'Admin' })
     }).catch(e => console.error('Failed to update wholesale payment status on server', e));
 
@@ -700,7 +703,8 @@ export class OrderService {
 
     // Call backend API
     fetch(`/api/orders/${encodeURIComponent(orderId)}?adminName=${encodeURIComponent(adminName || 'Admin')}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(e => console.error('Failed to delete order on server', e));
 
     return true;
@@ -717,7 +721,8 @@ export class OrderService {
 
     // Call backend API
     fetch(`/api/wholesale/${encodeURIComponent(inquiryId)}?adminName=${encodeURIComponent(adminName || 'Admin')}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(e => console.error('Failed to delete wholesale inquiry on server', e));
 
     return true;

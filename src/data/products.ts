@@ -3,17 +3,17 @@ import { Product, CategoryInfo, RetailCategoryKey, WholesalePricingTier } from '
 export const OFFICIAL_FACEBOOK_URL = 'https://www.facebook.com/share/1G2hyYvWFR/';
 
 export const BRAND_CONTACTS = {
-  name: 'Sider Fashion',
+  name: 'Sikder Fashion',
   tagline: 'Quality Fashion, Directly from Our Own Manufacturing',
   taglineBn: 'নিজস্ব কারখানায় তৈরি — পাইকারি ও খুচরা বিক্রি',
   locationDisplay: 'Ashulia, Savar, Dhaka, Bangladesh',
   locationArea: 'Ashulia, Savar, Dhaka (Near Savar Cantonment & EPZ Garment Hub)',
-  phones: ['01712773063', '01612241112'],
-  whatsappNumbers: ['01712773063', '01612241112'],
-  primaryPhone: '01712773063',
+  phones: ['01922241112', '01612241112'],
+  whatsappNumbers: ['01922241112', '01612241112'],
+  primaryPhone: '01922241112',
   secondaryPhone: '01612241112',
   wholesalePhone: '01612241112',
-  email: 'siderfashion.bd@gmail.com',
+  email: 'sikderfashion.bd@gmail.com',
   facebookUrl: 'https://www.facebook.com/share/1G2hyYvWFR/',
   workingHours: '9:00 AM – 10:00 PM (Everyday)',
   factoryAddress: 'Ashulia Industrial Zone, Savar, Dhaka, Bangladesh',

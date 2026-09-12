@@ -458,7 +458,7 @@ export const AdminAccountsTab: React.FC<AdminAccountsTabProps> = ({
       <div className="bg-amber-50/60 border border-amber-200/80 rounded-2xl p-5 text-xs text-amber-950 space-y-2">
         <div className="font-bold flex items-center gap-2 text-amber-900">
           <ShieldAlert className="w-4 h-4" />
-          <span>Sider Fashion Admin Security Protocol</span>
+          <span>Sikder Fashion Admin Security Protocol</span>
         </div>
         <ul className="list-disc pl-5 space-y-1 text-amber-900 text-[11px] leading-relaxed">
           <li><strong>Single Store Owner:</strong> Full master authority over finances, ad spends, system settings, and administrator account creations.</li>
@@ -510,7 +510,7 @@ export const AdminAccountsTab: React.FC<AdminAccountsTabProps> = ({
                   required
                   value={newEmail}
                   onChange={(e) => setNewEmail(e.target.value)}
-                  placeholder="shakil@siderfashion.com"
+                  placeholder="shakil@sikderfashion.com"
                   className="w-full px-3 py-2 bg-stone-50 border border-stone-200 rounded-xl text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500"
                 />
               </div>

@@ -87,7 +87,7 @@ export const OrderTrackingModal: React.FC = () => {
           </div>
           <div>
             <h3 className="text-lg sm:text-xl font-bold text-white">
-              Track Sider Fashion Order (অর্ডার ট্র্যাকিং)
+              Track Sikder Fashion Order (অর্ডার ট্র্যাকিং)
             </h3>
             <p className="text-xs text-zinc-400 font-bangla">
               আপনার Order ID (যেমন: SF-2026-000001) অথবা মোবাইল নম্বর দিয়ে পার্সেল ট্র্যাক করুন
@@ -300,7 +300,7 @@ export const OrderTrackingModal: React.FC = () => {
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-zinc-400">
               <span>Need dispatch updates or address modification?</span>
               <button
-                onClick={() => openWhatsAppChat(`Hello Sider Fashion! I am checking status and dispatch for Order ID: ${searchedOrder.orderId}.`)}
+                onClick={() => openWhatsAppChat(`Hello Sikder Fashion! I am checking status and dispatch for Order ID: ${searchedOrder.orderId}.`)}
                 className="flex items-center gap-1 text-emerald-400 font-bold hover:underline cursor-pointer"
               >
                 <MessageSquare className="w-3.5 h-3.5" />

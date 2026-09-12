@@ -303,7 +303,7 @@ export const AdminBusinessSettingsTab: React.FC<AdminBusinessSettingsTabProps> =
                 <input
                   type="text"
                   required
-                  value={settings.brandName || 'Sider Fashion'}
+                  value={settings.brandName || 'Sikder Fashion'}
                   onChange={(e) => setSettings({ ...settings, brandName: e.target.value })}
                   className="w-full px-3 py-2 border border-stone-200 rounded-xl text-xs font-bold"
                 />
@@ -824,7 +824,7 @@ export const AdminBusinessSettingsTab: React.FC<AdminBusinessSettingsTabProps> =
                   required
                   value={socialDisplayName}
                   onChange={(e) => setSocialDisplayName(e.target.value)}
-                  placeholder="e.g. Sider Fashion Official Page"
+                  placeholder="e.g. Sikder Fashion Official Page"
                   className="w-full px-3 py-2 border border-stone-200 rounded-xl text-xs font-medium"
                 />
               </div>

@@ -72,10 +72,10 @@ export const WhyChooseUs: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-14">
           <div className="inline-flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full text-amber-400 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>The Sider Fashion Advantage</span>
+            <span>The Sikder Fashion Advantage</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-sans">
-            Why Choose Sider Fashion?
+            Why Choose Sikder Fashion?
           </h2>
           <p className="text-base text-zinc-400 font-bangla">
             "নিজস্ব কারখানায় তৈরি — পাইকারি ও খুচরা বিক্রি" — সরাসরি প্রস্তুতকারকের কাছ থেকে সেরা মানের পোশাক।

@@ -160,7 +160,7 @@ export const OrderSuccessModal: React.FC = () => {
             <div className="p-3 bg-sky-950/50 border border-sky-800 rounded-lg text-[11px] text-sky-300 flex items-start gap-2">
               <AlertTriangle className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
               <div>
-                <strong>Payment Notice:</strong> Your prepaid payment is pending verification. Sider Fashion factory staff will verify this transaction before packing and dispatch.
+                <strong>Payment Notice:</strong> Your prepaid payment is pending verification. Sikder Fashion factory staff will verify this transaction before packing and dispatch.
               </div>
             </div>
           )}

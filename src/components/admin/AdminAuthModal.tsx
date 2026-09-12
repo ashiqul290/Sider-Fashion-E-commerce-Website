@@ -154,7 +154,7 @@ export const AdminAuthModal: React.FC<AdminAuthModalProps> = ({
               S
             </div>
             <div>
-              <h3 className="font-black text-stone-950 text-lg font-sans">Sider Fashion</h3>
+              <h3 className="font-black text-stone-950 text-lg font-sans">Sikder Fashion</h3>
               <p className="text-xs text-amber-900 font-bold uppercase tracking-wider">
                 {authMode === 'login' ? 'Staff & Admin Security Access' : 'Password Recovery'}
               </p>

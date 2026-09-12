@@ -319,7 +319,7 @@ export const SIDER_FAQS: FAQItem[] = [
   {
     id: 'faq-size-finder',
     category: 'size',
-    question: 'How do I choose the correct size for Sider Fashion shirts or Katua?',
+    question: 'How do I choose the correct size for Sikder Fashion shirts or Katua?',
     questionBn: 'আমি কীভাবে সঠিক সাইজ নির্বাচন করব?',
     answer: 'You can use our interactive Size Finder tool located on every product page and in the main menu. Simply input your Height, Weight, and Fit Preference (Slim, Regular, or Relaxed) to see your calculated recommended size. You can also view our detailed Size Chart table with chest, shoulder, length, and sleeve measurements in inches and cm.',
     answerBn: 'আমাদের প্রতিটি প্রোডাক্টের পাশে এবং ওয়েবসাইটের "সাইজ গাইড" অপশনে একটি স্মার্ট সাইজ ফাইন্ডার আছে। আপনার উচ্চতা, ওজন এবং ফিটিং পছন্দ দিলেই সিস্টেম আপনাকে সঠিক সাইজ (M, L, XL, XXL) সাজেস্ট করবে। এছাড়াও মেজারমেন্ট টেবিল দেখে ইঞ্চি বা সেন্টিমিটারে মাপ মিলিয়ে নিতে পারেন।'
@@ -329,7 +329,7 @@ export const SIDER_FAQS: FAQItem[] = [
     category: 'delivery',
     question: 'Can I open and check the clothing before paying the delivery person?',
     questionBn: 'ডেলিভারি পাওয়ার পর কি পার্সেল খুলে চেক করে দেখা যাবে?',
-    answer: 'Yes, absolutely! At Sider Fashion, we encourage you to inspect the fabric, color, stitching, and size in front of the courier delivery executive. If there is any discrepancy or you are not fully satisfied, you may return it immediately right on the spot.',
+    answer: 'Yes, absolutely! At Sikder Fashion, we encourage you to inspect the fabric, color, stitching, and size in front of the courier delivery executive. If there is any discrepancy or you are not fully satisfied, you may return it immediately right on the spot.',
     answerBn: 'হ্যাঁ, অবশ্যই! ডেলিভারিম্যানের সামনে পার্সেলটি খুলে কাপড়ের কোয়ালিটি, কালার, সাইজ ও সেলাই দেখে নিতে পারবেন। পছন্দ না হলে বা কোনো সমস্যা থাকলে সাথে সাথে রিটার্ন করতে পারবেন।'
   },
   {

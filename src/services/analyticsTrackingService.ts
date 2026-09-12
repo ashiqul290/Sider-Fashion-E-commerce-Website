@@ -1,5 +1,5 @@
 /**
- * Sider Fashion - Client-Side Analytics & UTM Tracking Service
+ * Sikder Fashion - Client-Side Analytics & UTM Tracking Service
  * Captures UTM query parameters, tracks funnel events (views, clicks, carts, checkouts),
  * and ensures attribution data is preserved through the entire buyer journey.
  */

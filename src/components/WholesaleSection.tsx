@@ -179,7 +179,7 @@ export const WholesaleSection: React.FC = () => {
       phone,
       whatsappNumber: whatsappNumber || phone,
       productCode: selectedProduct?.code || 'SF-BULK',
-      productName: selectedProduct?.name || 'Sider Fashion Collection',
+      productName: selectedProduct?.name || 'Sikder Fashion Collection',
       targetQuantity: totalQuantity,
       sizeBreakdown,
       targetColor: selectedColor,
@@ -205,7 +205,7 @@ export const WholesaleSection: React.FC = () => {
       .map(([sz, qty]) => `${sz}: ${qty} pcs`)
       .join(' | ');
 
-    const formattedMsg = `*SIDER FASHION WHOLESALE B2B ORDER [${submittedInquiryId || 'NEW'}]*\n\n` +
+    const formattedMsg = `*SIKDER FASHION WHOLESALE B2B ORDER [${submittedInquiryId || 'NEW'}]*\n\n` +
       `🏢 *Shop / Business:* ${businessName || 'Clothing Store'}\n` +
       `👤 *Proprietor / Buyer:* ${customerName}\n` +
       `📞 *Phone:* ${phone}\n` +
@@ -239,7 +239,7 @@ export const WholesaleSection: React.FC = () => {
 
             <div>
               <h1 className="text-3xl sm:text-5xl font-black tracking-tight font-sans text-white leading-tight">
-                Sider Fashion Wholesale
+                Sikder Fashion Wholesale
               </h1>
               <p className="text-lg sm:text-xl font-bold text-amber-400 font-sans mt-2">
                 Buy Directly From Our Own Factory
@@ -280,7 +280,7 @@ export const WholesaleSection: React.FC = () => {
 
               <button
                 type="button"
-                onClick={() => openWhatsAppChat("Hello Sider Fashion! I want to discuss wholesale prices and request your current B2B catalog.", 'wholesale')}
+                onClick={() => openWhatsAppChat("Hello Sikder Fashion! I want to discuss wholesale prices and request your current B2B catalog.", 'wholesale')}
                 className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl text-sm transition-all shadow-md flex items-center gap-2 cursor-pointer"
               >
                 <MessageSquare className="w-4 h-4 fill-white" />

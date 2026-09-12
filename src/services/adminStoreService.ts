@@ -35,6 +35,7 @@ import { HERO_SLIDES } from '../data/heroSlides';
 import { PAYMENT_ACCOUNTS_CONFIG } from '../data/paymentAccounts';
 import { SIDER_FAQS, DEFAULT_SIZE_CHARTS } from '../data/sizeGuideData';
 import { normalizeBdPhone, isValidBdPhone, generateUniqueOrderId, OrderService } from './orderService';
+import { adminHeaders, adminJsonHeaders } from './authHeaders';
 
 // Storage Keys
 const STORAGE_PREFIX = 'sider_admin_v3_';
@@ -63,13 +64,13 @@ const KEYS = {
 };
 
 export const DEFAULT_BUSINESS_SETTINGS: BusinessSettings = {
-  brandName: 'Sider Fashion',
+  brandName: 'Sikder Fashion',
   tagline: 'Quality Fashion, Directly from Our Own Manufacturing',
   taglineBn: 'নিজস্ব কারখানায় তৈরি — পাইকারি ও খুচরা বিক্রি',
   primaryPhone: '01712773063',
   secondaryPhone: '01612241112',
   wholesalePhone: '01612241112',
-  email: 'siderfashion.bd@gmail.com',
+  email: 'sikderfashion.bd@gmail.com',
   facebookUrl: 'https://www.facebook.com/share/1G2hyYvWFR/',
   locationDisplay: 'Ashulia, Savar, Dhaka, Bangladesh',
   factoryAddress: 'Ashulia Industrial Zone, Savar, Dhaka, Bangladesh',
@@ -120,7 +121,7 @@ export const DEFAULT_CONTACTS: ContactItem[] = [
     type: 'email',
     label: 'Official Email',
     labelBn: 'অফিসিয়াল ইমেইল',
-    value: 'siderfashion.bd@gmail.com',
+    value: 'sikderfashion.bd@gmail.com',
     isPrimary: true,
     isActive: true,
     displayOrder: 4
@@ -160,7 +161,7 @@ export const DEFAULT_SOCIAL_LINKS: SocialLinkItem[] = [
     id: 'social-ig',
     platform: 'instagram',
     displayName: 'Instagram',
-    url: 'https://instagram.com/siderfashion.bd',
+    url: 'https://instagram.com/sikderfashion.bd',
     icon: 'instagram',
     isActive: true,
     displayOrder: 3
@@ -169,7 +170,7 @@ export const DEFAULT_SOCIAL_LINKS: SocialLinkItem[] = [
     id: 'social-tt',
     platform: 'tiktok',
     displayName: 'TikTok',
-    url: 'https://tiktok.com/@siderfashion',
+    url: 'https://tiktok.com/@sikderfashion',
     icon: 'tiktok',
     isActive: true,
     displayOrder: 4
@@ -178,7 +179,7 @@ export const DEFAULT_SOCIAL_LINKS: SocialLinkItem[] = [
     id: 'social-yt',
     platform: 'youtube',
     displayName: 'YouTube Channel',
-    url: 'https://youtube.com/@siderfashion',
+    url: 'https://youtube.com/@sikderfashion',
     icon: 'youtube',
     isActive: true,
     displayOrder: 5
@@ -190,7 +191,7 @@ export const DEFAULT_HOMEPAGE_SECTIONS: HomepageSectionConfig[] = [
   { id: 'sec-portals', key: 'portals', title: 'Dual Shopping Choice (Retail vs Wholesale)', titleBn: 'খুচরা ও পাইকারি শপিং পোর্টাল', subtitle: 'Instant portal switcher', isVisible: true, displayOrder: 2 },
   { id: 'sec-categories', key: 'categories', title: 'Featured Categories', titleBn: 'জনপ্রিয় ক্যাটাগরি সমূহ', subtitle: 'Category navigation cards', isVisible: true, displayOrder: 3 },
   { id: 'sec-products', key: 'featured-products', title: 'Featured & Catalog Products', titleBn: 'সেরা নির্বাচিত কালেকশন', subtitle: 'Curated retail products grid', isVisible: true, displayOrder: 4 },
-  { id: 'sec-why-us', key: 'why-choose-us', title: 'Why Choose Sider Fashion', titleBn: 'কেন সাইডার ফ্যাশন সেরা', subtitle: 'Factory-direct value propositions', isVisible: true, displayOrder: 5 },
+  { id: 'sec-why-us', key: 'why-choose-us', title: 'Why Choose Sikder Fashion', titleBn: 'কেন সাইডার ফ্যাশন সেরা', subtitle: 'Factory-direct value propositions', isVisible: true, displayOrder: 5 },
   { id: 'sec-wholesale', key: 'wholesale-highlight', title: 'Wholesale & B2B Portal Section', titleBn: 'পাইকারি ও কর্পোরেট সুযোগ', subtitle: 'Factory MOQ & bulk manufacturing', isVisible: true, displayOrder: 6 },
   { id: 'sec-social', key: 'social-community', title: 'Social Community & Live Reviews', titleBn: 'সোশ্যাল মিডিয়া ও রিভিউ', subtitle: 'Facebook group & customer community', isVisible: true, displayOrder: 7 },
   { id: 'sec-faqs', key: 'faqs', title: 'Frequently Asked Questions', titleBn: 'সাধারণ প্রশ্নোত্তর (FAQ)', subtitle: 'Customer service queries', isVisible: true, displayOrder: 8 },
@@ -250,7 +251,7 @@ export const DEFAULT_COUPONS: Coupon[] = [
 ];
 
 export const DEFAULT_POLICIES: PolicyContent = {
-  returnPolicy: 'At Sider Fashion, we manufacture in our own Savar factory with rigorous 3-step quality checks. You have the full right to check your package in front of the delivery person before payment. If there is any defect or mismatch, you can immediately return it without penalty.',
+  returnPolicy: 'At Sikder Fashion, we manufacture in our own Savar factory with rigorous 3-step quality checks. You have the full right to check your package in front of the delivery person before payment. If there is any defect or mismatch, you can immediately return it without penalty.',
   returnPolicyBn: 'সাইডার ফ্যাশন নিজস্ব কারখানায় মান নিয়ন্ত্রণ করে পোশাক তৈরি করে। ডেলিভারিম্যানের সামনে পার্সেল খুলে ফেব্রিক ও কোয়ালিটি দেখে নেওয়ার সুযোগ রয়েছে। কোনো সমস্যা থাকলে তাৎক্ষণিক ডেলিভারিম্যানকে রিটার্ন দিতে পারেন।',
   exchangePolicy: 'Wrong size or color? We offer a hassle-free 7-day exchange warranty. Keep the original tags intact and contact our hotline or WhatsApp at 01712773063.',
   exchangePolicyBn: 'সাইজ অথবা রঙের পরিবর্তনে আমরা ৭ দিনের সহজ এক্সচেঞ্জ সুবিধা প্রদান করি। হটলাইন 01712773063 এ মেসেজ দিন।',
@@ -258,11 +259,11 @@ export const DEFAULT_POLICIES: PolicyContent = {
   deliveryPolicyBn: 'ঢাকার ভেতরে ডেলিভারি চার্জ মাত্র ৭০ টাকা (২৪-৪৮ ঘণ্টায়)। ঢাকার বাইরে সারা দেশে ডেলিভারি চার্জ ১২০ টাকা (৪৮-৭২ ঘণ্টায়)।',
   shippingInfo: 'All orders are dispatched directly from our Savar & Ashulia manufacturing and fulfillment hub in secure weather-resistant packaging.',
   shippingInfoBn: 'সাভার ও আশুলিয়া কারখানা হাব থেকে সরাসরি সিকিউর প্যাকেজিংয়ে পার্সেল পাঠানো হয়।',
-  privacyPolicy: 'We respect your privacy. Sider Fashion only collects your name, phone number, and delivery address to fulfill and dispatch your orders. We never sell or share your information with third parties.',
+  privacyPolicy: 'We respect your privacy. Sikder Fashion only collects your name, phone number, and delivery address to fulfill and dispatch your orders. We never sell or share your information with third parties.',
   privacyPolicyBn: 'আমরা আপনার তথ্যের গোপনীয়তা রক্ষা করি। আপনার নাম, মোবাইল নম্বর ও ঠিকানা শুধুমাত্র পার্সেল প্রেরণের কাজে ব্যবহার করা হয়।',
-  termsConditions: 'By placing an order on Sider Fashion, you agree to our fair usage and cash on delivery terms. For wholesale orders, minimum order quantity rules apply.',
+  termsConditions: 'By placing an order on Sikder Fashion, you agree to our fair usage and cash on delivery terms. For wholesale orders, minimum order quantity rules apply.',
   termsConditionsBn: 'সাইডার ফ্যাশনে অর্ডার করার মাধ্যমে আপনি আমাদের সাধারণ নিয়মাবলি মেনে নিচ্ছেন। ক্যাশ অন ডেলিভারি পার্সেল সঠিক ঠিকানায় রিসিভ করার অনুরোধ করা হচ্ছে।',
-  aboutUs: 'Sider Fashion is a premier ready-made garments manufacturer based in Ashulia & Savar, Dhaka. We specialize in premium cotton shirts, katua, and contemporary menswear crafted directly at our own factory.',
+  aboutUs: 'Sikder Fashion is a premier ready-made garments manufacturer based in Ashulia & Savar, Dhaka. We specialize in premium cotton shirts, katua, and contemporary menswear crafted directly at our own factory.',
   aboutUsBn: 'সাইডার ফ্যাশন আশুলিয়া, সাভার ভিত্তিক নিজস্ব পোশাক প্রস্তুতকারক ও সরবরাহকারী ব্র্যান্ড। আমরা প্রিমিয়াম শার্ট ও কতুয়া সরাসরি কারখানায় তৈরি করে গ্রাহক ও পাইকারি ব্যবসায়ীদের কাছে পৌঁছে দিই।'
 };
 
@@ -283,7 +284,7 @@ export const PRESET_ADMIN_USERS: AdminUser[] = [
     name: 'Showroom Manager',
     role: 'admin',
     roleTitle: 'Orders & Inventory Admin',
-    email: 'dispatch@siderfashion.com',
+    email: 'dispatch@sikderfashion.com',
     status: 'active',
     createdAt: '2026-01-01T00:00:00.000Z'
   }
@@ -622,7 +623,7 @@ export class AdminStoreService {
 
       const res = await fetch('/api/admin/session/verify', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({ token, userId: current?.id })
       });
       const data = await res.json();
@@ -653,7 +654,7 @@ export class AdminStoreService {
     try {
       const res = await fetch('/api/admin/login', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({ email: emailOrUser, password, expectedRole })
       });
       const data = await res.json();
@@ -675,15 +676,9 @@ export class AdminStoreService {
     const current = this.getActiveAdmin();
     const token = this.getAuthToken();
     if (current || token) {
-      try {
-        await fetch('/api/admin/logout', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ userId: current?.id, email: current?.email, token })
-        });
-      } catch {
-        // ignore
-      }
+      // Record the audit entry *before* the logout request, while the session
+      // token is still valid. Afterwards the server has already revoked it, so
+      // the audit POST would be rejected and the entry silently lost.
       if (current) {
         this.logActivity({
           adminName: current.name,
@@ -691,6 +686,15 @@ export class AdminStoreService {
           action: 'Admin Logged Out',
           category: 'auth'
         });
+      }
+      try {
+        await fetch('/api/admin/logout', {
+          method: 'POST',
+          headers: adminJsonHeaders(),
+          body: JSON.stringify({ userId: current?.id, email: current?.email, token })
+        });
+      } catch {
+        // ignore
       }
     }
     try {
@@ -715,7 +719,7 @@ export class AdminStoreService {
   static async fetchAdminUsers(requesterId?: string): Promise<{ success: boolean; users: AdminUser[]; meta?: any; error?: string }> {
     try {
       const url = requesterId ? `/api/admin/users?requesterId=${encodeURIComponent(requesterId)}` : '/api/admin/users';
-      const res = await fetch(url);
+      const res = await fetch(url, { headers: adminHeaders() });
       const data = await res.json();
       if (data.success) {
         return { success: true, users: data.users, meta: data.meta };
@@ -736,7 +740,7 @@ export class AdminStoreService {
     try {
       const res = await fetch('/api/admin/users', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({ name, email, password, roleTitle, currentAdminId })
       });
       const data = await res.json();
@@ -758,7 +762,7 @@ export class AdminStoreService {
     try {
       const res = await fetch(`/api/admin/users/${id}`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({ ...updates, currentAdminId })
       });
       const data = await res.json();
@@ -775,7 +779,8 @@ export class AdminStoreService {
   static async deleteAdminUser(id: string, currentAdminId: string): Promise<{ success: boolean; error?: string }> {
     try {
       const res = await fetch(`/api/admin/users/${id}?currentAdminId=${encodeURIComponent(currentAdminId)}`, {
-        method: 'DELETE'
+        method: 'DELETE',
+        headers: adminHeaders()
       });
       const data = await res.json();
       if (data.success) {
@@ -797,7 +802,7 @@ export class AdminStoreService {
     try {
       const res = await fetch('/api/admin/change-password', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({ userId, email, newPassword, confirmPassword })
       });
       const data = await res.json();
@@ -814,7 +819,7 @@ export class AdminStoreService {
     try {
       const res = await fetch('/api/admin/forgot-password/request', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({ email })
       });
       const data = await res.json();
@@ -839,7 +844,7 @@ export class AdminStoreService {
     try {
       const res = await fetch('/api/admin/forgot-password/verify-and-reset', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({ email, code, newPassword, confirmPassword })
       });
       const data = await res.json();
@@ -872,7 +877,7 @@ export class AdminStoreService {
     // Sync to backend
     fetch('/api/audit-logs', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ log: newLog })
     }).catch(() => {});
   }
@@ -919,7 +924,7 @@ export class AdminStoreService {
     // Send to backend API
     fetch('/api/products', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ product, adminName })
     }).catch(e => console.error('Failed to post product to backend', e));
   }
@@ -946,7 +951,7 @@ export class AdminStoreService {
     // Send to backend API
     fetch(`/api/products/${encodeURIComponent(updatedProd.id)}`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ product: updatedProd, adminName })
     }).catch(e => console.error('Failed to put product to backend', e));
   }
@@ -970,7 +975,8 @@ export class AdminStoreService {
 
     // Send to backend API
     fetch(`/api/products/${encodeURIComponent(productId)}?adminName=${encodeURIComponent(adminName)}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(e => console.error('Failed to delete product from backend', e));
 
     return { success: true, message: `Product "${prod.name}" successfully deleted.` };
@@ -1028,7 +1034,7 @@ export class AdminStoreService {
     // Post to backend
     fetch('/api/categories', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ category, adminName })
     }).catch(() => {});
   }
@@ -1054,7 +1060,7 @@ export class AdminStoreService {
     // Put to backend
     fetch(`/api/categories/${encodeURIComponent(updatedCat.id)}`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ category: updatedCat, adminName })
     }).catch(() => {});
   }
@@ -1092,7 +1098,8 @@ export class AdminStoreService {
 
     // Delete on backend
     fetch(`/api/categories/${encodeURIComponent(categoryId)}?adminName=${encodeURIComponent(adminName)}&moveTo=${encodeURIComponent(moveTo)}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(() => {});
 
     return { success: true, message: `Category "${cat.name}" deleted. (${moved} products reassigned)` };
@@ -1116,7 +1123,7 @@ export class AdminStoreService {
     this.saveContacts(updated, adminName);
     fetch('/api/contacts', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ contact, adminName })
     }).catch(() => {});
   }
@@ -1132,7 +1139,7 @@ export class AdminStoreService {
     this.saveContacts([...list], adminName);
     fetch(`/api/contacts/${encodeURIComponent(contact.id)}`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ contact, adminName })
     }).catch(() => {});
   }
@@ -1142,7 +1149,8 @@ export class AdminStoreService {
     const updated = list.filter(c => c.id !== contactId);
     this.saveContacts(updated, adminName);
     fetch(`/api/contacts/${encodeURIComponent(contactId)}?adminName=${encodeURIComponent(adminName)}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(() => {});
   }
 
@@ -1164,7 +1172,7 @@ export class AdminStoreService {
     this.saveSocialLinks(updated, adminName);
     fetch('/api/social-links', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ socialLink, adminName })
     }).catch(() => {});
   }
@@ -1174,7 +1182,8 @@ export class AdminStoreService {
     const updated = list.filter(s => s.id !== id);
     this.saveSocialLinks(updated, adminName);
     fetch(`/api/social-links/${encodeURIComponent(id)}?adminName=${encodeURIComponent(adminName)}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(() => {});
   }
 
@@ -1208,7 +1217,7 @@ export class AdminStoreService {
     });
     fetch('/api/hero-slides', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ slide, adminName })
     }).catch(() => {});
   }
@@ -1232,7 +1241,7 @@ export class AdminStoreService {
     });
     fetch('/api/hero-slides', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ slide, adminName })
     }).catch(() => {});
   }
@@ -1249,7 +1258,8 @@ export class AdminStoreService {
       targetId: slideId
     });
     fetch(`/api/hero-slides/${encodeURIComponent(slideId)}?adminName=${encodeURIComponent(adminName)}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(() => {});
   }
 
@@ -1271,7 +1281,7 @@ export class AdminStoreService {
     this.saveFAQs(updated);
     fetch('/api/faqs', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ faq, adminName })
     }).catch(() => {});
   }
@@ -1287,7 +1297,7 @@ export class AdminStoreService {
     this.saveFAQs([...list]);
     fetch('/api/faqs', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ faq, adminName })
     }).catch(() => {});
   }
@@ -1297,7 +1307,8 @@ export class AdminStoreService {
     const updated = list.filter(f => f.id !== id);
     this.saveFAQs(updated);
     fetch(`/api/faqs/${encodeURIComponent(id)}?adminName=${encodeURIComponent(adminName)}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(() => {});
   }
 
@@ -1313,7 +1324,7 @@ export class AdminStoreService {
     this.notifyListeners();
     fetch('/api/homepage-sections', {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ sections, adminName })
     }).catch(() => {});
   }
@@ -1337,7 +1348,7 @@ export class AdminStoreService {
     });
     fetch('/api/settings', {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ settings, adminName })
     }).catch(() => {});
   }
@@ -1361,7 +1372,7 @@ export class AdminStoreService {
     });
     fetch('/api/payment-accounts', {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ paymentAccounts: config, adminName })
     }).catch(() => {});
   }
@@ -1384,7 +1395,7 @@ export class AdminStoreService {
     this.saveColors(updated);
     fetch('/api/colors', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ color, adminName })
     }).catch(() => {});
   }
@@ -1394,7 +1405,8 @@ export class AdminStoreService {
     const updated = list.filter(c => c.name !== idOrName && (c as any).id !== idOrName);
     this.saveColors(updated);
     fetch(`/api/colors/${encodeURIComponent(idOrName)}?adminName=${encodeURIComponent(adminName)}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(() => {});
   }
 
@@ -1416,7 +1428,7 @@ export class AdminStoreService {
       this.saveSizes(updated);
       fetch('/api/sizes', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: adminJsonHeaders(),
         body: JSON.stringify({ size: cleanSize, adminName })
       }).catch(() => {});
     }
@@ -1427,7 +1439,8 @@ export class AdminStoreService {
     const updated = list.filter(s => s.toUpperCase() !== size.toUpperCase());
     this.saveSizes(updated);
     fetch(`/api/sizes/${encodeURIComponent(size)}?adminName=${encodeURIComponent(adminName)}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(() => {});
   }
 
@@ -1459,7 +1472,7 @@ export class AdminStoreService {
     });
     fetch('/api/policies', {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ policies, adminName })
     }).catch(() => {});
   }
@@ -1490,7 +1503,7 @@ export class AdminStoreService {
     });
     fetch('/api/coupons', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ coupon, adminName })
     }).catch(() => {});
   }
@@ -1506,7 +1519,7 @@ export class AdminStoreService {
     this.saveCoupons([...list]);
     fetch('/api/coupons', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ coupon, adminName })
     }).catch(() => {});
   }
@@ -1524,7 +1537,8 @@ export class AdminStoreService {
       targetName: cpn?.code || couponId
     });
     fetch(`/api/coupons/${encodeURIComponent(couponId)}?adminName=${encodeURIComponent(adminName)}`, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: adminHeaders()
     }).catch(() => {});
   }
 
@@ -1600,7 +1614,7 @@ export class AdminStoreService {
     });
     fetch('/api/campaigns', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: adminJsonHeaders(),
       body: JSON.stringify({ campaign: camp, adminName })
     }).catch(() => {});
   }
@@ -2099,7 +2113,7 @@ export class AdminStoreService {
   static generateFullBackupJson(): string {
     const backup = {
       backupTimestamp: new Date().toISOString(),
-      app: 'Sider Fashion Master Store',
+      app: 'Sikder Fashion Master Store',
       version: '3.0',
       data: {
         products: this.getProducts(),

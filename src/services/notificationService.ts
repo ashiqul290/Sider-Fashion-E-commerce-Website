@@ -65,7 +65,7 @@ export class NotificationService {
       // Future real API integration point
       try {
         if (this.provider.sendSMS) {
-          const smsText = `Sider Fashion: Your order ${payload.orderId} of BDT ${payload.totalAmount} has been placed. Status: ${payload.orderStatus}. Helpline: 01712773063`;
+          const smsText = `Sikder Fashion: Your order ${payload.orderId} of BDT ${payload.totalAmount} has been placed. Status: ${payload.orderStatus}. Helpline: 01712773063`;
           await this.provider.sendSMS(payload.phone, smsText);
         }
         return { success: true, dispatched: true };
@@ -98,7 +98,7 @@ export class NotificationService {
     }
 
     return (
-      `*SIDER FASHION OFFICIAL ORDER SLIP*\n` +
+      `*SIKDER FASHION OFFICIAL ORDER SLIP*\n` +
       `---------------------------------------\n` +
       `• *Order ID:* ${order.orderId}\n` +
       `• *Date:* ${new Date(order.createdAt).toLocaleString('en-US', { timeZone: 'Asia/Dhaka' })}\n` +

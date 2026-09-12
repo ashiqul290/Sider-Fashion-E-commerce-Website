@@ -272,7 +272,9 @@ export const AdminOrdersTab: React.FC<AdminOrdersTabProps> = ({
                     <tr key={ord.orderId} className="hover:bg-stone-50/70 transition-colors">
                       {/* ID & Date */}
                       <td className="py-3.5 px-4">
-                        <div className="font-mono font-black text-amber-900">{ord.orderId}</div>
+                        <div className="flex items-center gap-1.5">
+                          <div className="font-mono font-black text-amber-900">{ord.orderId}</div>
+                        </div>
                         <div className="text-[10px] text-stone-400 flex items-center gap-1 mt-0.5">
                           <Calendar className="w-3 h-3" />
                           <span>{new Date(ord.createdAt).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}</span>

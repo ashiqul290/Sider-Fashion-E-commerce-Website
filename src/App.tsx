@@ -251,7 +251,7 @@ const MainContent: React.FC = () => {
               </div>
             </section>
 
-            {/* 6. Why Choose Sider Fashion */}
+            {/* 6. Why Choose Sikder Fashion */}
             <WhyChooseUs />
 
             {/* 7. Wholesale Preview Banner for B2B Buyers */}

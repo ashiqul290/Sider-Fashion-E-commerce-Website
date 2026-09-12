@@ -150,7 +150,7 @@ export const AdminProductManagerModal: React.FC = () => {
         <div className="mt-4 p-3 bg-zinc-900 border border-zinc-800 rounded-xl text-xs text-zinc-300 flex items-start gap-2">
           <Sparkles className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
           <span>
-            This panel demonstrates that the entire Sider Fashion catalog is structured with full support for Retail/Wholesale tiering, MOQ, dynamic category expansion, and future PostgreSQL / Firestore backend plugging without UI restructuring.
+            This panel demonstrates that the entire Sikder Fashion catalog is structured with full support for Retail/Wholesale tiering, MOQ, dynamic category expansion, and future PostgreSQL / Firestore backend plugging without UI restructuring.
           </span>
         </div>
 
@@ -309,7 +309,7 @@ export const AdminProductManagerModal: React.FC = () => {
 
           {savedSuccess && (
             <div className="p-3 bg-emerald-950/80 text-emerald-300 border border-emerald-800 rounded-lg text-center font-bold animate-in fade-in">
-              🎉 Product successfully registered into Sider Fashion catalog!
+              🎉 Product successfully registered into Sikder Fashion catalog!
             </div>
           )}
         </form>

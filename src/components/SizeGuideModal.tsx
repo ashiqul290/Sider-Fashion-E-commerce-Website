@@ -453,7 +453,7 @@ export const SizeGuideModal: React.FC<SizeGuideModalProps> = ({
                     <span>Questions regarding custom fit?</span>
                     <button
                       type="button"
-                      onClick={() => openWhatsAppChat("Hello Sider Fashion! I need help choosing my size.")}
+                      onClick={() => openWhatsAppChat("Hello Sikder Fashion! I need help choosing my size.")}
                       className="text-emerald-400 hover:underline font-bold flex items-center gap-1 cursor-pointer"
                     >
                       <MessageSquare className="w-3.5 h-3.5" />
@@ -699,7 +699,7 @@ export const SizeGuideModal: React.FC<SizeGuideModalProps> = ({
         <div className="flex items-center gap-3">
           <button
             type="button"
-            onClick={() => openWhatsAppChat("Hello! I need assistance with Sider Fashion sizing.")}
+            onClick={() => openWhatsAppChat("Hello! I need assistance with Sikder Fashion sizing.")}
             className="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1 cursor-pointer"
           >
             <MessageSquare className="w-3.5 h-3.5" />

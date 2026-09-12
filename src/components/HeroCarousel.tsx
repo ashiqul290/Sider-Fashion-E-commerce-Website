@@ -115,7 +115,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({
   return (
     <section 
       id="hero-carousel-section"
-      aria-label="Sider Fashion Featured Collections Banner"
+      aria-label="Sikder Fashion Featured Collections Banner"
       className="relative w-full overflow-hidden bg-stone-950 text-white select-none border-b border-stone-800"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}

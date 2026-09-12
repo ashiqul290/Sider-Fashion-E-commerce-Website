@@ -213,7 +213,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                   S
                 </div>
                 <div>
-                  <h1 className="font-black text-white text-sm tracking-wide">SIDER FASHION</h1>
+                  <h1 className="font-black text-white text-sm tracking-wide">SIKDER FASHION</h1>
                   <p className="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Master Admin Panel</p>
                 </div>
               </div>

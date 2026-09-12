@@ -30,7 +30,7 @@ export const CategorySection: React.FC<CategorySectionProps> = ({ isStandaloneVi
           <div className="space-y-2">
             <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-950/60 px-3 py-1 rounded-md border border-amber-800/50">
               <Layers className="w-3.5 h-3.5" />
-              <span>Sider Fashion Catalog</span>
+              <span>Sikder Fashion Catalog</span>
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
               Clothing Categories &amp; Future Lines

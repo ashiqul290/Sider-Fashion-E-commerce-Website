@@ -138,6 +138,7 @@ interface CartContextType {
     subtotal: number;
     discount?: number;
     couponCode?: string;
+    membershipCode?: string;
     total: number;
     customerNote?: string;
   }) => { success: boolean; order?: OrderDetails; error?: string };
@@ -652,7 +653,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const primaryContact = contacts.find(c => c.type === 'whatsapp' || c.type === 'hotline')?.value;
     const targetPhone = phoneNumber || primaryContact || settings.primaryPhone || BRAND_CONTACTS.primaryPhone;
     const formattedNumber = targetPhone.startsWith('0') ? `88${targetPhone}` : targetPhone;
-    const defaultMsg = "Hello Sider Fashion! I am interested in your clothing collection (Retail / Wholesale). Please provide more details.";
+    const defaultMsg = "Hello Sikder Fashion! I am interested in your clothing collection (Retail / Wholesale). Please provide more details.";
     const text = encodeURIComponent(message || defaultMsg);
     window.open(`https://wa.me/${formattedNumber}?text=${text}`, '_blank', 'noopener,noreferrer');
   };
