@@ -4,7 +4,6 @@ import fs from 'fs';
 import crypto from 'crypto';
 import net from 'net';
 import nodemailer from 'nodemailer';
-import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI } from '@google/genai';
 import { 
   testSupabaseHealth, 
@@ -23,9 +22,22 @@ import { HERO_SLIDES } from './src/data/heroSlides';
 import { PAYMENT_ACCOUNTS_CONFIG } from './src/data/paymentAccounts';
 import { SIDER_FAQS, DEFAULT_SIZE_CHARTS } from './src/data/sizeGuideData';
 
+// `npm run build` emits this file as <app>/dist/server.cjs. When running from
+// that bundle we are in production even if the host (e.g. Hostinger hPanel)
+// never sets NODE_ENV, and the app root is resolved from the bundle location
+// instead of relying on the working directory the process manager starts in.
+const IS_BUNDLED = typeof __dirname !== 'undefined' && path.basename(__dirname) === 'dist';
+const IS_PRODUCTION = process.env.NODE_ENV === 'production' || IS_BUNDLED;
+const APP_ROOT = IS_BUNDLED ? path.dirname(__dirname) : process.cwd();
+
 const PORT = Number(process.env.PORT) || 3000;
 const HMR_PORT = Number(process.env.HMR_PORT) || 24678;
-const DB_FILE = path.join(process.cwd(), 'data', 'store.json');
+// Managed hosts replace the deployed app folder on every redeploy, which wipes
+// runtime writes under ./data. DATA_DIR lets that state live outside it.
+const BUNDLED_DATA_DIR = path.join(APP_ROOT, 'data');
+const DATA_DIR = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : BUNDLED_DATA_DIR;
+const DB_FILE = path.join(DATA_DIR, 'store.json');
+const SESSIONS_FILE = path.join(DATA_DIR, 'sessions.json');
 
 function findAvailablePort(startPort: number): Promise<number> {
   return new Promise((resolve, reject) => {
@@ -380,20 +392,63 @@ const activeAdminSessions = new Map<string, { userId: string; email: string; rol
 const failedLoginAttempts = new Map<string, { count: number; blockedUntil?: number; lastAttempt: number }>();
 const passwordResetCodes = new Map<string, { code: string; expiresAt: number; used: boolean; failedAttempts?: number; requestedAt: string }>();
 
+// Sessions are keyed by a SHA-256 of the bearer token and mirrored to disk.
+// Hosts like Hostinger (LiteSpeed lsnode) stop idle Node processes and start
+// them again on the next request; purely in-memory sessions were wiped by every
+// restart, so admin saves started failing with 401 behind the admin's back.
+function hashSessionToken(token: string): string {
+  return crypto.createHash('sha256').update(token).digest('hex');
+}
+
+function persistAdminSessions() {
+  try {
+    const tmpFile = `${SESSIONS_FILE}.${process.pid}.tmp`;
+    fs.writeFileSync(tmpFile, JSON.stringify(Object.fromEntries(activeAdminSessions)), { encoding: 'utf-8', mode: 0o600 });
+    fs.renameSync(tmpFile, SESSIONS_FILE);
+  } catch (err) {
+    console.error('[Sessions] Failed to persist admin sessions:', err);
+  }
+}
+
+function loadAdminSessions() {
+  try {
+    if (!fs.existsSync(SESSIONS_FILE)) return;
+    const stored = JSON.parse(fs.readFileSync(SESSIONS_FILE, 'utf-8'));
+    if (!isPlainObject(stored)) return;
+    const now = Date.now();
+    activeAdminSessions.clear();
+    for (const [key, s] of Object.entries<any>(stored)) {
+      if (isPlainObject(s) && typeof s.userId === 'string' && typeof s.expiresAt === 'number' && s.expiresAt > now) {
+        activeAdminSessions.set(key, s);
+      }
+    }
+  } catch (err) {
+    console.warn('[Sessions] Could not load stored admin sessions:', err);
+  }
+}
+
 function revokeUserSessions(userId: string) {
-  for (const [token, s] of activeAdminSessions.entries()) {
+  let changed = false;
+  for (const [key, s] of activeAdminSessions.entries()) {
     if (s.userId === userId) {
-      activeAdminSessions.delete(token);
+      activeAdminSessions.delete(key);
+      changed = true;
     }
   }
+  if (changed) persistAdminSessions();
 }
 
 // Drops expired sessions / reset codes so the in-memory maps stay bounded.
 function purgeExpiredAuthState() {
   const now = Date.now();
-  for (const [token, s] of activeAdminSessions.entries()) {
-    if (s.expiresAt <= now) activeAdminSessions.delete(token);
+  let sessionsChanged = false;
+  for (const [key, s] of activeAdminSessions.entries()) {
+    if (s.expiresAt <= now) {
+      activeAdminSessions.delete(key);
+      sessionsChanged = true;
+    }
   }
+  if (sessionsChanged) persistAdminSessions();
   for (const [email, record] of passwordResetCodes.entries()) {
     if (record.expiresAt <= now) passwordResetCodes.delete(email);
   }
@@ -427,15 +482,23 @@ function resolveSessionUser(req: Request): { user: any; token: string } | null {
   purgeExpiredAuthState();
   const token = extractSessionToken(req);
   if (!token) return null;
-  const session = activeAdminSessions.get(token);
+  const key = hashSessionToken(token);
+  if (!activeAdminSessions.has(key)) {
+    // The session may predate a process restart or come from another worker
+    // process; the sessions file is the shared source of truth.
+    loadAdminSessions();
+  }
+  const session = activeAdminSessions.get(key);
   if (!session) return null;
   if (session.expiresAt <= Date.now()) {
-    activeAdminSessions.delete(token);
+    activeAdminSessions.delete(key);
+    persistAdminSessions();
     return null;
   }
   const user = db.adminUsers.find((u: any) => u.id === session.userId);
   if (!user || user.status === 'disabled') {
-    activeAdminSessions.delete(token);
+    activeAdminSessions.delete(key);
+    persistAdminSessions();
     return null;
   }
   return { user, token };
@@ -507,9 +570,15 @@ function normalizeDatabaseShape(state: any): DatabaseSchema {
 
 // Ensure data folder and load or init DB
 function initDatabase(): DatabaseSchema {
-  const dataDir = path.join(process.cwd(), 'data');
-  if (!fs.existsSync(dataDir)) {
-    fs.mkdirSync(dataDir, { recursive: true });
+  if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  }
+
+  // First start with an external DATA_DIR: seed it from the deployed store.
+  const bundledDbFile = path.join(BUNDLED_DATA_DIR, 'store.json');
+  if (!fs.existsSync(DB_FILE) && DB_FILE !== bundledDbFile && fs.existsSync(bundledDbFile)) {
+    fs.copyFileSync(bundledDbFile, DB_FILE);
+    console.log(`[Database] Seeded ${DB_FILE} from ${bundledDbFile}`);
   }
 
   if (fs.existsSync(DB_FILE)) {
@@ -712,12 +781,14 @@ function logAction(adminName: string, role: string, action: string, category: st
 }
 
 async function startServer() {
-  const httpPort = await findAvailablePort(PORT);
-  const hmrPort = process.env.NODE_ENV !== 'production'
-    ? await findAvailablePort(HMR_PORT)
-    : undefined;
+  // Port hunting is a local-dev convenience only. In production the host's
+  // proxy forwards to exactly PORT, so silently moving to another port would
+  // leave the site unreachable.
+  const httpPort = IS_PRODUCTION ? PORT : await findAvailablePort(PORT);
+  const hmrPort = IS_PRODUCTION ? undefined : await findAvailablePort(HMR_PORT);
 
   db = initDatabase();
+  loadAdminSessions();
 
   // Attempt initial hydration from Supabase Cloud
   try {
@@ -1065,12 +1136,13 @@ async function startServer() {
 
     // Create session token (24h expiry)
     const sessionToken = `tok_${crypto.randomBytes(24).toString('hex')}_${Date.now()}`;
-    activeAdminSessions.set(sessionToken, {
+    activeAdminSessions.set(hashSessionToken(sessionToken), {
       userId: user.id,
       email: user.email,
       role: user.role,
       expiresAt: Date.now() + 24 * 60 * 60 * 1000
     });
+    persistAdminSessions();
 
     logAction(user.name, user.role, 'ADMIN_LOGIN', 'auth', `Admin ${user.name} (${user.email}, ${user.roleTitle || user.role}) logged in from IP ${clientIp}.`);
     saveDatabase(db);
@@ -1085,9 +1157,10 @@ async function startServer() {
 
   // Admin Logout
   app.post('/api/admin/logout', (req: Request, res: Response) => {
-    const { token, userId, email } = req.body;
-    if (token) {
-      activeAdminSessions.delete(token);
+    const { userId, email } = req.body;
+    const token = extractSessionToken(req);
+    if (token && activeAdminSessions.delete(hashSessionToken(token))) {
+      persistAdminSessions();
     }
     const user = db.adminUsers.find(u => u.id === userId || u.email === email);
     if (user) {
@@ -3631,7 +3704,9 @@ Output structured JSON in this format:
   // ==========================================
   // VITE / STATIC SERVING
   // ==========================================
-  if (process.env.NODE_ENV !== 'production') {
+  if (!IS_PRODUCTION) {
+    // Loaded lazily so production never pulls in the Vite dev server.
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: {
         middlewareMode: true,
@@ -3641,7 +3716,16 @@ Output structured JSON in this format:
     });
     app.use(vite.middlewares);
   } else {
-    const distPath = path.join(process.cwd(), 'dist');
+    const distPath = path.join(APP_ROOT, 'dist');
+    // The server bundle and its source map are built into dist/ next to the
+    // client assets. Never serve them: they expose the entire backend source.
+    app.use((req: Request, res: Response, next: any) => {
+      if (/^\/server\.cjs(\.map)?$/i.test(req.path)) {
+        res.status(404).end();
+        return;
+      }
+      next();
+    });
     app.use(express.static(distPath));
     app.get('*', (_req: Request, res: Response) => {
       res.sendFile(path.join(distPath, 'index.html'));
