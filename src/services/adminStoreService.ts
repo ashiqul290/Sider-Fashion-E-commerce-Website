@@ -571,20 +571,13 @@ export class AdminStoreService {
   }
 
   private static setupServerSync(): void {
-    try {
-      if (typeof window === 'undefined' || !window.EventSource) return;
-      const es = new EventSource('/api/sync/events');
-      es.onmessage = () => {
-        this.syncWithServer().catch(() => {});
-      };
-      es.onerror = () => {
-        // close and retry silently
-        try { es.close(); } catch { /* ignore */ }
-        setTimeout(() => this.setupServerSync(), 15000);
-      };
-    } catch {
-      // ignore
-    }
+    if (typeof window === 'undefined') return;
+
+    // Polling also works on static hosting, where the SSE endpoint may be
+    // handled by the SPA fallback and return HTML instead of an event stream.
+    window.setInterval(() => {
+      this.syncWithServer().catch(() => {});
+    }, 30000);
   }
 
   // --- Admin Language Preference (Bangla ↔ English) ---
