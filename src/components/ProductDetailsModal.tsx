@@ -6,7 +6,6 @@ import {
   MessageSquare, 
   Star, 
   Check, 
-  Factory, 
   ShieldCheck, 
   Truck, 
   RotateCcw, 
@@ -204,7 +203,7 @@ const ProductDetailsModalContent: React.FC<ProductDetailsModalContentProps> = ({
                 </div>
               </div>
 
-              {/* Pricing Box with Wholesale highlight */}
+              {/* Retail Pricing Box */}
               <div className="p-3.5 rounded-xl bg-amber-950/30 border border-amber-900/60 flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <span className="text-xs text-zinc-400 block">Retail Price (খুচরা মূল্য):</span>
@@ -217,16 +216,6 @@ const ProductDetailsModalContent: React.FC<ProductDetailsModalContentProps> = ({
                         ৳{product.originalRetailPrice}
                       </span>
                     )}
-                  </div>
-                </div>
-
-                <div className="border-l border-amber-900/60 pl-3">
-                  <div className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-300 bg-amber-950/80 border border-amber-800 px-2 py-0.5 rounded-sm">
-                    <Factory className="w-3 h-3" />
-                    Wholesale Rate
-                  </div>
-                  <div className="text-sm font-bold text-emerald-400 mt-0.5">
-                    ৳{product.wholesalePrice} <span className="text-[11px] font-normal text-zinc-400">(MOQ {product.wholesaleMOQ} pcs)</span>
                   </div>
                 </div>
               </div>

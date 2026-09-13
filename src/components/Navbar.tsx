@@ -17,8 +17,7 @@ import {
   Facebook,
   ExternalLink,
   Lock,
-  UserCheck,
-  UserRound
+  UserCheck
 } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { BRAND_CONTACTS } from '../data/products';
@@ -180,10 +179,7 @@ export const Navbar: React.FC = () => {
             >
               <div className="flex items-center gap-2">
                 <span className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white uppercase font-sans">
-                  Sider<span className="text-amber-400 font-bold ml-1">Fashion</span>
-                </span>
-                <span className="hidden sm:inline-block bg-zinc-800 text-zinc-300 text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded-sm border border-zinc-700">
-                  Dhaka, BD
+                  Sikder<span className="text-amber-400 font-bold ml-1">Fashion</span>
                 </span>
               </div>
               <span className="text-[11px] sm:text-[12px] font-medium text-zinc-400 font-bangla group-hover:text-amber-400 transition-colors">
@@ -344,20 +340,6 @@ export const Navbar: React.FC = () => {
             >
               <MessageSquare className="w-3.5 h-3.5 text-emerald-400 fill-emerald-400" />
               <span>WhatsApp</span>
-            </button>
-
-            <button
-              id="header-profile-btn"
-              type="button"
-              onClick={() => {
-                setForceMembershipForm(false);
-                setIsCustomerAuthOpen(true);
-              }}
-              title={customerProfile ? 'Open profile' : 'Login or sign up'}
-              aria-label={customerProfile ? 'Open profile' : 'Login or sign up'}
-              className="p-2 rounded-full text-zinc-400 hover:text-emerald-400 hover:bg-zinc-900 transition-colors flex items-center justify-center cursor-pointer"
-            >
-              <UserRound className="w-4 h-4" />
             </button>
 
             {/* Shopping Cart Button */}

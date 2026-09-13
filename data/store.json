@@ -1,5 +1,5 @@
 {
-  "version": 1789209482468,
+  "version": 1789303894721,
   "products": [
     {
       "id": "sf-prod-1787774899538",
@@ -3277,6 +3277,33 @@
   ],
   "auditLogs": [
     {
+      "id": "log-1789303894721-4ld2s",
+      "timestamp": "2026-09-13T12:51:34.721Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "owner",
+      "action": "ADMIN_LOGOUT",
+      "category": "auth",
+      "details": "Admin Abir Hosen Saon (abirhosensaon@gmail.com) logged out."
+    },
+    {
+      "id": "log-1789303894708-398",
+      "timestamp": "2026-09-13T12:51:34.708Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "owner",
+      "action": "Admin Logged Out",
+      "category": "auth",
+      "details": ""
+    },
+    {
+      "id": "log-1789303863730-new46",
+      "timestamp": "2026-09-13T12:51:03.730Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "owner",
+      "action": "ADMIN_LOGIN",
+      "category": "auth",
+      "details": "Admin Abir Hosen Saon (abirhosensaon@gmail.com, Founder & Managing Director) logged in from IP 127.0.0.1."
+    },
+    {
       "id": "log-1789209482468-mpzn2",
       "timestamp": "2026-09-12T10:38:02.468Z",
       "adminName": "Abir Hosen Saon",
@@ -3575,8 +3602,8 @@
       "status": "active",
       "passwordHash": "0437ae5f515bf7c9b6ba8b5a06348f94e916ae1f5ce7b1defe0b4311114deae9ddfc841ccadc21297c9e61ecaa3d29a7f534d94be02d2808528370559dfd64f8",
       "passwordSalt": "84579dce57d31013b9006af654df0f52",
-      "lastLogin": "2026-09-12T10:38:02.468Z",
-      "lastLogout": "2026-08-29T14:55:28.924Z",
+      "lastLogin": "2026-09-13T12:51:03.729Z",
+      "lastLogout": "2026-09-13T12:51:34.721Z",
       "lastLoginIp": "127.0.0.1",
       "createdAt": "2026-01-01T00:00:00.000Z"
     },
