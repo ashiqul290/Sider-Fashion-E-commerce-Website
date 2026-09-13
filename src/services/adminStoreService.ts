@@ -485,7 +485,7 @@ export class AdminStoreService {
   static async syncWithServer(): Promise<boolean> {
     try {
       const res = await fetch('/api/sync');
-      if (!res.ok) return false;
+      if (!res.ok || !res.headers.get('content-type')?.includes('application/json')) return false;
       const json = await res.json();
       if (json && json.data) {
         const d = json.data;
@@ -626,6 +626,7 @@ export class AdminStoreService {
         headers: adminJsonHeaders(),
         body: JSON.stringify({ token, userId: current?.id })
       });
+      if (!res.headers.get('content-type')?.includes('application/json')) return false;
       const data = await res.json();
       if (!data.valid) {
         try {
@@ -657,6 +658,9 @@ export class AdminStoreService {
         headers: adminJsonHeaders(),
         body: JSON.stringify({ email: emailOrUser, password, expectedRole })
       });
+      if (!res.headers.get('content-type')?.includes('application/json')) {
+        return { success: false, error: 'Admin API is not available on this hosting server.' };
+      }
       const data = await res.json();
       if (data.success && data.user) {
         if (data.token) {
