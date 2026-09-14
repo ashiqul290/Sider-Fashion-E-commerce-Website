@@ -104,8 +104,6 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({
       setCurrentView('shop');
     } else if (btn.action === 'category') {
       navigateToCategory(btn.categoryKey || 'all');
-    } else if (btn.action === 'wholesale') {
-      setCurrentView('wholesale');
     } else {
       setCurrentView('shop');
     }

@@ -355,7 +355,6 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
                 <th className="py-3 px-4">SKU / Code</th>
                 <th className="py-3 px-4">Category</th>
                 <th className="py-3 px-4 text-right">Retail Price</th>
-                <th className="py-3 px-4 text-right">Wholesale (MOQ)</th>
                 <th className="py-3 px-4 text-center">Stock</th>
                 <th className="py-3 px-4 text-center">Badges</th>
                 <th className="py-3 px-4 text-right">Actions</th>
@@ -364,7 +363,7 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
             <tbody className="divide-y divide-stone-100 font-sans">
               {filteredProducts.length === 0 ? (
                 <tr>
-                  <td colSpan={8} className="py-12 text-center text-stone-400">
+                  <td colSpan={7} className="py-12 text-center text-stone-400">
                     No products found matching your search and filter criteria.
                   </td>
                 </tr>
@@ -405,12 +404,6 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
                       {prod.originalRetailPrice && prod.originalRetailPrice > prod.retailPrice && (
                         <div className="text-[10px] text-stone-400 line-through">৳{prod.originalRetailPrice}</div>
                       )}
-                    </td>
-
-                    {/* Wholesale */}
-                    <td className="py-3 px-4 text-right font-mono text-amber-900">
-                      <span className="font-bold">৳{prod.wholesalePrice}</span>
-                      <span className="text-[10px] text-stone-500 block">MOQ: {prod.wholesaleMOQ || 12} pcs</span>
                     </td>
 
                     {/* Stock */}
@@ -593,13 +586,13 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
                 </div>
               </div>
 
-              {/* Pricing & MOQ Section */}
+              {/* Retail Pricing Section */}
               <div className="p-4 bg-stone-50 rounded-2xl border border-stone-200 space-y-4">
                 <div className="text-xs font-bold uppercase tracking-wider text-amber-900">
-                  Retail &amp; Wholesale Pricing Rules
+                  Retail Pricing Rules
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-bold text-stone-700 mb-1">Retail Price (৳) *</label>
                     <input
@@ -624,29 +617,6 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
                     />
                   </div>
 
-                  <div>
-                    <label className="block text-xs font-bold text-amber-900 mb-1">Wholesale Base (৳) *</label>
-                    <input
-                      type="number"
-                      required
-                      min={0}
-                      value={wholesalePrice}
-                      onChange={(e) => setWholesalePrice(Number(e.target.value))}
-                      className="w-full px-3 py-2 bg-white border border-amber-300 rounded-xl text-xs font-mono font-bold text-amber-900"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold text-amber-900 mb-1">Wholesale MOQ (Pcs) *</label>
-                    <input
-                      type="number"
-                      required
-                      min={1}
-                      value={wholesaleMOQ}
-                      onChange={(e) => setWholesaleMOQ(Number(e.target.value))}
-                      className="w-full px-3 py-2 bg-white border border-amber-300 rounded-xl text-xs font-mono font-bold text-amber-900"
-                    />
-                  </div>
                 </div>
               </div>
 

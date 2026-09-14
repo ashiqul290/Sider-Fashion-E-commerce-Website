@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleViewNav = (view: 'home' | 'retail' | 'wholesale' | 'contact' | 'size-guide' | 'faq' | 'categories') => {
+  const handleViewNav = (view: 'home' | 'retail' | 'contact' | 'size-guide' | 'faq' | 'categories') => {
     setCurrentView(view);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -150,14 +150,6 @@ export const Footer: React.FC = () => {
                   className="hover:text-amber-400 transition-colors cursor-pointer text-left text-amber-400 font-bold"
                 >
                   Sider Retail Shop (খুচরা শপ)
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleViewNav('wholesale')}
-                  className="hover:text-amber-400 transition-colors cursor-pointer text-left text-amber-400 font-bold"
-                >
-                  Wholesale Factory Hub (পাইকারি)
                 </button>
               </li>
               {categories.slice(0, 4).map(c => (

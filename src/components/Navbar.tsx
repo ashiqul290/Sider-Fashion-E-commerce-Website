@@ -215,18 +215,6 @@ export const Navbar: React.FC = () => {
             </button>
 
             <button
-              id="nav-wholesale-btn"
-              onClick={() => handleNavClick('wholesale')}
-              className={`px-3 py-2 rounded-lg text-sm font-semibold transition-colors cursor-pointer ${
-                currentView === 'wholesale'
-                  ? 'text-amber-400 bg-zinc-900 border border-zinc-700/80 font-bold' 
-                  : 'text-zinc-300 hover:text-white hover:bg-zinc-900'
-              }`}
-            >
-              WHOLESALE
-            </button>
-
-            <button
               id="nav-categories-btn"
               onClick={() => handleNavClick('categories')}
               className={`px-3 py-2 rounded-lg text-sm font-semibold transition-colors flex items-center gap-1 cursor-pointer ${
@@ -303,7 +291,7 @@ export const Navbar: React.FC = () => {
               </button>
             )}
 
-            {/* Direct Dual CTAs: SHOP RETAIL & WHOLESALE */}
+            {/* Direct CTA: SHOP RETAIL */}
             <div className="hidden xl:flex items-center gap-1.5">
               <button
                 id="header-cta-shop-retail"
@@ -311,14 +299,6 @@ export const Navbar: React.FC = () => {
                 className="bg-amber-500 hover:bg-amber-400 text-black px-3 py-1.5 rounded-lg text-xs font-bold transition-all shadow-xs cursor-pointer active:scale-98"
               >
                 SHOP RETAIL
-              </button>
-              <button
-                id="header-cta-wholesale"
-                onClick={() => handleNavClick('wholesale')}
-                className="bg-zinc-900 hover:bg-zinc-800 text-amber-400 border border-amber-500/40 px-3 py-1.5 rounded-lg text-xs font-bold transition-all shadow-xs cursor-pointer active:scale-98 flex items-center gap-1"
-              >
-                <Factory className="w-3.5 h-3.5 text-amber-400" />
-                <span>WHOLESALE</span>
               </button>
             </div>
 
@@ -374,11 +354,11 @@ export const Navbar: React.FC = () => {
               SHOP RETAIL
             </button>
             <button
-              id="mobile-quick-wholesale-btn"
-              onClick={() => handleNavClick('wholesale')}
-              className="py-2.5 px-3 rounded-xl text-center text-xs font-bold bg-zinc-900 border border-amber-500/40 text-amber-400 shadow-xs"
+              id="mobile-quick-contact-btn"
+              onClick={() => handleNavClick('contact')}
+              className="py-2.5 px-3 rounded-xl text-center text-xs font-bold bg-zinc-900 border border-zinc-700 text-zinc-200 shadow-xs"
             >
-              WHOLESALE B2B
+              CONTACT
             </button>
           </div>
 
@@ -405,22 +385,6 @@ export const Navbar: React.FC = () => {
               <span>Retail (খুচরা কেনাকাটা)</span>
             </div>
             <ChevronRight className="w-4 h-4 text-zinc-500" />
-          </button>
-
-          <button
-            id="mobile-nav-wholesale"
-            onClick={() => handleNavClick('wholesale')}
-            className={`w-full text-left px-3 py-2.5 rounded-lg text-sm font-semibold flex items-center justify-between cursor-pointer ${
-              currentView === 'wholesale' ? 'bg-zinc-900 text-amber-400 font-bold border border-zinc-800' : 'text-zinc-300 hover:bg-zinc-900'
-            }`}
-          >
-            <div className="flex items-center gap-2">
-              <Factory className="w-4 h-4 text-amber-400" />
-              <span>Wholesale (পাইকারি অর্ডার)</span>
-            </div>
-            <span className="text-[10px] bg-amber-500 text-black font-mono font-bold px-2 py-0.5 rounded">
-              MOQ 12+
-            </span>
           </button>
 
           <button

@@ -640,7 +640,7 @@ function initDatabase(): DatabaseSchema {
 
   const initialDb: DatabaseSchema = {
     version: Date.now(),
-    products: INITIAL_PRODUCTS,
+    products: [],
     categories: CATEGORIES,
     sizes: DEFAULT_MASTER_SIZES,
     colors: DEFAULT_COLORS,

@@ -46,7 +46,7 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
   adminName = 'Super Admin'
 }) => {
   const [dateRange, setDateRange] = useState<'today' | 'yesterday' | '7d' | '30d' | 'this_month' | 'last_month' | 'this_year' | 'all'>('all');
-  const [chartMetric, setChartMetric] = useState<'total' | 'retail' | 'wholesale'>('total');
+  const [chartMetric, setChartMetric] = useState<'total' | 'retail'>('total');
 
   // Filter orders by date range
   const filteredOrders = useMemo(() => {
@@ -128,14 +128,13 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
       { name: 'Facebook & Instagram Ads', count: Math.round(filteredOrders.length * 0.58), revenue: Math.round(analytics.totalSales * 0.60), tag: 'Meta Ads' },
       { name: 'Direct Website / Organic Search', count: Math.round(filteredOrders.length * 0.24), revenue: Math.round(analytics.totalSales * 0.22), tag: 'SEO / Direct' },
       { name: 'WhatsApp & Messenger Hotline', count: Math.round(filteredOrders.length * 0.12), revenue: Math.round(analytics.totalSales * 0.13), tag: 'Direct Chat' },
-      { name: 'Wholesale B2B Inquiries', count: Math.round(filteredOrders.length * 0.06), revenue: Math.round(analytics.totalSales * 0.05), tag: 'B2B / Factory' },
     ];
     return channels;
   }, [filteredOrders, analytics.totalSales]);
 
   // SVG Chart Calculation for 14 Days
   const chartData = analytics.dailyChart;
-  const maxSales = Math.max(1000, ...chartData.map(d => chartMetric === 'total' ? d.total : chartMetric === 'retail' ? d.retail : d.wholesale));
+  const maxSales = Math.max(1000, ...chartData.map(d => chartMetric === 'retail' ? d.retail : d.total));
 
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
@@ -211,12 +210,12 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
           </div>
         </div>
 
-        {/* Retail vs Wholesale Sales */}
+        {/* Retail Sales */}
         <div className="bg-white p-5 rounded-2xl border border-stone-200 shadow-xs space-y-2">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-bold uppercase tracking-wider text-stone-500">Retail &amp; Wholesale</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-stone-500">Retail Sales</span>
             <div className="w-8 h-8 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center">
-              <Factory className="w-4 h-4" />
+              <ShoppingBag className="w-4 h-4" />
             </div>
           </div>
           <div className="flex items-baseline gap-2">
@@ -224,8 +223,8 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
             <span className="text-xs font-semibold text-stone-400">Retail</span>
           </div>
           <div className="flex items-center justify-between text-xs text-stone-500 pt-1 border-t border-stone-100">
-            <span>Wholesale: <strong className="text-amber-800">৳{analytics.wholesaleSales.toLocaleString()}</strong></span>
-            <span>Ratio: <strong className="text-stone-900">{analytics.totalSales > 0 ? Math.round((analytics.wholesaleSales / analytics.totalSales) * 100) : 0}% WS</strong></span>
+            <span>Orders: <strong className="text-stone-900">{filteredOrders.length}</strong></span>
+            <span>Average: <strong className="text-stone-900">৳{filteredOrders.length > 0 ? Math.round(analytics.retailSales / filteredOrders.length) : 0}</strong></span>
           </div>
         </div>
 
@@ -266,7 +265,7 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
       </div>
 
       {/* Critical Alert Bar: Pending Payment Verification & Stock Alerts */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         
         {/* Verification Pending */}
         <div 
@@ -302,23 +301,6 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
           <ArrowUpRight className="w-5 h-5 text-rose-800 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
         </div>
 
-        {/* Wholesale Bulk Inquiries */}
-        <div 
-          onClick={() => onNavigateTab('wholesale')}
-          className="bg-indigo-50/80 border border-indigo-200 hover:border-indigo-400 p-4 rounded-2xl flex items-center justify-between cursor-pointer transition-all hover:shadow-xs group"
-        >
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0">
-              <Factory className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-indigo-900">Wholesale Inquiries</div>
-              <div className="text-lg font-black text-indigo-950">{wholesaleOrders.length} Factory Inquiries</div>
-            </div>
-          </div>
-          <ArrowUpRight className="w-5 h-5 text-indigo-800 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-        </div>
-
       </div>
 
       {/* Main Interactive Chart Section: Daily Sales Trend */}
@@ -326,7 +308,7 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-stone-100 pb-4">
           <div>
             <h3 className="text-base font-black text-stone-900">14-Day Sales &amp; Revenue Trend</h3>
-            <p className="text-xs text-stone-500">Calculated directly from actual customer checkout &amp; wholesale database.</p>
+            <p className="text-xs text-stone-500">Calculated directly from actual customer checkout data.</p>
           </div>
 
           <div className="flex items-center gap-1.5 bg-stone-100 p-1 rounded-xl text-xs font-bold text-stone-700">
@@ -342,19 +324,13 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
             >
               Retail Only
             </button>
-            <button
-              onClick={() => setChartMetric('wholesale')}
-              className={`px-3 py-1 rounded-lg transition-all cursor-pointer ${chartMetric === 'wholesale' ? 'bg-amber-600 text-white shadow-xs' : 'hover:text-stone-950'}`}
-            >
-              Wholesale Only
-            </button>
           </div>
         </div>
 
         {/* SVG Responsive Area / Bar Chart */}
         <div className="h-64 w-full flex items-end gap-2 pt-6 pb-2">
           {chartData.map((d, idx) => {
-            const val = chartMetric === 'total' ? d.total : chartMetric === 'retail' ? d.retail : d.wholesale;
+            const val = chartMetric === 'retail' ? d.retail : d.total;
             const heightPercent = maxSales > 0 ? Math.max(8, Math.round((val / maxSales) * 100)) : 8;
 
             return (

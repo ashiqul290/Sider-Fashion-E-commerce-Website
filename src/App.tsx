@@ -6,7 +6,6 @@ import { Hero } from './components/Hero';
 import { CategorySection } from './components/CategorySection';
 import { ProductCard } from './components/ProductCard';
 import { WhyChooseUs } from './components/WhyChooseUs';
-import { WholesaleSection } from './components/WholesaleSection';
 import { PaymentMethodsSection } from './components/PaymentMethodsSection';
 import { ReturnPolicySection } from './components/ReturnPolicySection';
 import { ContactSection } from './components/ContactSection';
@@ -109,7 +108,7 @@ const MainContent: React.FC = () => {
             {/* 2. Premium Auto-Rotating Hero Carousel */}
             <Hero />
 
-            {/* 2.5 Dual Portal Choice Banner: Retail vs Wholesale */}
+            {/* 2.5 Retail Shopping Banner */}
             <DualPortalChoiceBanner />
 
             {/* 3. Featured Categories Showcase */}
@@ -254,37 +253,7 @@ const MainContent: React.FC = () => {
             {/* 6. Why Choose Sikder Fashion */}
             <WhyChooseUs />
 
-            {/* 7. Wholesale Preview Banner for B2B Buyers */}
-            <section className="py-12 bg-zinc-950 text-white border-y border-zinc-800">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
-                <div className="space-y-2">
-                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 bg-amber-950/60 px-3 py-1 rounded-md border border-amber-800/40">
-                    <Factory className="w-3.5 h-3.5" />
-                    <span>Wholesale &amp; Garment Manufacturing</span>
-                  </div>
-                  <h3 className="text-2xl font-black text-white">
-                    Need Bulk Stock for Your Showroom or Online Shop?
-                  </h3>
-                  <p className="text-xs sm:text-sm text-zinc-300 font-bangla">
-                    সাভার কারখানার সর্বনিম্ন পাইকারি রেট, ফ্লেক্সিবল সাইজ রেশিও এবং সারা দেশে পার্সেল ডেলিভারি। MOQ ১২ পিস।
-                  </p>
-                </div>
-
-                <button
-                  id="home-wholesale-cta-btn"
-                  onClick={() => {
-                    setCurrentView('wholesale');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }}
-                  className="bg-amber-500 hover:bg-amber-400 text-zinc-950 font-black px-6 py-3 rounded-xl text-sm transition-all shadow-md shrink-0 flex items-center gap-2 cursor-pointer"
-                >
-                  <span>Visit Wholesale Portal</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-            </section>
-
-            {/* 8. FAQs Section on Home */}
+            {/* 7. FAQs Section on Home */}
             <FAQSection />
 
             {/* Return Policy Overview Section */}
@@ -315,13 +284,6 @@ const MainContent: React.FC = () => {
         {currentView === 'faq' && (
           <div>
             <FAQSection />
-          </div>
-        )}
-
-        {currentView === 'wholesale' && (
-          <div>
-            <WholesaleSection />
-            <ReturnPolicySection />
           </div>
         )}
 

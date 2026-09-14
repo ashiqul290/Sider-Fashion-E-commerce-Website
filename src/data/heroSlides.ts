@@ -22,13 +22,6 @@ export const HERO_SLIDES: HeroSlide[] = [
         categoryKey: 'all',
         variant: 'primary'
       },
-      {
-        id: 'hero-btn-store-wholesale',
-        text: 'WHOLESALE',
-        textBn: 'পাইকারি পোর্টাল',
-        action: 'wholesale',
-        variant: 'secondary'
-      }
     ],
     active: true,
     alignment: 'left'
@@ -157,13 +150,6 @@ export const HERO_SLIDES: HeroSlide[] = [
         categoryKey: 'all',
         variant: 'primary'
       },
-      {
-        id: 'hero-btn-lifestyle-wholesale',
-        text: 'WHOLESALE RATES',
-        textBn: 'পাইকারি রেট',
-        action: 'wholesale',
-        variant: 'secondary'
-      }
     ],
     active: true,
     alignment: 'left'

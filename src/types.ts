@@ -281,7 +281,6 @@ export type NavigationView =
   | 'home' 
   | 'retail'
   | 'shop' 
-  | 'wholesale' 
   | 'categories' 
   | 'size-guide' 
   | 'faq' 
@@ -314,7 +313,7 @@ export interface PaymentAccountConfig {
 export interface HeroSlideButton {
   text: string;
   textBn?: string;
-  action: 'shop' | 'category' | 'wholesale';
+  action: 'shop' | 'category';
   categoryKey?: RetailCategoryKey;
   variant?: 'primary' | 'secondary' | 'outline';
   id?: string;

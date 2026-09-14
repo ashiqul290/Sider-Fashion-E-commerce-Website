@@ -2054,7 +2054,21 @@ export class AdminStoreService {
     const outOfStockProducts = products.filter(p => (Number(p.stock) || 0) <= 0);
 
     const estimatedProfit = Math.max(0, totalSales - estimatedCost);
-    const bestSellers = Array.from(productSalesMap.values()).sort((a, b) => b.units - a.units).slice(0, 6);
+    const bestSellers = products
+      .map(product => {
+        const sales = productSalesMap.get(product.id) || Array.from(productSalesMap.entries())
+          .find(([productId, seller]) => productId === product.id || seller.code === product.code)?.[1];
+
+        return {
+          name: product.name,
+          code: product.code,
+          units: sales?.units || 0,
+          revenue: sales?.revenue || 0,
+          image: product.images?.[0]
+        };
+      })
+      .sort((a, b) => b.units - a.units || b.revenue - a.revenue)
+      .slice(0, 6);
     const categoryBreakdown = Array.from(categorySalesMap.values()).sort((a, b) => b.revenue - a.revenue);
     const dailyChart = Array.from(dailyMap.values());
 

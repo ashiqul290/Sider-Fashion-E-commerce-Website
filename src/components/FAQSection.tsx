@@ -44,7 +44,6 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ asModal = false, onClose
     { id: 'size', label: 'Size & Fit', labelBn: 'সাইজ ও ফিটিং', icon: Ruler },
     { id: 'delivery', label: 'Delivery & Inspection', labelBn: 'ডেলিভারি ও চেক', icon: Truck },
     { id: 'return', label: 'Return & Exchange', labelBn: 'রিটার্ন ও এক্সচেঞ্জ', icon: RotateCcw },
-    { id: 'wholesale', label: 'Wholesale & MOQ', labelBn: 'পাইকারি সাপ্লাই', icon: Factory },
     { id: 'payment', label: 'Payment Methods', labelBn: 'পেমেন্ট পদ্ধতি', icon: CreditCard }
   ];
 

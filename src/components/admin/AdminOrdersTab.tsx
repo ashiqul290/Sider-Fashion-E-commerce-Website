@@ -175,11 +175,11 @@ export const AdminOrdersTab: React.FC<AdminOrdersTabProps> = ({
         <div>
           <h2 className="text-xl font-black text-stone-950 font-sans">Orders &amp; Dispatch Management</h2>
           <p className="text-xs text-stone-500 mt-0.5">
-            Real-time fulfillment tracking for retail orders and Savar factory wholesale dispatches.
+            Real-time fulfillment tracking for retail orders.
           </p>
         </div>
 
-        {/* Tab switch between Retail and Wholesale */}
+        {/* Retail order view */}
         <div className="flex items-center bg-stone-100 p-1 rounded-xl text-xs font-bold">
           <button
             onClick={() => setOrderTypeTab('retail')}
@@ -189,15 +189,6 @@ export const AdminOrdersTab: React.FC<AdminOrdersTabProps> = ({
           >
             <ShoppingBag className="w-3.5 h-3.5" />
             <span>Retail Orders ({orders.length})</span>
-          </button>
-          <button
-            onClick={() => setOrderTypeTab('wholesale')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all cursor-pointer ${
-              orderTypeTab === 'wholesale' ? 'bg-white text-stone-950 shadow-xs font-black' : 'text-stone-600 hover:text-stone-900'
-            }`}
-          >
-            <Factory className="w-3.5 h-3.5" />
-            <span>Wholesale Dispatches ({wholesaleOrders.length})</span>
           </button>
         </div>
       </div>

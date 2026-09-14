@@ -135,7 +135,6 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       items: [
         { id: 'products' as AdminTab, label: isBn ? 'প্রোডাক্ট ক্যাটালগ' : 'Product Catalog', icon: Package, badge: null },
         { id: 'inventory' as AdminTab, label: isBn ? 'ইনভেন্টরি ও স্টক' : 'Inventory & Stock', icon: Boxes, badge: lowStockCount > 0 ? `${lowStockCount} Low` : null, badgeColor: 'bg-amber-100 text-amber-900' },
-        { id: 'wholesale' as AdminTab, label: isBn ? 'হোলসেল ও পাইকারি' : 'Wholesale & MOQ', icon: Factory, badge: null },
         { id: 'categories' as AdminTab, label: isBn ? 'ক্যাটেগরি সমূহ' : 'Categories', icon: Layers, badge: null },
         { id: 'sizes-colors' as AdminTab, label: isBn ? 'সাইজ ও কালার' : 'Sizes & Colors', icon: Ruler, badge: null },
       ]

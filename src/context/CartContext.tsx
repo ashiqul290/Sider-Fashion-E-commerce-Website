@@ -329,7 +329,6 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const path = window.location.pathname.toLowerCase().replace(/\/$/, '');
       if (path === '/admin') return 'admin';
       if (path === '/retail' || path === '/shop') return 'retail';
-      if (path === '/wholesale') return 'wholesale';
       if (path === '/categories') return 'categories';
       if (path === '/size-guide') return 'size-guide';
       if (path === '/faq') return 'faq';
@@ -346,7 +345,6 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         home: '/',
         retail: '/retail',
         shop: '/retail',
-        wholesale: '/wholesale',
         categories: '/categories',
         'size-guide': '/size-guide',
         faq: '/faq',
@@ -370,8 +368,6 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setCurrentViewInternal('admin');
       } else if (path === '/retail' || path === '/shop') {
         setCurrentViewInternal('retail');
-      } else if (path === '/wholesale') {
-        setCurrentViewInternal('wholesale');
       } else if (path === '/categories') {
         setCurrentViewInternal('categories');
       } else if (path === '/size-guide') {
