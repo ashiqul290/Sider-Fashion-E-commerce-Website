@@ -230,7 +230,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <div className="text-xs font-bold text-white truncate max-w-[130px]">{currentUser?.name || 'Sider Admin'}</div>
                 <div className="text-[10px] text-amber-400 font-medium capitalize">{(currentUser?.role || 'super_admin').replace(/_/g, ' ')}</div>
               </div>
-              <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" title="System Online" />
+              <div className="w-2 h-2 rounded-full bg-stone-400" title="System Online" />
             </div>
 
             {/* Nav Groups & Links */}

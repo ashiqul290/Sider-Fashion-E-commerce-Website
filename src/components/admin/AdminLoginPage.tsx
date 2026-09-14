@@ -312,8 +312,8 @@ export const AdminLoginPage: React.FC<AdminLoginPageProps> = ({
                 )}
 
                 {successMessage && (
-                  <div id="admin-login-success-alert" className="p-3.5 rounded-xl bg-emerald-950/60 border border-emerald-800/80 text-emerald-200 text-xs flex items-start gap-2.5 animate-in fade-in">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <div id="admin-login-success-alert" className="p-3.5 rounded-xl bg-stone-900/80 border border-stone-700 text-stone-200 text-xs flex items-start gap-2.5 animate-in fade-in">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                     <span className="leading-relaxed">{successMessage}</span>
                   </div>
                 )}

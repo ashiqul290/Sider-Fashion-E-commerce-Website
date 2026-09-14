@@ -1,5 +1,5 @@
 {
-  "version": 1789387956319,
+  "version": 1789405098666,
   "products": [],
   "archivedDemoProducts": [
     {
@@ -993,7 +993,1472 @@
       "createdAt": "2026-08-26T19:50:16.524Z"
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "area": "adsf",
+      "items": [
+        {
+          "product": {
+            "id": "sf-sh-103",
+            "code": "SF-SH-103",
+            "name": "Smart Casual Micro Check Shirt",
+            "tags": [
+              "Check",
+              "Smart Casual",
+              "Everyday"
+            ],
+            "sizes": [
+              {
+                "size": "S",
+                "stock": 15,
+                "chestInches": 36,
+                "lengthInches": 27,
+                "sleeveInches": 23.5,
+                "shoulderInches": 16.5
+              },
+              {
+                "size": "M",
+                "stock": 35,
+                "chestInches": 38,
+                "lengthInches": 28,
+                "sleeveInches": 24,
+                "shoulderInches": 17.5
+              },
+              {
+                "size": "L",
+                "stock": 45,
+                "chestInches": 40,
+                "lengthInches": 29,
+                "sleeveInches": 24.5,
+                "shoulderInches": 18.5
+              },
+              {
+                "size": "XL",
+                "stock": 30,
+                "chestInches": 42,
+                "lengthInches": 30,
+                "sleeveInches": 25,
+                "shoulderInches": 19.5
+              },
+              {
+                "size": "XXL",
+                "stock": 12,
+                "chestInches": 44,
+                "lengthInches": 31,
+                "sleeveInches": 25.5,
+                "shoulderInches": 20.5
+              }
+            ],
+            "stock": 137,
+            "colors": [
+              {
+                "hex": "#800020",
+                "name": "Maroon & Navy Grid",
+                "nameBn": "মেরুন ও নেভি"
+              },
+              {
+                "hex": "#2d5a27",
+                "name": "Forest Green Plaid",
+                "nameBn": "ফরেস্ট গ্রিন"
+              },
+              {
+                "hex": "#708090",
+                "name": "Slate Grey Box",
+                "nameBn": "গ্রে চেক"
+              }
+            ],
+            "fabric": "100% Pure Twill Cotton",
+            "images": [
+              "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "স্মার্ট ক্যাজুয়াল মাইক্রো চেক শার্ট",
+            "rating": 4.7,
+            "category": "mens-shirts",
+            "fabricBn": "১০০% পিওর টুইল কটন",
+            "isFeatured": false,
+            "description": "Modern woven yarn-dyed micro check pattern. Washed for extra softness with double-needle tailoring for durable daily wear.",
+            "retailPrice": 890,
+            "categoryName": "Men's Shirts",
+            "isNewArrival": true,
+            "reviewsCount": 19,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "আকর্ষণীয় মাইক্রো চেক ডিজাইনের কটন শার্ট। ১০০% কালার গ্যারান্টি ও প্রি-শ্রাংক ফ্যাব্রিক।",
+            "categoryNameBn": "পুরুষদের শার্ট",
+            "wholesalePrice": 490,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 490
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 460
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 430
+              }
+            ],
+            "originalRetailPrice": 1100
+          },
+          "quantity": 1,
+          "isWholesale": false,
+          "selectedSize": "S",
+          "selectedColor": {
+            "hex": "#800020",
+            "name": "Maroon & Navy Grid",
+            "nameBn": "মেরুন ও নেভি"
+          }
+        }
+      ],
+      "phone": "01557465474",
+      "total": 1010,
+      "status": "Confirmed",
+      "orderId": "SF-2026-000008",
+      "discount": 0,
+      "district": "Chattogram",
+      "subtotal": 890,
+      "createdAt": "2026-09-12T10:37:01.029Z",
+      "orderType": "retail",
+      "deliveryFee": 120,
+      "fullAddress": "adsfad",
+      "itemRecords": [
+        {
+          "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+          "category": "mens-shirts",
+          "quantity": 1,
+          "subtotal": 890,
+          "productId": "sf-sh-103",
+          "unitPrice": 890,
+          "isWholesale": false,
+          "productCode": "SF-SH-103",
+          "productName": "Smart Casual Micro Check Shirt",
+          "selectedSize": "S",
+          "productNameBn": "স্মার্ট ক্যাজুয়াল মাইক্রো চেক শার্ট",
+          "selectedColor": {
+            "hex": "#800020",
+            "name": "Maroon & Navy Grid",
+            "nameBn": "মেরুন ও নেভি"
+          }
+        }
+      ],
+      "orderStatus": "Cancelled",
+      "productCost": 490,
+      "senderLast4": null,
+      "customerName": "ashikul islam",
+      "deliveryZone": "outside_dhaka",
+      "paymentAmount": 0,
+      "paymentMethod": "cod",
+      "paymentStatus": "Pending",
+      "trafficSource": "direct",
+      "transactionId": null,
+      "membershipCode": "455014",
+      "whatsappNumber": "01557465474",
+      "estimatedProfit": 400,
+      "paymentTimestamp": null,
+      "isVerificationRequired": false
+    },
+    {
+      "area": "dhanmondi",
+      "items": [
+        {
+          "product": {
+            "id": "sf-sh-104",
+            "code": "SF-SH-104",
+            "name": "Summer Breeze Linen-Cotton Shirt",
+            "tags": [
+              "Linen",
+              "Summer",
+              "Breathable"
+            ],
+            "sizes": [
+              {
+                "size": "S",
+                "stock": 10,
+                "chestInches": 36,
+                "lengthInches": 27,
+                "sleeveInches": 23.5,
+                "shoulderInches": 16.5
+              },
+              {
+                "size": "M",
+                "stock": 25,
+                "chestInches": 38,
+                "lengthInches": 28,
+                "sleeveInches": 24,
+                "shoulderInches": 17.5
+              },
+              {
+                "size": "L",
+                "stock": 35,
+                "chestInches": 40,
+                "lengthInches": 29,
+                "sleeveInches": 24.5,
+                "shoulderInches": 18.5
+              },
+              {
+                "size": "XL",
+                "stock": 20,
+                "chestInches": 42,
+                "lengthInches": 30,
+                "sleeveInches": 25,
+                "shoulderInches": 19.5
+              },
+              {
+                "size": "XXL",
+                "stock": 10,
+                "chestInches": 44,
+                "lengthInches": 31,
+                "sleeveInches": 25.5,
+                "shoulderInches": 20.5
+              }
+            ],
+            "stock": 100,
+            "colors": [
+              {
+                "hex": "#556b2f",
+                "name": "Olive Green",
+                "nameBn": "অলিভ গ্রিন"
+              },
+              {
+                "hex": "#d2b48c",
+                "name": "Sand Beige",
+                "nameBn": "স্যান্ড বেইজ"
+              },
+              {
+                "hex": "#ffdab9",
+                "name": "Pastel Peach",
+                "nameBn": "পিচ"
+              }
+            ],
+            "fabric": "Linen-Cotton Blend (160 GSM)",
+            "images": [
+              "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "সামার ব্রিজ লিনেন-কটন ক্যাজুয়াল শার্ট",
+            "rating": 4.9,
+            "category": "mens-shirts",
+            "fabricBn": "লিনেন-কটন ব্লেন্ড (১৬০ জিএসএম)",
+            "isFeatured": true,
+            "description": "Designed specifically for Bangladesh warm climate. Blend of 60% linen and 40% organic cotton for superior sweat-wicking and breezy breathability.",
+            "retailPrice": 950,
+            "categoryName": "Men's Shirts",
+            "reviewsCount": 42,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "বাংলাদেশের আবহাওয়ার উপযোগী ৬০% লিনেন ও ৪০% অর্গানিক কটন শার্ট। গরমে পরার জন্য অত্যন্ত উপযোগী।",
+            "categoryNameBn": "পুরুষদের শার্ট",
+            "wholesalePrice": 550,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 550
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 510
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 480
+              }
+            ],
+            "originalRetailPrice": 1200
+          },
+          "quantity": 1,
+          "isWholesale": false,
+          "selectedSize": "S",
+          "selectedColor": {
+            "hex": "#556b2f",
+            "name": "Olive Green",
+            "nameBn": "অলিভ গ্রিন"
+          }
+        }
+      ],
+      "phone": "01618532116",
+      "total": 1030,
+      "status": "Confirmed",
+      "orderId": "SF-2026-000007",
+      "discount": 0,
+      "district": "Dhaka City (North / South)",
+      "subtotal": 950,
+      "createdAt": "2026-09-12T09:07:20.218Z",
+      "orderType": "retail",
+      "deliveryFee": 80,
+      "fullAddress": "Monuar bila jigatola Dhanmondi\nMonuar bila jigatola Dhanmondi",
+      "itemRecords": [
+        {
+          "image": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80",
+          "category": "mens-shirts",
+          "quantity": 1,
+          "subtotal": 950,
+          "productId": "sf-sh-104",
+          "unitPrice": 950,
+          "isWholesale": false,
+          "productCode": "SF-SH-104",
+          "productName": "Summer Breeze Linen-Cotton Shirt",
+          "selectedSize": "S",
+          "productNameBn": "সামার ব্রিজ লিনেন-কটন ক্যাজুয়াল শার্ট",
+          "selectedColor": {
+            "hex": "#556b2f",
+            "name": "Olive Green",
+            "nameBn": "অলিভ গ্রিন"
+          }
+        }
+      ],
+      "orderStatus": "Confirmed",
+      "productCost": 523,
+      "senderLast4": null,
+      "customerName": "roy",
+      "deliveryZone": "inside_dhaka",
+      "paymentAmount": 0,
+      "paymentMethod": "cod",
+      "paymentStatus": "Pending",
+      "trafficSource": "direct",
+      "transactionId": null,
+      "membershipCode": "455014",
+      "whatsappNumber": "01618532116",
+      "estimatedProfit": 428,
+      "paymentTimestamp": null,
+      "isVerificationRequired": false
+    },
+    {
+      "area": "netrokona",
+      "items": [
+        {
+          "product": {
+            "id": "sf-sh-102",
+            "code": "SF-SH-102",
+            "name": "Casual Washed Denim Cotton Shirt",
+            "tags": [
+              "Denim",
+              "Casual",
+              "Youth"
+            ],
+            "sizes": [
+              {
+                "size": "S",
+                "stock": 13,
+                "chestInches": 36,
+                "lengthInches": 27,
+                "sleeveInches": 23.5,
+                "shoulderInches": 16.5
+              },
+              {
+                "size": "M",
+                "stock": 35,
+                "chestInches": 38,
+                "lengthInches": 28,
+                "sleeveInches": 24,
+                "shoulderInches": 17.5
+              },
+              {
+                "size": "L",
+                "stock": 45,
+                "chestInches": 40,
+                "lengthInches": 29,
+                "sleeveInches": 24.5,
+                "shoulderInches": 18.5
+              },
+              {
+                "size": "XL",
+                "stock": 30,
+                "chestInches": 42,
+                "lengthInches": 30,
+                "sleeveInches": 25,
+                "shoulderInches": 19.5
+              },
+              {
+                "size": "XXL",
+                "stock": 15,
+                "chestInches": 44,
+                "lengthInches": 31,
+                "sleeveInches": 25.5,
+                "shoulderInches": 20.5
+              }
+            ],
+            "stock": 138,
+            "colors": [
+              {
+                "hex": "#5b84b1",
+                "name": "Light Indigo",
+                "nameBn": "হালকা নীল"
+              },
+              {
+                "hex": "#203a43",
+                "name": "Deep Indigo",
+                "nameBn": "গাঢ় নীল"
+              },
+              {
+                "hex": "#2c3539",
+                "name": "Vintage Black",
+                "nameBn": "ভিন্টেজ কালো"
+              }
+            ],
+            "fabric": "Soft Washed Denim Cotton (6.5 oz)",
+            "images": [
+              "https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "ক্যাজুয়াল ওয়াশড ডেনিম কটন শার্ট",
+            "rating": 4.85,
+            "category": "mens-shirts",
+            "fabricBn": "সফট ওয়াশড ডেনিম কটন",
+            "isFeatured": true,
+            "description": "Enzyme-washed soft indigo denim cotton with double-chest flap pockets and contrast heavy stitching. Timeless rugged appeal tailored for youth fashion.",
+            "retailPrice": 920,
+            "categoryName": "Men's Shirts",
+            "isNewArrival": true,
+            "reviewsCount": 34,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "এনজাইম ওয়াশড প্রিমিয়াম কটন ডেনিম শার্ট। ডাবল পকেট, কন্ট্রাস্ট সেলাই এবং ১০০% আরামদায়ক ফিনিশিং।",
+            "categoryNameBn": "পুরুষদের শার্ট",
+            "wholesalePrice": 520,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 520
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 490
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 460
+              }
+            ],
+            "originalRetailPrice": 1150
+          },
+          "quantity": 1,
+          "isWholesale": false,
+          "selectedSize": "S",
+          "selectedColor": {
+            "hex": "#5b84b1",
+            "name": "Light Indigo",
+            "nameBn": "হালকা নীল"
+          }
+        }
+      ],
+      "phone": "01618532116",
+      "total": 1040,
+      "status": "Confirmed",
+      "orderId": "SF-2026-000003",
+      "discount": 0,
+      "district": "Shariatpur",
+      "subtotal": 920,
+      "createdAt": "2026-08-29T14:46:21.639Z",
+      "orderType": "retail",
+      "deliveryFee": 120,
+      "fullAddress": "adfshjklasdg",
+      "itemRecords": [
+        {
+          "image": "https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=800&q=80",
+          "category": "mens-shirts",
+          "quantity": 1,
+          "subtotal": 920,
+          "productId": "sf-sh-102",
+          "unitPrice": 920,
+          "isWholesale": false,
+          "productCode": "SF-SH-102",
+          "productName": "Casual Washed Denim Cotton Shirt",
+          "selectedSize": "S",
+          "productNameBn": "ক্যাজুয়াল ওয়াশড ডেনিম কটন শার্ট",
+          "selectedColor": {
+            "hex": "#5b84b1",
+            "name": "Light Indigo",
+            "nameBn": "হালকা নীল"
+          }
+        }
+      ],
+      "orderStatus": "Processing",
+      "productCost": 506,
+      "senderLast4": "9999",
+      "customerName": "imran",
+      "deliveryZone": "outside_dhaka",
+      "paymentAmount": 920,
+      "paymentMethod": "nagad",
+      "paymentStatus": "Verified",
+      "trafficSource": "direct",
+      "transactionId": "3468572821",
+      "whatsappNumber": "01618532116",
+      "estimatedProfit": 414,
+      "paymentTimestamp": "2026-08-29T14:46:21.639Z",
+      "isVerificationRequired": false
+    },
+    {
+      "area": "netrokona",
+      "items": [
+        {
+          "product": {
+            "id": "sf-sh-102",
+            "code": "SF-SH-102",
+            "name": "Casual Washed Denim Cotton Shirt",
+            "tags": [
+              "Denim",
+              "Casual",
+              "Youth"
+            ],
+            "sizes": [
+              {
+                "size": "S",
+                "stock": 14,
+                "chestInches": 36,
+                "lengthInches": 27,
+                "sleeveInches": 23.5,
+                "shoulderInches": 16.5
+              },
+              {
+                "size": "M",
+                "stock": 35,
+                "chestInches": 38,
+                "lengthInches": 28,
+                "sleeveInches": 24,
+                "shoulderInches": 17.5
+              },
+              {
+                "size": "L",
+                "stock": 45,
+                "chestInches": 40,
+                "lengthInches": 29,
+                "sleeveInches": 24.5,
+                "shoulderInches": 18.5
+              },
+              {
+                "size": "XL",
+                "stock": 30,
+                "chestInches": 42,
+                "lengthInches": 30,
+                "sleeveInches": 25,
+                "shoulderInches": 19.5
+              },
+              {
+                "size": "XXL",
+                "stock": 15,
+                "chestInches": 44,
+                "lengthInches": 31,
+                "sleeveInches": 25.5,
+                "shoulderInches": 20.5
+              }
+            ],
+            "stock": 139,
+            "colors": [
+              {
+                "hex": "#5b84b1",
+                "name": "Light Indigo",
+                "nameBn": "হালকা নীল"
+              },
+              {
+                "hex": "#203a43",
+                "name": "Deep Indigo",
+                "nameBn": "গাঢ় নীল"
+              },
+              {
+                "hex": "#2c3539",
+                "name": "Vintage Black",
+                "nameBn": "ভিন্টেজ কালো"
+              }
+            ],
+            "fabric": "Soft Washed Denim Cotton (6.5 oz)",
+            "images": [
+              "https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "ক্যাজুয়াল ওয়াশড ডেনিম কটন শার্ট",
+            "rating": 4.85,
+            "category": "mens-shirts",
+            "fabricBn": "সফট ওয়াশড ডেনিম কটন",
+            "isFeatured": true,
+            "description": "Enzyme-washed soft indigo denim cotton with double-chest flap pockets and contrast heavy stitching. Timeless rugged appeal tailored for youth fashion.",
+            "retailPrice": 920,
+            "categoryName": "Men's Shirts",
+            "isNewArrival": true,
+            "reviewsCount": 34,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "এনজাইম ওয়াশড প্রিমিয়াম কটন ডেনিম শার্ট। ডাবল পকেট, কন্ট্রাস্ট সেলাই এবং ১০০% আরামদায়ক ফিনিশিং।",
+            "categoryNameBn": "পুরুষদের শার্ট",
+            "wholesalePrice": 520,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 520
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 490
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 460
+              }
+            ],
+            "originalRetailPrice": 1150
+          },
+          "quantity": 1,
+          "isWholesale": false,
+          "selectedSize": "S",
+          "selectedColor": {
+            "hex": "#5b84b1",
+            "name": "Light Indigo",
+            "nameBn": "হালকা নীল"
+          }
+        }
+      ],
+      "phone": "01618532116",
+      "total": 1000,
+      "status": "Confirmed",
+      "orderId": "SF-2026-000002",
+      "discount": 0,
+      "district": "Keraniganj (Dhaka)",
+      "subtotal": 920,
+      "createdAt": "2026-08-29T14:42:52.079Z",
+      "orderType": "retail",
+      "deliveryFee": 80,
+      "fullAddress": "netrakona",
+      "itemRecords": [
+        {
+          "image": "https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=800&q=80",
+          "category": "mens-shirts",
+          "quantity": 1,
+          "subtotal": 920,
+          "productId": "sf-sh-102",
+          "unitPrice": 920,
+          "isWholesale": false,
+          "productCode": "SF-SH-102",
+          "productName": "Casual Washed Denim Cotton Shirt",
+          "selectedSize": "S",
+          "productNameBn": "ক্যাজুয়াল ওয়াশড ডেনিম কটন শার্ট",
+          "selectedColor": {
+            "hex": "#5b84b1",
+            "name": "Light Indigo",
+            "nameBn": "হালকা নীল"
+          }
+        }
+      ],
+      "orderStatus": "Processing",
+      "productCost": 506,
+      "senderLast4": "9999",
+      "customerName": "WebMarkio",
+      "deliveryZone": "inside_dhaka",
+      "paymentAmount": 1090,
+      "paymentMethod": "bkash",
+      "paymentStatus": "Verified",
+      "trafficSource": "direct",
+      "transactionId": "3545646556",
+      "whatsappNumber": "01618532116",
+      "estimatedProfit": 414,
+      "paymentTimestamp": "2026-08-29T14:42:52.079Z",
+      "isVerificationRequired": false
+    },
+    {
+      "area": "netrokona",
+      "items": [
+        {
+          "product": {
+            "id": "sf-kt-203",
+            "code": "SF-KT-203",
+            "name": "Embroidered Placket Festive Katua",
+            "tags": [
+              "Festive",
+              "Embroidery",
+              "Party Wear"
+            ],
+            "sizes": [
+              {
+                "size": "S",
+                "stock": 15,
+                "chestInches": 38,
+                "lengthInches": 36,
+                "sleeveInches": 23,
+                "shoulderInches": 17
+              },
+              {
+                "size": "M",
+                "stock": 25,
+                "chestInches": 40,
+                "lengthInches": 38,
+                "sleeveInches": 23.5,
+                "shoulderInches": 18
+              },
+              {
+                "size": "L",
+                "stock": 35,
+                "chestInches": 42,
+                "lengthInches": 40,
+                "sleeveInches": 24,
+                "shoulderInches": 19
+              },
+              {
+                "size": "XL",
+                "stock": 20,
+                "chestInches": 44,
+                "lengthInches": 42,
+                "sleeveInches": 24.5,
+                "shoulderInches": 20
+              },
+              {
+                "size": "XXL",
+                "stock": 10,
+                "chestInches": 46,
+                "lengthInches": 44,
+                "sleeveInches": 25,
+                "shoulderInches": 21
+              }
+            ],
+            "stock": 105,
+            "colors": [
+              {
+                "hex": "#63081e",
+                "name": "Deep Maroon",
+                "nameBn": "গাঢ় মেরুন"
+              },
+              {
+                "hex": "#fffff0",
+                "name": "Ivory Cream",
+                "nameBn": "আইভরি ক্রিম"
+              },
+              {
+                "hex": "#191970",
+                "name": "Midnight Blue",
+                "nameBn": "মিডনাইট ব্লু"
+              }
+            ],
+            "fabric": "Fine Cotton Silk Finish Blend",
+            "images": [
+              "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "সূক্ষ্ম এমব্রয়ডারি করা উৎসবের কতুয়া",
+            "rating": 4.9,
+            "category": "mens-katua",
+            "fabricBn": "ফাইন কটন সিল্ক ফিনিশ ব্লেন্ড",
+            "isFeatured": true,
+            "description": "Subtle computerized tonal embroidery along the collar and button placket. Tailored for wedding guest wear, family gatherings and festive seasons.",
+            "retailPrice": 1090,
+            "categoryName": "Men's Katua",
+            "isNewArrival": true,
+            "reviewsCount": 27,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "কলার ও প্লাকেটে সূক্ষ্ম এমব্রয়ডারি ডিজাইন। যেকোনো উৎসব বা ঘরোয়া আয়োজনের জন্য দারুণ একটি পছন্দ।",
+            "categoryNameBn": "পুরুষদের কতুয়া",
+            "wholesalePrice": 620,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 620
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 580
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 540
+              }
+            ],
+            "originalRetailPrice": 1390
+          },
+          "quantity": 7,
+          "isWholesale": false,
+          "selectedSize": "S",
+          "selectedColor": {
+            "hex": "#63081e",
+            "name": "Deep Maroon",
+            "nameBn": "গাঢ় মেরুন"
+          }
+        },
+        {
+          "product": {
+            "id": "sf-sh-102",
+            "code": "SF-SH-102",
+            "name": "Casual Washed Denim Cotton Shirt",
+            "tags": [
+              "Denim",
+              "Casual",
+              "Youth"
+            ],
+            "sizes": [
+              {
+                "size": "S",
+                "stock": 15,
+                "chestInches": 36,
+                "lengthInches": 27,
+                "sleeveInches": 23.5,
+                "shoulderInches": 16.5
+              },
+              {
+                "size": "M",
+                "stock": 35,
+                "chestInches": 38,
+                "lengthInches": 28,
+                "sleeveInches": 24,
+                "shoulderInches": 17.5
+              },
+              {
+                "size": "L",
+                "stock": 45,
+                "chestInches": 40,
+                "lengthInches": 29,
+                "sleeveInches": 24.5,
+                "shoulderInches": 18.5
+              },
+              {
+                "size": "XL",
+                "stock": 30,
+                "chestInches": 42,
+                "lengthInches": 30,
+                "sleeveInches": 25,
+                "shoulderInches": 19.5
+              },
+              {
+                "size": "XXL",
+                "stock": 15,
+                "chestInches": 44,
+                "lengthInches": 31,
+                "sleeveInches": 25.5,
+                "shoulderInches": 20.5
+              }
+            ],
+            "stock": 140,
+            "colors": [
+              {
+                "hex": "#5b84b1",
+                "name": "Light Indigo",
+                "nameBn": "হালকা নীল"
+              },
+              {
+                "hex": "#203a43",
+                "name": "Deep Indigo",
+                "nameBn": "গাঢ় নীল"
+              },
+              {
+                "hex": "#2c3539",
+                "name": "Vintage Black",
+                "nameBn": "ভিন্টেজ কালো"
+              }
+            ],
+            "fabric": "Soft Washed Denim Cotton (6.5 oz)",
+            "images": [
+              "https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "ক্যাজুয়াল ওয়াশড ডেনিম কটন শার্ট",
+            "rating": 4.85,
+            "category": "mens-shirts",
+            "fabricBn": "সফট ওয়াশড ডেনিম কটন",
+            "isFeatured": true,
+            "description": "Enzyme-washed soft indigo denim cotton with double-chest flap pockets and contrast heavy stitching. Timeless rugged appeal tailored for youth fashion.",
+            "retailPrice": 920,
+            "categoryName": "Men's Shirts",
+            "isNewArrival": true,
+            "reviewsCount": 34,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "এনজাইম ওয়াশড প্রিমিয়াম কটন ডেনিম শার্ট। ডাবল পকেট, কন্ট্রাস্ট সেলাই এবং ১০০% আরামদায়ক ফিনিশিং।",
+            "categoryNameBn": "পুরুষদের শার্ট",
+            "wholesalePrice": 520,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 520
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 490
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 460
+              }
+            ],
+            "originalRetailPrice": 1150
+          },
+          "quantity": 1,
+          "isWholesale": false,
+          "selectedSize": "S",
+          "selectedColor": {
+            "hex": "#5b84b1",
+            "name": "Light Indigo",
+            "nameBn": "হালকা নীল"
+          }
+        }
+      ],
+      "phone": "01618532116",
+      "total": 8670,
+      "status": "Confirmed",
+      "orderId": "SF-2026-000001",
+      "discount": 0,
+      "district": "Mymensingh",
+      "subtotal": 8550,
+      "createdAt": "2026-08-29T14:37:45.727Z",
+      "orderType": "retail",
+      "deliveryFee": 120,
+      "fullAddress": "netrakona",
+      "itemRecords": [
+        {
+          "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80",
+          "category": "mens-katua",
+          "quantity": 7,
+          "subtotal": 7630,
+          "productId": "sf-kt-203",
+          "unitPrice": 1090,
+          "isWholesale": false,
+          "productCode": "SF-KT-203",
+          "productName": "Embroidered Placket Festive Katua",
+          "selectedSize": "S",
+          "productNameBn": "সূক্ষ্ম এমব্রয়ডারি করা উৎসবের কতুয়া",
+          "selectedColor": {
+            "hex": "#63081e",
+            "name": "Deep Maroon",
+            "nameBn": "গাঢ় মেরুন"
+          }
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=800&q=80",
+          "category": "mens-shirts",
+          "quantity": 1,
+          "subtotal": 920,
+          "productId": "sf-sh-102",
+          "unitPrice": 920,
+          "isWholesale": false,
+          "productCode": "SF-SH-102",
+          "productName": "Casual Washed Denim Cotton Shirt",
+          "selectedSize": "S",
+          "productNameBn": "ক্যাজুয়াল ওয়াশড ডেনিম কটন শার্ট",
+          "selectedColor": {
+            "hex": "#5b84b1",
+            "name": "Light Indigo",
+            "nameBn": "হালকা নীল"
+          }
+        }
+      ],
+      "orderStatus": "Pending",
+      "productCost": 4703,
+      "senderLast4": null,
+      "customerName": "WebMarkio Agency",
+      "deliveryZone": "outside_dhaka",
+      "paymentAmount": 0,
+      "paymentMethod": "cod",
+      "paymentStatus": "Pending",
+      "trafficSource": "direct",
+      "transactionId": null,
+      "whatsappNumber": "01618532116",
+      "estimatedProfit": 3848,
+      "paymentTimestamp": null,
+      "isVerificationRequired": false
+    },
+    {
+      "area": "Mohipur",
+      "items": [
+        {
+          "product": {
+            "id": "sf-prod-1787774899538",
+            "code": "SF-800",
+            "name": "Shart",
+            "tags": [
+              "Cotton",
+              "Factory Direct",
+              "Casual"
+            ],
+            "sizes": [
+              {
+                "size": "M",
+                "stock": 30,
+                "chestInches": 40,
+                "lengthInches": 28.5
+              },
+              {
+                "size": "L",
+                "stock": 40,
+                "chestInches": 42,
+                "lengthInches": 29.5
+              },
+              {
+                "size": "XL",
+                "stock": 30,
+                "chestInches": 44,
+                "lengthInches": 30.5
+              }
+            ],
+            "stock": 100,
+            "colors": [
+              {
+                "id": "col-navy",
+                "hex": "#1e293b",
+                "name": "Navy Blue",
+                "nameBn": "নেভি ব্লু",
+                "isActive": true,
+                "displayOrder": 1
+              },
+              {
+                "id": "col-white",
+                "hex": "#ffffff",
+                "name": "Pure White",
+                "nameBn": "সাদা",
+                "isActive": true,
+                "displayOrder": 2
+              }
+            ],
+            "fabric": "100% Combed Cotton",
+            "images": [
+              "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "শার্ট",
+            "rating": 4.8,
+            "category": "shirt",
+            "fabricBn": "১০০% কম্বড কটন",
+            "isFeatured": true,
+            "description": "Crafted at our Savar factory using premium cotton weave.",
+            "retailPrice": 850,
+            "categoryName": "Men's Shirts",
+            "isNewArrival": true,
+            "reviewsCount": 12,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "আমাদের সাভার কারখানায় তৈরি প্রিমিয়াম কটন পোশাক।",
+            "categoryNameBn": "পুরুষদের শার্ট",
+            "wholesalePrice": 480,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 480
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 450
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 420
+              }
+            ],
+            "shortDescription": "Premium finish directly from Savar factory.",
+            "originalRetailPrice": 950
+          },
+          "quantity": 1,
+          "isWholesale": false,
+          "selectedSize": "M",
+          "selectedColor": {
+            "id": "col-navy",
+            "hex": "#1e293b",
+            "name": "Navy Blue",
+            "nameBn": "নেভি ব্লু",
+            "isActive": true,
+            "displayOrder": 1
+          }
+        }
+      ],
+      "phone": "01604003899",
+      "total": 920,
+      "status": "Confirmed",
+      "orderId": "SF-2026-000004",
+      "discount": 0,
+      "district": "Dhaka City (North / South)",
+      "subtotal": 850,
+      "createdAt": "2026-08-29T12:55:20.521Z",
+      "orderType": "retail",
+      "deliveryFee": 70,
+      "fullAddress": "Kuakata",
+      "itemRecords": [
+        {
+          "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+          "category": "shirt",
+          "quantity": 1,
+          "subtotal": 850,
+          "productId": "sf-prod-1787774899538",
+          "unitPrice": 850,
+          "isWholesale": false,
+          "productCode": "SF-800",
+          "productName": "Shart",
+          "selectedSize": "M",
+          "productNameBn": "শার্ট",
+          "selectedColor": {
+            "hex": "#1e293b",
+            "name": "Navy Blue",
+            "nameBn": "নেভি ব্লু"
+          }
+        }
+      ],
+      "orderStatus": "Pending",
+      "productCost": 468,
+      "senderLast4": null,
+      "customerName": "Abir",
+      "deliveryZone": "inside_dhaka",
+      "paymentAmount": 0,
+      "paymentMethod": "cod",
+      "paymentStatus": "Pending",
+      "trafficSource": "google",
+      "transactionId": null,
+      "whatsappNumber": "01604003899",
+      "estimatedProfit": 382,
+      "paymentTimestamp": null,
+      "isVerificationRequired": false
+    },
+    {
+      "area": "Patuakhali",
+      "items": [
+        {
+          "product": {
+            "id": "sf-kt-201",
+            "code": "SF-KT-201",
+            "name": "Premium Jacquard Weave Men’s Katua",
+            "tags": [
+              "Katua",
+              "Jacquard",
+              "Eid Special",
+              "Top Wholesale Seller"
+            ],
+            "sizes": [
+              {
+                "size": "S",
+                "stock": 20,
+                "chestInches": 38,
+                "lengthInches": 36,
+                "sleeveInches": 23,
+                "shoulderInches": 17
+              },
+              {
+                "size": "M",
+                "stock": 40,
+                "chestInches": 40,
+                "lengthInches": 38,
+                "sleeveInches": 23.5,
+                "shoulderInches": 18
+              },
+              {
+                "size": "L",
+                "stock": 55,
+                "chestInches": 42,
+                "lengthInches": 40,
+                "sleeveInches": 24,
+                "shoulderInches": 19
+              },
+              {
+                "size": "XL",
+                "stock": 35,
+                "chestInches": 44,
+                "lengthInches": 42,
+                "sleeveInches": 24.5,
+                "shoulderInches": 20
+              },
+              {
+                "size": "XXL",
+                "stock": 20,
+                "chestInches": 46,
+                "lengthInches": 44,
+                "sleeveInches": 25,
+                "shoulderInches": 21
+              }
+            ],
+            "stock": 170,
+            "colors": [
+              {
+                "hex": "#fdfbf7",
+                "name": "Royal Off-White",
+                "nameBn": "অফ হোয়াইট"
+              },
+              {
+                "hex": "#0f52ba",
+                "name": "Emerald Forest",
+                "nameBn": "পান্না সবুজ"
+              },
+              {
+                "hex": "#800000",
+                "name": "Maroon Ruby",
+                "nameBn": "রুবী মেরুন"
+              },
+              {
+                "hex": "#111827",
+                "name": "Coal Black",
+                "nameBn": "কালো"
+              }
+            ],
+            "fabric": "Jacquard Textured Pure Cotton (200 GSM)",
+            "images": [
+              "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "প্রিমিয়াম জ্যাকার্ড উইভ পুরুষদের কতুয়া",
+            "rating": 4.95,
+            "category": "mens-katua",
+            "fabricBn": "জ্যাকার্ড টেক্সচার্ড পিওর কটন (২০০ জিএসএম)",
+            "isFeatured": true,
+            "description": "Artisanal Jacquard patterned Katua with band collar (Mandarin neckline) and handcrafted wooden buttons. Perfect for Jummah prayers, cultural festivals and formal events.",
+            "retailPrice": 990,
+            "categoryName": "Men's Katua",
+            "isBestSeller": true,
+            "isNewArrival": true,
+            "reviewsCount": 56,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "নিজস্ব ফ্যাক্টরিতে বোনা জ্যাকার্ড কতুয়া। চাইনিজ কলার, হ্যান্ডক্রাফটেড বোতাম ও আভিজাত্যপূর্ণ লুক। জুম্মার নামাজ, ঈদ ও ঘরোয়া যেকোনো অনুষ্ঠানে পরা যায়।",
+            "categoryNameBn": "পুরুষদের কতুয়া",
+            "wholesalePrice": 560,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 560
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 520
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 480
+              }
+            ],
+            "originalRetailPrice": 1250
+          },
+          "quantity": 1,
+          "isWholesale": false,
+          "selectedSize": "L",
+          "selectedColor": {
+            "hex": "#fdfbf7",
+            "name": "Royal Off-White",
+            "nameBn": "অফ হোয়াইট"
+          }
+        },
+        {
+          "product": {
+            "id": "sf-sh-101",
+            "code": "SF-SH-101",
+            "name": "Royal Oxford Formal Cotton Shirt",
+            "tags": [
+              "Formal",
+              "Cotton",
+              "Oxford",
+              "Best Seller"
+            ],
+            "sizes": [
+              {
+                "size": "S",
+                "stock": 20,
+                "chestInches": 36,
+                "collarInches": 14.5,
+                "lengthInches": 27,
+                "sleeveInches": 23.5,
+                "shoulderInches": 16.5
+              },
+              {
+                "size": "M",
+                "stock": 45,
+                "chestInches": 38,
+                "collarInches": 15,
+                "lengthInches": 28,
+                "sleeveInches": 24,
+                "shoulderInches": 17.5
+              },
+              {
+                "size": "L",
+                "stock": 60,
+                "chestInches": 40,
+                "collarInches": 15.5,
+                "lengthInches": 29,
+                "sleeveInches": 24.5,
+                "shoulderInches": 18.5
+              },
+              {
+                "size": "XL",
+                "stock": 35,
+                "chestInches": 42,
+                "collarInches": 16,
+                "lengthInches": 30,
+                "sleeveInches": 25,
+                "shoulderInches": 19.5
+              },
+              {
+                "size": "XXL",
+                "stock": 15,
+                "chestInches": 44,
+                "collarInches": 16.5,
+                "lengthInches": 31,
+                "sleeveInches": 25.5,
+                "shoulderInches": 20.5
+              }
+            ],
+            "stock": 175,
+            "colors": [
+              {
+                "hex": "#87ceeb",
+                "name": "Sky Blue",
+                "nameBn": "আকাশি নীল"
+              },
+              {
+                "hex": "#f8fafc",
+                "name": "Pure White",
+                "nameBn": "সাদা"
+              },
+              {
+                "hex": "#1e293b",
+                "name": "Classic Navy",
+                "nameBn": "নেভি ব্লু"
+              },
+              {
+                "hex": "#18181b",
+                "name": "Charcoal Black",
+                "nameBn": "কালো"
+              }
+            ],
+            "fabric": "100% Combed Oxford Cotton (180 GSM)",
+            "images": [
+              "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80",
+              "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80"
+            ],
+            "nameBn": "রয়্যাল অক্সফোর্ড ফরমাল কটন শার্ট",
+            "rating": 4.9,
+            "category": "mens-shirts",
+            "fabricBn": "১০০% কম্বড অক্সফোর্ড কটন (১৮০ জিএসএম)",
+            "isFeatured": true,
+            "description": "Crafted from 100% long-staple combed Oxford cotton. Designed with a reinforced spread collar, high-density stitching, and pearlized buttons for an impeccable corporate or smart-casual look.",
+            "retailPrice": 850,
+            "categoryName": "Men's Shirts",
+            "isBestSeller": true,
+            "isNewArrival": false,
+            "reviewsCount": 48,
+            "wholesaleMOQ": 12,
+            "descriptionBn": "১০০% কম্বড অক্সফোর্ড কটন ফেব্রিক দিয়ে আমাদের নিজস্ব কারখানায় তৈরি। সফট ফিনিশিং, আরামদায়ক ও নিখুঁত সেলাই। অফিস বা ক্যাজুয়াল যেকোনো পরিবেশের জন্য দারুণ মানানসই।",
+            "categoryNameBn": "পুরুষদের শার্ট",
+            "wholesalePrice": 480,
+            "wholesaleTiers": [
+              {
+                "label": "12–49 pcs",
+                "maxQty": 49,
+                "minQty": 12,
+                "pricePerPiece": 480
+              },
+              {
+                "label": "50–99 pcs",
+                "maxQty": 99,
+                "minQty": 50,
+                "pricePerPiece": 450
+              },
+              {
+                "label": "100+ pcs",
+                "minQty": 100,
+                "pricePerPiece": 420
+              }
+            ],
+            "originalRetailPrice": 1050
+          },
+          "quantity": 1,
+          "isWholesale": false,
+          "selectedSize": "S",
+          "selectedColor": {
+            "hex": "#87ceeb",
+            "name": "Sky Blue",
+            "nameBn": "আকাশি নীল"
+          }
+        }
+      ],
+      "phone": "01767599965",
+      "total": 1960,
+      "status": "Confirmed",
+      "orderId": "SF-2026-000003",
+      "discount": 0,
+      "district": "Sherpur",
+      "subtotal": 1840,
+      "createdAt": "2026-08-29T12:38:44.744Z",
+      "orderType": "retail",
+      "deliveryFee": 120,
+      "fullAddress": "Kuakata\nPanjupara",
+      "itemRecords": [
+        {
+          "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+          "category": "mens-katua",
+          "quantity": 1,
+          "subtotal": 990,
+          "productId": "sf-kt-201",
+          "unitPrice": 990,
+          "isWholesale": false,
+          "productCode": "SF-KT-201",
+          "productName": "Premium Jacquard Weave Men’s Katua",
+          "selectedSize": "L",
+          "productNameBn": "প্রিমিয়াম জ্যাকার্ড উইভ পুরুষদের কতুয়া",
+          "selectedColor": {
+            "hex": "#fdfbf7",
+            "name": "Royal Off-White",
+            "nameBn": "অফ হোয়াইট"
+          }
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+          "category": "mens-shirts",
+          "quantity": 1,
+          "subtotal": 850,
+          "productId": "sf-sh-101",
+          "unitPrice": 850,
+          "isWholesale": false,
+          "productCode": "SF-SH-101",
+          "productName": "Royal Oxford Formal Cotton Shirt",
+          "selectedSize": "S",
+          "productNameBn": "রয়্যাল অক্সফোর্ড ফরমাল কটন শার্ট",
+          "selectedColor": {
+            "hex": "#87ceeb",
+            "name": "Sky Blue",
+            "nameBn": "আকাশি নীল"
+          }
+        }
+      ],
+      "orderStatus": "Confirmed",
+      "productCost": 1012,
+      "senderLast4": null,
+      "customerName": "Robiul",
+      "deliveryZone": "outside_dhaka",
+      "paymentAmount": 0,
+      "paymentMethod": "cod",
+      "paymentStatus": "Pending",
+      "trafficSource": "google",
+      "transactionId": null,
+      "whatsappNumber": "01767599965",
+      "estimatedProfit": 828,
+      "paymentTimestamp": null,
+      "isVerificationRequired": false
+    }
+  ],
   "archivedDemoOrders": [
     {
       "area": "adsf",
@@ -2460,7 +3925,38 @@
       "isVerificationRequired": false
     }
   ],
-  "wholesaleInquiries": [],
+  "wholesaleInquiries": [
+    {
+      "id": "SF-WS-2026-000001",
+      "area": "",
+      "phone": "01618532116",
+      "district": "Savar & Ashulia (Dhaka)",
+      "createdAt": "2026-08-29T14:53:53.105Z",
+      "fullAddress": "dhaka",
+      "orderStatus": "Pending",
+      "productCode": "SF-SH-104",
+      "productName": "Summer Breeze Linen-Cotton Shirt",
+      "senderLast4": null,
+      "targetColor": "Olive Green",
+      "businessName": "housing",
+      "customerName": "WebMarkio Agency",
+      "paymentMethod": "cod",
+      "paymentStatus": "Pending",
+      "sizeBreakdown": {
+        "L": 0,
+        "M": 6,
+        "S": 0,
+        "XL": 6,
+        "XXL": 0
+      },
+      "transactionId": null,
+      "targetQuantity": 12,
+      "whatsappNumber": "01618532116",
+      "appliedTierPrice": 550,
+      "additionalMessage": "",
+      "totalEstimatedAmount": 6600
+    }
+  ],
   "archivedDemoWholesaleInquiries": [
     {
       "id": "SF-WS-2026-000001",
@@ -2494,6 +3990,78 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "log-1789405098666-2lugw",
+      "timestamp": "2026-09-14T16:58:18.666Z",
+      "adminName": "Musa",
+      "adminRole": "admin",
+      "action": "ADMIN_LOGIN",
+      "category": "auth",
+      "details": "Admin Musa (mohammadmusa4321@gmail.com, Order & Inventory Admin) logged in from IP 127.0.0.1."
+    },
+    {
+      "id": "log-1789404177148-ysj77",
+      "timestamp": "2026-09-14T16:42:57.148Z",
+      "adminName": "Musa",
+      "adminRole": "admin",
+      "action": "FAILED_PASSWORD_ATTEMPT",
+      "category": "auth",
+      "details": "Failed password attempt for mohammadmusa4321@gmail.com (IP: 127.0.0.1)"
+    },
+    {
+      "id": "log-1789404080829-9wj7n",
+      "timestamp": "2026-09-14T16:41:20.829Z",
+      "adminName": "Musa",
+      "adminRole": "admin",
+      "action": "FAILED_PASSWORD_ATTEMPT",
+      "category": "auth",
+      "details": "Failed password attempt for mohammadmusa4321@gmail.com (IP: 127.0.0.1)"
+    },
+    {
+      "id": "log-1789403769107-3yt7y",
+      "timestamp": "2026-09-14T16:36:09.107Z",
+      "adminName": "Musa",
+      "adminRole": "admin",
+      "action": "FAILED_PASSWORD_ATTEMPT",
+      "category": "auth",
+      "details": "Failed password attempt for mohammadmusa4321@gmail.com (IP: 127.0.0.1)"
+    },
+    {
+      "id": "log-1789403730086-uzslv",
+      "timestamp": "2026-09-14T16:35:30.086Z",
+      "adminName": "Musa",
+      "adminRole": "admin",
+      "action": "FAILED_PASSWORD_ATTEMPT",
+      "category": "auth",
+      "details": "Failed password attempt for mohammadmusa4321@gmail.com (IP: 127.0.0.1)"
+    },
+    {
+      "id": "log-1789403704716-sqk8d",
+      "timestamp": "2026-09-14T16:35:04.716Z",
+      "adminName": "Musa",
+      "adminRole": "admin",
+      "action": "FAILED_PASSWORD_ATTEMPT",
+      "category": "auth",
+      "details": "Failed password attempt for mohammadmusa4321@gmail.com (IP: 127.0.0.1)"
+    },
+    {
+      "id": "log-1789403573130-eeryc",
+      "timestamp": "2026-09-14T16:32:53.130Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "owner",
+      "action": "ADMIN_LOGOUT",
+      "category": "auth",
+      "details": "Admin Abir Hosen Saon (abirhosensaon@gmail.com) logged out."
+    },
+    {
+      "id": "log-1789403573082-128",
+      "timestamp": "2026-09-14T16:32:53.082Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "owner",
+      "action": "Admin Logged Out",
+      "category": "auth",
+      "details": ""
+    },
     {
       "id": "log-1789387956319-kli3h",
       "timestamp": "2026-09-14T12:12:36.319Z",
@@ -2829,7 +4397,7 @@
       "createdAt": "2026-01-01T00:00:00.000Z",
       "lastLogin": "2026-09-14T12:12:36.318Z",
       "roleTitle": "Founder & Managing Director",
-      "lastLogout": "2026-09-14T11:50:29.701Z",
+      "lastLogout": "2026-09-14T16:32:53.130Z",
       "lastLoginIp": "127.0.0.1",
       "passwordHash": "0437ae5f515bf7c9b6ba8b5a06348f94e916ae1f5ce7b1defe0b4311114deae9ddfc841ccadc21297c9e61ecaa3d29a7f534d94be02d2808528370559dfd64f8",
       "passwordSalt": "84579dce57d31013b9006af654df0f52"
@@ -2854,9 +4422,9 @@
       "status": "active",
       "username": "mohammadmusa4321",
       "createdAt": "2026-09-14T08:30:43.918Z",
-      "lastLogin": "2026-09-14T11:28:45.173Z",
+      "lastLogin": "2026-09-14T16:58:18.660Z",
       "roleTitle": "Order & Inventory Admin",
-      "lastLogout": "2026-09-14T11:30:44.535Z",
+      "lastLogout": "2026-09-14T15:48:53.873Z",
       "lastLoginIp": "127.0.0.1",
       "passwordHash": "4396d153e0f3f2802acbe1268ca3d05ed76d060b06b2c55c026d1c04eac6ffa33dc82f1feac08003248c3d7073ddaea56c613808a97ba7d25748290692b44ba2",
       "passwordSalt": "26ea56b9b09f7cd72244f43ff535f8d0"
