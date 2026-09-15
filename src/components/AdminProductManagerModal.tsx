@@ -40,11 +40,11 @@ export const AdminProductManagerModal: React.FC = () => {
   const [savedSuccess, setSavedSuccess] = useState(false);
 
   const [sizesConfig, setSizesConfig] = useState<{ size: string; chest: number; length: number; shoulder: number; sleeve: number }[]>([
-    { size: 'S', chest: 38, length: 27.5, shoulder: 17.5, sleeve: 24.5 },
-    { size: 'M', chest: 40, length: 28.5, shoulder: 18.0, sleeve: 25.0 },
-    { size: 'L', chest: 42, length: 29.5, shoulder: 18.5, sleeve: 25.5 },
-    { size: 'XL', chest: 44, length: 30.5, shoulder: 19.2, sleeve: 26.0 },
-    { size: 'XXL', chest: 46, length: 31.5, shoulder: 20.0, sleeve: 26.5 }
+    { size: 'S', chest: 36, length: 27, shoulder: 16.5, sleeve: 23.5 },
+    { size: 'M', chest: 41, length: 29, shoulder: 17.5, sleeve: 24.5 },
+    { size: 'L', chest: 43, length: 29.5, shoulder: 18.5, sleeve: 25.0 },
+    { size: 'XL', chest: 45, length: 30, shoulder: 19.5, sleeve: 25.5 },
+    { size: 'XXL', chest: 47, length: 31, shoulder: 20.5, sleeve: 26.0 }
   ]);
 
   if (!isAdminManagerOpen) return null;
