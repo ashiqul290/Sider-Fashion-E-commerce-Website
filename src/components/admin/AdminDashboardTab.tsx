@@ -201,10 +201,10 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
               ৳
             </div>
           </div>
-          <div className="text-2xl font-black text-stone-950 font-sans">
+          <div className="text-2xl font-black text-stone-300 font-sans select-none opacity-0">
             ৳{analytics.totalSales.toLocaleString()}
           </div>
-          <div className="flex items-center justify-between text-xs text-stone-500 pt-1 border-t border-stone-100">
+          <div className="flex items-center justify-between text-xs text-stone-500 pt-1 border-t border-stone-100 opacity-0 pointer-events-none">
             <span>Orders: <strong className="text-stone-900">{filteredOrders.length}</strong></span>
             <span>AOV: <strong className="text-stone-900">৳{filteredOrders.length > 0 ? Math.round(analytics.totalSales / filteredOrders.length) : 0}</strong></span>
           </div>
@@ -218,11 +218,11 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
               <ShoppingBag className="w-4 h-4" />
             </div>
           </div>
-          <div className="flex items-baseline gap-2">
-            <span className="text-xl font-black text-stone-950">৳{analytics.retailSales.toLocaleString()}</span>
-            <span className="text-xs font-semibold text-stone-400">Retail</span>
+          <div className="flex items-baseline gap-2 text-stone-300 select-none opacity-0">
+            <span className="text-xl font-black">৳{analytics.retailSales.toLocaleString()}</span>
+            <span className="text-xs font-semibold text-stone-300">Retail</span>
           </div>
-          <div className="flex items-center justify-between text-xs text-stone-500 pt-1 border-t border-stone-100">
+          <div className="flex items-center justify-between text-xs text-stone-500 pt-1 border-t border-stone-100 opacity-0 pointer-events-none">
             <span>Orders: <strong className="text-stone-900">{filteredOrders.length}</strong></span>
             <span>Average: <strong className="text-stone-900">৳{filteredOrders.length > 0 ? Math.round(analytics.retailSales / filteredOrders.length) : 0}</strong></span>
           </div>
@@ -236,10 +236,10 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
               <Boxes className="w-4 h-4" />
             </div>
           </div>
-          <div className="text-2xl font-black text-stone-950 font-sans">
-            {inventoryStats.totalUnits.toLocaleString()} <span className="text-xs font-normal text-stone-500">Pcs</span>
+          <div className="text-2xl font-black text-stone-300 font-sans select-none opacity-0">
+            {inventoryStats.totalUnits.toLocaleString()} <span className="text-xs font-normal text-stone-300">Pcs</span>
           </div>
-          <div className="flex items-center justify-between text-xs text-stone-500 pt-1 border-t border-stone-100">
+          <div className="flex items-center justify-between text-xs text-stone-500 pt-1 border-t border-stone-100 opacity-0 pointer-events-none">
             <span>Retail Val: <strong className="text-stone-900">৳{inventoryStats.retailValuation.toLocaleString()}</strong></span>
             <span>Cost: <strong className="text-stone-900">৳{inventoryStats.wholesaleValuation.toLocaleString()}</strong></span>
           </div>
@@ -253,10 +253,10 @@ export const AdminDashboardTab: React.FC<AdminDashboardTabProps> = ({
               <TrendingUp className="w-4 h-4" />
             </div>
           </div>
-          <div className="text-2xl font-black text-emerald-700 font-sans">
+          <div className="text-2xl font-black text-emerald-300 font-sans select-none opacity-0">
             ৳{analytics.estimatedProfit.toLocaleString()}
           </div>
-          <div className="flex items-center justify-between text-xs text-stone-500 pt-1 border-t border-stone-100">
+          <div className="flex items-center justify-between text-xs text-stone-500 pt-1 border-t border-stone-100 opacity-0 pointer-events-none">
             <span>Gross Margin: <strong className="text-emerald-800">{analytics.totalSales > 0 ? Math.round((analytics.estimatedProfit / analytics.totalSales) * 100) : 0}%</strong></span>
             <span className="text-[11px] text-stone-400">Direct Margin</span>
           </div>

@@ -401,7 +401,7 @@ const ProductDetailsModalContent: React.FC<ProductDetailsModalContentProps> = ({
                 </button>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 gap-2">
                 <button
                   id="modal-whatsapp-order-btn"
                   onClick={handleWhatsAppInquiry}
@@ -409,15 +409,6 @@ const ProductDetailsModalContent: React.FC<ProductDetailsModalContentProps> = ({
                 >
                   <MessageSquare className="w-4 h-4" />
                   <span>WhatsApp Order</span>
-                </button>
-
-                <button
-                  id="modal-wholesale-request-btn"
-                  onClick={handleWholesaleInquiry}
-                  className="flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-amber-400 py-2.5 px-3 rounded-lg text-xs font-bold border border-zinc-800 hover:border-amber-500/50 transition-colors cursor-pointer"
-                >
-                  <Building2 className="w-4 h-4" />
-                  <span>Wholesale Inquiry (পাইকারি)</span>
                 </button>
               </div>
             </div>

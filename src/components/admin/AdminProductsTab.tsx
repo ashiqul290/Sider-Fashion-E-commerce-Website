@@ -267,6 +267,16 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
     return matchQ && matchCat && matchStock && matchStatus;
   });
 
+  const inventorySummary = products.reduce(
+    (acc, product) => {
+      const stock = Number(product.stock || 0);
+      acc.totalStock += stock;
+      acc.totalRetailValue += stock * Number(product.retailPrice || 0);
+      return acc;
+    },
+    { totalStock: 0, totalRetailValue: 0 }
+  );
+
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
       
@@ -294,6 +304,29 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
           <Plus className="w-4 h-4" />
           <span>Add New Product</span>
         </button>
+      </div>
+
+      {/* Inventory Summary */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="bg-white rounded-2xl border border-stone-200 shadow-xs p-4">
+          <div className="flex items-center justify-between">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-stone-500">Total Stock</span>
+            <Boxes className="w-4 h-4 text-emerald-600" />
+          </div>
+          <div className="mt-2 text-2xl font-black text-stone-950 font-sans">
+            {inventorySummary.totalStock.toLocaleString()} <span className="text-xs font-medium text-stone-500">pcs</span>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-2xl border border-stone-200 shadow-xs p-4">
+          <div className="flex items-center justify-between">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-stone-500">Inventory Value</span>
+            <DollarSign className="w-4 h-4 text-amber-600" />
+          </div>
+          <div className="mt-2 text-2xl font-black text-stone-950 font-sans">
+            ৳{inventorySummary.totalRetailValue.toLocaleString()}
+          </div>
+        </div>
       </div>
 
       {/* Filters Bar */}
