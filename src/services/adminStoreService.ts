@@ -317,6 +317,93 @@ export const PRESET_CAMPAIGNS: MarketingCampaign[] = [
   }
 ];
 
+const normalizeSizeCharts = (charts: CategorySizeChart[]): CategorySizeChart[] => {
+  return charts.map((chart) => {
+    if (chart.categoryId !== 'mens-shirts') return chart;
+
+    return {
+      ...chart,
+      chartRows: [
+        {
+          size: 'S',
+          chestInches: 36,
+          chestCm: 91.4,
+          lengthInches: 27,
+          lengthCm: 68.6,
+          shoulderInches: 16.5,
+          shoulderCm: 41.9,
+          sleeveInches: 23.5,
+          sleeveCm: 59.7,
+          collarInches: 14.5,
+          collarCm: 36.8,
+          recommendedWeightKg: '48 – 56 kg',
+          recommendedHeightFt: '5\'2" – 5\'5"'
+        },
+        {
+          size: 'M',
+          chestInches: 41,
+          chestCm: 104.1,
+          lengthInches: 29,
+          lengthCm: 73.7,
+          shoulderInches: 17.5,
+          shoulderCm: 44.5,
+          sleeveInches: 24.5,
+          sleeveCm: 62.2,
+          collarInches: 15.5,
+          collarCm: 39.4,
+          recommendedWeightKg: '57 – 66 kg',
+          recommendedHeightFt: '5\'5" – 5\'8"'
+        },
+        {
+          size: 'L',
+          chestInches: 43,
+          chestCm: 109.2,
+          lengthInches: 29.5,
+          lengthCm: 74.9,
+          shoulderInches: 18.5,
+          shoulderCm: 47.0,
+          sleeveInches: 25,
+          sleeveCm: 63.5,
+          collarInches: 16,
+          collarCm: 40.6,
+          recommendedWeightKg: '67 – 76 kg',
+          recommendedHeightFt: '5\'7" – 5\'11"'
+        },
+        {
+          size: 'XL',
+          chestInches: 45,
+          chestCm: 114.3,
+          lengthInches: 30,
+          lengthCm: 76.2,
+          shoulderInches: 19.5,
+          shoulderCm: 49.5,
+          sleeveInches: 25.5,
+          sleeveCm: 64.8,
+          collarInches: 16.5,
+          collarCm: 41.9,
+          recommendedWeightKg: '77 – 87 kg',
+          recommendedHeightFt: '5\'9" – 6\'1"'
+        },
+        {
+          size: 'XXL',
+          chestInches: 47,
+          chestCm: 119.4,
+          lengthInches: 31,
+          lengthCm: 78.7,
+          shoulderInches: 20.5,
+          shoulderCm: 52.1,
+          sleeveInches: 26,
+          sleeveCm: 66.0,
+          collarInches: 17,
+          collarCm: 43.2,
+          recommendedWeightKg: '88 – 100+ kg',
+          recommendedHeightFt: '5\'10" – 6\'3"'
+        }
+      ]
+    };
+  });
+};
+
 // In-Memory Global Store Cache for Instant Response
 let storeCache = {
   version: Date.now(),
@@ -332,7 +419,7 @@ let storeCache = {
   policies: DEFAULT_POLICIES,
   colors: DEFAULT_COLORS,
   sizes: DEFAULT_MASTER_SIZES,
-  sizeCharts: DEFAULT_SIZE_CHARTS,
+  sizeCharts: normalizeSizeCharts(DEFAULT_SIZE_CHARTS),
   contacts: DEFAULT_CONTACTS,
   socialLinks: DEFAULT_SOCIAL_LINKS,
   homepageSections: DEFAULT_HOMEPAGE_SECTIONS,
@@ -465,7 +552,7 @@ export class AdminStoreService {
     storeCache.policies = this.getItem<PolicyContent>(KEYS.POLICIES, DEFAULT_POLICIES);
     storeCache.colors = this.getItem<ProductColor[]>(KEYS.COLORS, DEFAULT_COLORS);
     storeCache.sizes = this.getItem<string[]>(KEYS.SIZES, DEFAULT_MASTER_SIZES);
-    storeCache.sizeCharts = this.getItem<CategorySizeChart[]>(KEYS.SIZE_CHARTS, DEFAULT_SIZE_CHARTS);
+    storeCache.sizeCharts = normalizeSizeCharts(this.getItem<CategorySizeChart[]>(KEYS.SIZE_CHARTS, DEFAULT_SIZE_CHARTS));
     storeCache.contacts = this.getItem<ContactItem[]>(KEYS.CONTACTS, DEFAULT_CONTACTS);
     storeCache.socialLinks = this.getItem<SocialLinkItem[]>(KEYS.SOCIAL_LINKS, DEFAULT_SOCIAL_LINKS);
     storeCache.homepageSections = this.getItem<HomepageSectionConfig[]>(KEYS.HOMEPAGE_SECTIONS, DEFAULT_HOMEPAGE_SECTIONS);
@@ -1442,12 +1529,18 @@ export class AdminStoreService {
   }
 
   static getSizeCharts(): CategorySizeChart[] {
-    return storeCache.sizeCharts.length > 0 ? storeCache.sizeCharts : this.getItem<CategorySizeChart[]>(KEYS.SIZE_CHARTS, DEFAULT_SIZE_CHARTS);
+    const charts = storeCache.sizeCharts.length > 0 ? storeCache.sizeCharts : this.getItem<CategorySizeChart[]>(KEYS.SIZE_CHARTS, DEFAULT_SIZE_CHARTS);
+    const normalized = normalizeSizeCharts(charts);
+    if (JSON.stringify(normalized) !== JSON.stringify(charts)) {
+      storeCache.sizeCharts = normalized;
+      this.setItem(KEYS.SIZE_CHARTS, normalized);
+    }
+    return normalized;
   }
 
   static saveSizeCharts(charts: CategorySizeChart[]): void {
-    storeCache.sizeCharts = charts;
-    this.setItem(KEYS.SIZE_CHARTS, charts);
+    storeCache.sizeCharts = normalizeSizeCharts(charts);
+    this.setItem(KEYS.SIZE_CHARTS, storeCache.sizeCharts);
     this.notifyListeners();
   }
 
