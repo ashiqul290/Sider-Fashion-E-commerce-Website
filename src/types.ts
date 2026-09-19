@@ -36,6 +36,7 @@ export interface ProductSize {
   shoulderInches?: number;
   sleeveInches?: number;
   collarInches?: number;
+  recommendedWeightKg?: string;
   stock: number;
 }
 

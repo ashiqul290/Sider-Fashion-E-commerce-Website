@@ -1,6 +1,104 @@
 {
-  "version": 1789477567261,
+  "version": 1789843704326,
   "products": [
+    {
+      "id": "sf-prod-1789843704280",
+      "code": "SF-124",
+      "name": "dfgmkfhk",
+      "nameBn": "dgjhgdj",
+      "category": "shirt",
+      "categoryName": "Men's Shirts",
+      "categoryNameBn": "পুরুষদের শার্ট",
+      "images": [
+        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
+      ],
+      "fabric": "100% Combed Cotton",
+      "fabricBn": "১০০% কম্বড কটন",
+      "description": "Crafted at our Savar factory using premium cotton weave.",
+      "descriptionBn": "আমাদের সাভার কারখানায় তৈরি প্রিমিয়াম কটন পোশাক।",
+      "shortDescription": "Premium finish directly from Savar factory.",
+      "retailPrice": 850,
+      "originalRetailPrice": 950,
+      "wholesalePrice": 480,
+      "wholesaleMOQ": 12,
+      "wholesaleTiers": [
+        {
+          "minQty": 12,
+          "maxQty": 49,
+          "pricePerPiece": 480,
+          "label": "12–49 pcs"
+        },
+        {
+          "minQty": 50,
+          "maxQty": 99,
+          "pricePerPiece": 450,
+          "label": "50–99 pcs"
+        },
+        {
+          "minQty": 100,
+          "pricePerPiece": 420,
+          "label": "100+ pcs"
+        }
+      ],
+      "stock": 120,
+      "isFeatured": true,
+      "isNewArrival": true,
+      "rating": 4.8,
+      "reviewsCount": 12,
+      "tags": [
+        "Cotton",
+        "Factory Direct",
+        "Casual"
+      ],
+      "colors": [
+        {
+          "id": "col-mustard",
+          "name": "Mustard Yellow",
+          "nameBn": "সরিষা হলুদ",
+          "hex": "#ca8a04",
+          "isActive": true,
+          "displayOrder": 9
+        },
+        {
+          "id": "col-maroon",
+          "name": "Maroon",
+          "nameBn": "মেরুন",
+          "hex": "#6b1d2f",
+          "isActive": true,
+          "displayOrder": 5
+        }
+      ],
+      "sizes": [
+        {
+          "size": "M",
+          "chestInches": 50,
+          "lengthInches": 30,
+          "stock": 30,
+          "recommendedWeightKg": "655"
+        },
+        {
+          "size": "L",
+          "chestInches": 55,
+          "lengthInches": 32,
+          "stock": 40,
+          "recommendedWeightKg": "555"
+        },
+        {
+          "size": "XL",
+          "chestInches": 60,
+          "lengthInches": 35,
+          "stock": 30,
+          "recommendedWeightKg": "855"
+        },
+        {
+          "size": "S",
+          "chestInches": 45,
+          "lengthInches": 29,
+          "recommendedWeightKg": "570",
+          "stock": 20
+        }
+      ]
+    },
     {
       "id": "sf-prod-1789423386324",
       "code": "SF-694",
@@ -5235,6 +5333,75 @@
   ],
   "auditLogs": [
     {
+      "id": "log-1789843704326-7dxjx",
+      "timestamp": "2026-09-19T18:48:24.326Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "super_admin",
+      "action": "PRODUCT_CREATED",
+      "category": "product",
+      "details": "Added product SF-124 - dfgmkfhk"
+    },
+    {
+      "id": "log-1789843704284-448",
+      "timestamp": "2026-09-19T18:48:24.284Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "content_manager",
+      "action": "Product Created",
+      "category": "product",
+      "details": "Added SKU: SF-124, Retail: ৳850, Wholesale: ৳480",
+      "targetId": "sf-prod-1789843704280",
+      "targetName": "dfgmkfhk"
+    },
+    {
+      "id": "log-1789842897366-uvl0b",
+      "timestamp": "2026-09-19T18:34:57.366Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "super_admin",
+      "action": "PRODUCT_DELETED",
+      "category": "product",
+      "details": "Deleted product SF-657 - qsdrgdfag"
+    },
+    {
+      "id": "log-1789842897271-317",
+      "timestamp": "2026-09-19T18:34:57.271Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "super_admin",
+      "action": "Product Deleted",
+      "category": "product",
+      "details": "Permanently removed SKU: SF-657",
+      "targetId": "sf-prod-1789841686687",
+      "targetName": "qsdrgdfag"
+    },
+    {
+      "id": "log-1789841686784-vqus9",
+      "timestamp": "2026-09-19T18:14:46.784Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "super_admin",
+      "action": "PRODUCT_CREATED",
+      "category": "product",
+      "details": "Added product SF-657 - qsdrgdfag"
+    },
+    {
+      "id": "log-1789841686688-490",
+      "timestamp": "2026-09-19T18:14:46.688Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "content_manager",
+      "action": "Product Created",
+      "category": "product",
+      "details": "Added SKU: SF-657, Retail: ৳1000, Wholesale: ৳480",
+      "targetId": "sf-prod-1789841686687",
+      "targetName": "qsdrgdfag"
+    },
+    {
+      "id": "log-1789827137812-e6gdg",
+      "timestamp": "2026-09-19T14:12:17.812Z",
+      "adminName": "Abir Hosen Saon",
+      "adminRole": "owner",
+      "action": "ADMIN_LOGIN",
+      "category": "auth",
+      "details": "Admin Abir Hosen Saon (abirhosensaon@gmail.com, Founder & Managing Director) logged in from IP 127.0.0.1."
+    },
+    {
       "id": "log-1789477567261-zkq0h",
       "timestamp": "2026-09-15T13:06:07.261Z",
       "adminName": "Abir Hosen Saon",
@@ -5642,42 +5809,42 @@
   "adminUsers": [
     {
       "id": "admin-saon",
-      "name": "Abir Hosen Saon",
-      "role": "owner",
-      "email": "abirhosensaon@gmail.com",
-      "status": "active",
       "username": "saon",
-      "createdAt": "2026-01-01T00:00:00.000Z",
-      "lastLogin": "2026-09-15T13:06:07.259Z",
+      "name": "Abir Hosen Saon",
+      "email": "abirhosensaon@gmail.com",
+      "role": "owner",
       "roleTitle": "Founder & Managing Director",
+      "status": "active",
+      "passwordHash": "0437ae5f515bf7c9b6ba8b5a06348f94e916ae1f5ce7b1defe0b4311114deae9ddfc841ccadc21297c9e61ecaa3d29a7f534d94be02d2808528370559dfd64f8",
+      "passwordSalt": "84579dce57d31013b9006af654df0f52",
+      "lastLogin": "2026-09-19T14:12:17.810Z",
       "lastLogout": "2026-09-15T05:15:40.446Z",
       "lastLoginIp": "127.0.0.1",
-      "passwordHash": "0437ae5f515bf7c9b6ba8b5a06348f94e916ae1f5ce7b1defe0b4311114deae9ddfc841ccadc21297c9e61ecaa3d29a7f534d94be02d2808528370559dfd64f8",
-      "passwordSalt": "84579dce57d31013b9006af654df0f52"
+      "createdAt": "2026-01-01T00:00:00.000Z"
     },
     {
       "id": "admin-sider",
-      "name": "Sider Executive Head",
-      "role": "owner",
-      "email": "siderfashion.bd@gmail.com",
-      "status": "active",
       "username": "sider",
-      "createdAt": "2026-01-01T00:00:00.000Z",
+      "name": "Sider Executive Head",
+      "email": "siderfashion.bd@gmail.com",
+      "role": "owner",
       "roleTitle": "Store Director",
+      "status": "active",
       "passwordHash": "80a21ee753c336cdc5af1a556273e71abe745dae5f03a0a0a4f113f66c6e3aac7cc3748732c045a39dcb34c988cf131ec69235190f2c76a87f323106f5ceb027",
-      "passwordSalt": "ad5468f34bc09c9b7961e9cf6083c28d"
+      "passwordSalt": "ad5468f34bc09c9b7961e9cf6083c28d",
+      "createdAt": "2026-01-01T00:00:00.000Z"
     },
     {
       "id": "usr-admin-1789423911480",
-      "name": "Musa",
-      "role": "admin",
-      "email": "mohammadmusa4321@gmail.com",
-      "status": "active",
       "username": "mohammadmusa4321",
-      "createdAt": "2026-09-14T22:11:51.481Z",
+      "name": "Musa",
+      "email": "mohammadmusa4321@gmail.com",
+      "role": "admin",
       "roleTitle": "Order & Inventory Admin",
+      "status": "active",
       "passwordHash": "3668bf188dfbac3389a15fe5e6a4a38698b6767795f78f4fa921cc94d2d247029b5b04f39a0a64a64f206da5344f722a43a63af9e30ee545a3389aa46594c8b3",
-      "passwordSalt": "6563a9b71687ddb20cdcd0b107405770"
+      "passwordSalt": "6563a9b71687ddb20cdcd0b107405770",
+      "createdAt": "2026-09-14T22:11:51.481Z"
     }
   ],
   "events": [

@@ -678,6 +678,65 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
                         </button>
                       </div>
                       <div>
+                        <label className="block text-[10px] text-stone-500">Chest (inches)</label>
+                        <input
+                          type="number"
+                          min={0}
+                          step="0.1"
+                          value={sz.chestInches}
+                          onChange={(e) => {
+                            const updated = [...sizesList];
+                            updated[idx].chestInches = Number(e.target.value);
+                            setSizesList(updated);
+                          }}
+                          className="w-full px-2 py-1 border border-stone-200 rounded text-xs font-mono"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-[10px] text-stone-500">Length (inches)</label>
+                        <input
+                          type="number"
+                          min={0}
+                          step="0.1"
+                          value={sz.lengthInches}
+                          onChange={(e) => {
+                            const updated = [...sizesList];
+                            updated[idx].lengthInches = Number(e.target.value);
+                            setSizesList(updated);
+                          }}
+                          className="w-full px-2 py-1 border border-stone-200 rounded text-xs font-mono"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-[10px] text-stone-500">Shoulder (inches)</label>
+                        <input
+                          type="number"
+                          min={0}
+                          step="0.1"
+                          value={sz.shoulderInches ?? ''}
+                          onChange={(e) => {
+                            const updated = [...sizesList];
+                            updated[idx].shoulderInches = e.target.value === '' ? undefined : Number(e.target.value);
+                            setSizesList(updated);
+                          }}
+                          className="w-full px-2 py-1 border border-stone-200 rounded text-xs font-mono"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-[10px] text-stone-500">Weight Recommendation</label>
+                        <input
+                          type="text"
+                          value={sz.recommendedWeightKg ?? ''}
+                          onChange={(e) => {
+                            const updated = [...sizesList];
+                            updated[idx].recommendedWeightKg = e.target.value;
+                            setSizesList(updated);
+                          }}
+                          placeholder="55-65 kg"
+                          className="w-full px-2 py-1 border border-stone-200 rounded text-xs font-mono"
+                        />
+                      </div>
+                      <div>
                         <label className="block text-[10px] text-stone-500">Stock (pcs)</label>
                         <input
                           type="number"
@@ -703,7 +762,7 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
                       if (!e.target.value) return;
                       const sName = e.target.value;
                       if (!sizesList.find(s => s.size === sName)) {
-                        setSizesList([...sizesList, { size: sName, chestInches: 40, lengthInches: 29, stock: 20 }]);
+                        setSizesList([...sizesList, { size: sName, chestInches: 40, lengthInches: 29, shoulderInches: 17, recommendedWeightKg: '', stock: 20 }]);
                       }
                       e.target.value = '';
                     }}

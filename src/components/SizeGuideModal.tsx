@@ -83,6 +83,40 @@ export const SizeGuideModal: React.FC<SizeGuideModalProps> = ({
   }, [heightFeet, heightInches, weightKg, fitPreference, selectedCategory]);
 
   const activeChart = CATEGORY_SIZE_CHARTS[selectedCategory] || CATEGORY_SIZE_CHARTS['mens-shirts'];
+  const displayChartRows = useMemo(() => {
+    if (!product?.sizes?.length) return activeChart.chartRows;
+
+    return product.sizes.map((size) => {
+      const fallback = activeChart.chartRows.find((row) => row.size === size.size);
+      const chestInches = Number.isFinite(Number(size.chestInches)) && Number(size.chestInches) > 0
+        ? Number(size.chestInches)
+        : fallback?.chestInches || 0;
+      const lengthInches = Number.isFinite(Number(size.lengthInches)) && Number(size.lengthInches) > 0
+        ? Number(size.lengthInches)
+        : fallback?.lengthInches || 0;
+      const shoulderInches = Number.isFinite(Number(size.shoulderInches)) && Number(size.shoulderInches) > 0
+        ? Number(size.shoulderInches)
+        : fallback?.shoulderInches || 0;
+
+      return {
+        size: size.size,
+        chestInches,
+        chestCm: Math.round(chestInches * 2.54 * 10) / 10,
+        lengthInches,
+        lengthCm: Math.round(lengthInches * 2.54 * 10) / 10,
+        shoulderInches,
+        shoulderCm: Math.round(shoulderInches * 2.54 * 10) / 10,
+        sleeveInches: Number.isFinite(Number(size.sleeveInches)) && Number(size.sleeveInches) > 0
+          ? Number(size.sleeveInches)
+          : fallback?.sleeveInches || 0,
+        sleeveCm: Math.round((Number.isFinite(Number(size.sleeveInches)) && Number(size.sleeveInches) > 0
+          ? Number(size.sleeveInches)
+          : fallback?.sleeveInches || 0) * 2.54 * 10) / 10,
+        recommendedWeightKg: size.recommendedWeightKg || fallback?.recommendedWeightKg || 'Contact us',
+        recommendedHeightFt: fallback?.recommendedHeightFt || 'Contact us'
+      };
+    });
+  }, [activeChart.chartRows, product]);
 
   const handleApplySize = (size: string) => {
     if (onSelectSize) {
@@ -557,7 +591,7 @@ export const SizeGuideModal: React.FC<SizeGuideModalProps> = ({
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-zinc-800 font-medium">
-                  {activeChart.chartRows.map((row) => {
+                  {displayChartRows.map((row) => {
                     const isRecommended = recommendation.recommendedSize === row.size;
                     return (
                       <tr 

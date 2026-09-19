@@ -20,6 +20,7 @@ import {
 import { Product, ProductColor } from '../types';
 import { useCart } from '../context/CartContext';
 import { BRAND_CONTACTS } from '../data/products';
+import { CATEGORY_SIZE_CHARTS } from '../data/sizeGuideData';
 
 interface ProductDetailsModalProps {
   product?: Product | null;
@@ -51,6 +52,21 @@ const ProductDetailsModalContent: React.FC<ProductDetailsModalContentProps> = ({
   const [sizeError, setSizeError] = useState<string | null>(null);
 
   const currentSizeObj = product.sizes.find(s => s.size === selectedSize);
+  const defaultSize = currentSizeObj
+    ? (CATEGORY_SIZE_CHARTS[product.category] || CATEGORY_SIZE_CHARTS['mens-shirts']).chartRows.find(row => row.size === selectedSize)
+    : undefined;
+  const displayedSize = currentSizeObj && {
+    chest: Number.isFinite(Number(currentSizeObj.chestInches)) && Number(currentSizeObj.chestInches) > 0
+      ? currentSizeObj.chestInches
+      : defaultSize?.chestInches,
+    length: Number.isFinite(Number(currentSizeObj.lengthInches)) && Number(currentSizeObj.lengthInches) > 0
+      ? currentSizeObj.lengthInches
+      : defaultSize?.lengthInches,
+    shoulder: Number.isFinite(Number(currentSizeObj.shoulderInches)) && Number(currentSizeObj.shoulderInches) > 0
+      ? currentSizeObj.shoulderInches
+      : defaultSize?.shoulderInches,
+    weight: currentSizeObj.recommendedWeightKg?.trim() || defaultSize?.recommendedWeightKg
+  };
 
   const handleSelectSize = (size: string) => {
     setSelectedSize(size);
@@ -257,9 +273,11 @@ const ProductDetailsModalContent: React.FC<ProductDetailsModalContentProps> = ({
                 <div className="flex items-center justify-between text-xs">
                   <span className="font-semibold text-zinc-300">
                     Select Size: <strong className="text-white font-mono text-sm">{selectedSize || 'None'}</strong>
-                    {currentSizeObj && (
+                    {currentSizeObj && displayedSize && (
                       <span className="ml-2 text-zinc-400 text-[11px]">
-                        (Chest: {currentSizeObj.chestInches}", Length: {currentSizeObj.lengthInches}")
+                        (Chest: {displayedSize.chest}", Length: {displayedSize.length}"
+                        {displayedSize.shoulder ? `, Shoulder: ${displayedSize.shoulder}"` : ''}
+                        {displayedSize.weight ? `, Weight: ${displayedSize.weight}` : ''})
                       </span>
                     )}
                   </span>
