@@ -21,7 +21,6 @@ export const BRAND_CONTACTS = {
 
 // Retail Category Tabs displayed above product grid
 export const RETAIL_CATEGORY_TABS: { key: RetailCategoryKey; label: string; labelBn: string; badge?: string }[] = [
-  { key: 'all', label: 'ALL', labelBn: 'সকল পোশাক' },
   { key: 'shirt', label: 'SHIRT', labelBn: 'শার্ট' },
   { key: 'katua', label: 'KATUA', labelBn: 'কতুয়া' },
   { key: 'mens', label: "MEN'S", labelBn: 'মেনস কালেকশন' },
