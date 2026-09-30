@@ -991,6 +991,32 @@ export class AdminStoreService {
     this.notifyListeners();
   }
 
+  static async saveProductToBackend(product: Product, isUpdate: boolean, adminName = 'Admin'): Promise<Product> {
+    const response = await fetch(
+      isUpdate ? `/api/products/${encodeURIComponent(product.id)}` : '/api/products',
+      {
+        method: isUpdate ? 'PUT' : 'POST',
+        headers: adminJsonHeaders(),
+        body: JSON.stringify({ product, adminName })
+      }
+    );
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok || !result.success || !result.product) {
+      throw new Error(result.error || `Product could not be saved (HTTP ${response.status}).`);
+    }
+
+    const savedProduct = result.product as Product;
+    const synced = await this.syncWithServer();
+    if (!synced) {
+      const products = this.getProducts();
+      this.saveProducts([
+        savedProduct,
+        ...products.filter(item => item.id !== savedProduct.id && item.code !== savedProduct.code)
+      ]);
+    }
+    return savedProduct;
+  }
+
   static addProduct(product: Product, adminName = 'Admin'): void {
     const products = this.getProducts();
     const updated = [product, ...products.filter(p => p.id !== product.id && p.code !== product.code)];

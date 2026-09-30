@@ -61,6 +61,7 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [deleteConfirmId, setDeleteConfirmId] = useState<string | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [isSavingProduct, setIsSavingProduct] = useState(false);
 
   // Form Fields
   const [code, setCode] = useState('');
@@ -147,9 +148,10 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
     setCode(prod.code);
     setName(prod.name);
     setNameBn(prod.nameBn);
-    setSelectedCategoryKey(prod.category);
-    setCategoryName(prod.categoryName || prod.category);
-    setCategoryNameBn(prod.categoryNameBn || prod.category);
+    const productCategory = categoriesList.find(category => category.id === prod.category || category.key === prod.category);
+    setSelectedCategoryKey(productCategory?.key || prod.category);
+    setCategoryName(prod.categoryName || productCategory?.name || prod.category);
+    setCategoryNameBn(prod.categoryNameBn || productCategory?.nameBn || prod.category);
     setImages(prod.images || []);
     setFabric(prod.fabric);
     setFabricBn(prod.fabricBn);
@@ -177,9 +179,9 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
     setIsModalOpen(true);
   };
 
-  const handleSaveProduct = (e: React.FormEvent) => {
+  const handleSaveProduct = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name.trim() || !code.trim()) return;
+    if (!name.trim() || !code.trim() || isSavingProduct) return;
     if (!images.some(image => image.trim() && !isLegacyDefaultProductImage(image))) {
       showToast('Please add at least one product image.');
       return;
@@ -188,13 +190,17 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
     // Calculate total stock from sizes
     const computedStock = sizesList.reduce((sum, s) => sum + (s.stock || 0), 0);
     const finalStock = computedStock > 0 ? computedStock : stock;
+    const selectedCategory = categoriesList.find(category => category.key === selectedCategoryKey);
+    const productCategoryId = selectedCategory?.id === 'mens-all'
+      ? 'mens-fashion'
+      : selectedCategory?.id || selectedCategoryKey;
 
     const prodToSave: Product = {
       id: editingProduct ? editingProduct.id : `sf-prod-${Date.now()}`,
       code: code.trim(),
       name: name.trim(),
       nameBn: nameBn.trim() || name.trim(),
-      category: selectedCategoryKey as ProductCategory,
+      category: productCategoryId as ProductCategory,
       categoryName: categoryName,
       categoryNameBn: categoryNameBn,
       images: images.filter(Boolean),
@@ -218,16 +224,19 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
       sizes: sizesList
     };
 
-    if (editingProduct) {
-      AdminStoreService.updateProduct(prodToSave, adminName);
-      showToast(`Product "${prodToSave.name}" updated successfully.`);
-    } else {
-      AdminStoreService.addProduct(prodToSave, adminName);
-      showToast(`Product "${prodToSave.name}" added to live catalog.`);
+    setIsSavingProduct(true);
+    try {
+      const savedProduct = await AdminStoreService.saveProductToBackend(prodToSave, !!editingProduct, adminName);
+      showToast(editingProduct
+        ? `Product "${savedProduct.name}" updated successfully.`
+        : `Product "${savedProduct.name}" added to the live catalog.`);
+      setIsModalOpen(false);
+      onRefresh();
+    } catch (error) {
+      showToast(error instanceof Error ? error.message : 'Failed to save product to the backend.');
+    } finally {
+      setIsSavingProduct(false);
     }
-
-    setIsModalOpen(false);
-    onRefresh();
   };
 
   const handleDelete = (id: string) => {
@@ -958,15 +967,17 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
                   <button
                     type="button"
                     onClick={() => setIsModalOpen(false)}
+                    disabled={isSavingProduct}
                     className="px-4 py-2 border border-stone-200 rounded-xl text-xs font-bold text-stone-700 hover:bg-stone-50 cursor-pointer"
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="px-6 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-xs font-bold cursor-pointer"
+                    disabled={isSavingProduct}
+                    className="px-6 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-xs font-bold cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {editingProduct ? 'Save Product Changes' : 'Create Product'}
+                    {isSavingProduct ? 'Saving...' : editingProduct ? 'Save Product Changes' : 'Create Product'}
                   </button>
                 </div>
               </div>

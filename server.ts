@@ -737,15 +737,17 @@ function initDatabase(): DatabaseSchema {
 }
 
 // Save DB atomically to disk and sync to Supabase Cloud Database
-function saveDatabase(dataToSave: DatabaseSchema) {
+function saveDatabase(dataToSave: DatabaseSchema): boolean {
   try {
     dataToSave.version = Date.now();
     fs.writeFileSync(DB_FILE, JSON.stringify(dataToSave, null, 2), 'utf-8');
     broadcastUpdate('all', dataToSave.version);
     // Automatic cloud persistence to Supabase
     persistStateToSupabase(dataToSave);
+    return true;
   } catch (err) {
     console.error('[Database] Error saving to disk:', err);
+    return false;
   }
 }
 
@@ -1684,7 +1686,10 @@ async function startServer() {
       logAction(adminName, 'super_admin', 'PRODUCT_CREATED', 'product', `Added product ${product.code} - ${product.name}`);
     }
 
-    saveDatabase(db);
+    if (!saveDatabase(db)) {
+      res.status(500).json({ success: false, error: 'Product could not be persisted to the backend database.' });
+      return;
+    }
     res.json({ success: true, product, message: `Product ${product.name} saved.` });
   });
 
@@ -1711,7 +1716,10 @@ async function startServer() {
 
     db.products[idx] = { ...db.products[idx], ...updated };
     logAction(adminName, 'super_admin', 'PRODUCT_UPDATED', 'product', `Updated product ${db.products[idx].code} - ${db.products[idx].name}`);
-    saveDatabase(db);
+    if (!saveDatabase(db)) {
+      res.status(500).json({ success: false, error: 'Product could not be persisted to the backend database.' });
+      return;
+    }
     res.json({ success: true, product: db.products[idx], message: 'Product updated successfully.' });
   });
 
