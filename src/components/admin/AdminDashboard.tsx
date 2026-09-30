@@ -86,6 +86,10 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     loadData();
   }, [refreshKey]);
 
+  useEffect(() => {
+    return AdminStoreService.subscribe(loadData);
+  }, []);
+
   const handleRefresh = () => {
     setRefreshKey(prev => prev + 1);
   };

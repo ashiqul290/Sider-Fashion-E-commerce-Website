@@ -27,6 +27,8 @@ import { Product, ProductCategory, ProductColor, ProductSize, WholesalePricingTi
 import { AdminStoreService, DEFAULT_COLORS, DEFAULT_MASTER_SIZES } from '../../services/adminStoreService';
 import { compressImageFile } from '../../utils/imageCompressor';
 
+const isLegacyDefaultProductImage = (image: string) => image.includes('photo-1602810318383-e386cc2a3ccf');
+
 interface AdminProductsTabProps {
   products: Product[];
   onRefresh: () => void;
@@ -112,7 +114,7 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
     setSelectedCategoryKey(defaultCat.key);
     setCategoryName(defaultCat.name);
     setCategoryNameBn(defaultCat.nameBn);
-    setImages(['https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80']);
+    setImages([]);
     setFabric('100% Combed Cotton');
     setFabricBn('১০০% কম্বড কটন');
     setDescription('Crafted at our Savar factory using premium cotton weave.');
@@ -148,7 +150,7 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
     setSelectedCategoryKey(prod.category);
     setCategoryName(prod.categoryName || prod.category);
     setCategoryNameBn(prod.categoryNameBn || prod.category);
-    setImages(prod.images.length > 0 ? prod.images : ['https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80']);
+    setImages(prod.images || []);
     setFabric(prod.fabric);
     setFabricBn(prod.fabricBn);
     setDescription(prod.description);
@@ -178,6 +180,10 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
   const handleSaveProduct = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !code.trim()) return;
+    if (!images.some(image => image.trim() && !isLegacyDefaultProductImage(image))) {
+      showToast('Please add at least one product image.');
+      return;
+    }
 
     // Calculate total stock from sizes
     const computedStock = sizesList.reduce((sum, s) => sum + (s.stock || 0), 0);
@@ -406,11 +412,35 @@ export const AdminProductsTab: React.FC<AdminProductsTabProps> = ({
                     {/* Image & Title */}
                     <td className="py-3 px-4">
                       <div className="flex items-center gap-3">
-                        <img
-                          src={prod.images[0] || 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=150&q=80'}
-                          alt={prod.name}
-                          className="w-12 h-14 rounded-lg object-cover border border-stone-200 shrink-0"
-                        />
+                        {(() => {
+                          const images = prod.images || [];
+                          const firstImageIndex = images.findIndex(image => image && !isLegacyDefaultProductImage(image));
+                          if (firstImageIndex < 0) {
+                            return (
+                              <div className="w-12 h-14 rounded-lg border border-stone-200 bg-stone-50 flex items-center justify-center shrink-0">
+                                <ImageIcon className="w-4 h-4 text-stone-300" />
+                              </div>
+                            );
+                          }
+                          return (
+                            <img
+                              src={images[firstImageIndex]}
+                              data-image-index={firstImageIndex}
+                              onError={(e) => {
+                                const currentIndex = Number(e.currentTarget.dataset.imageIndex);
+                                const nextIndex = images.findIndex((image, index) => index > currentIndex && image && !isLegacyDefaultProductImage(image));
+                                if (nextIndex >= 0) {
+                                  e.currentTarget.dataset.imageIndex = String(nextIndex);
+                                  e.currentTarget.src = images[nextIndex];
+                                } else {
+                                  e.currentTarget.style.visibility = 'hidden';
+                                }
+                              }}
+                              alt={prod.name}
+                              className="w-12 h-14 rounded-lg object-cover border border-stone-200 shrink-0"
+                            />
+                          );
+                        })()}
                         <div>
                           <div className="font-bold text-stone-900 line-clamp-1">{prod.name}</div>
                           <div className="text-[11px] text-stone-500 font-bangla">{prod.nameBn}</div>

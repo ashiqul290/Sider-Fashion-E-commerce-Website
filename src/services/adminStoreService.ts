@@ -461,8 +461,8 @@ export class AdminStoreService {
       return (value as Product[]).map(p => {
         if (!p.images || p.images.length === 0) return p;
         const cleanImages = p.images.map(img => {
-          if (typeof img === 'string' && img.startsWith('data:') && img.length > 50000) {
-            return 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80';
+          if (typeof img === 'string' && (img.includes('photo-1602810318383-e386cc2a3ccf') || (img.startsWith('data:') && img.length > 50000))) {
+            return '';
           }
           return img;
         });
@@ -501,8 +501,8 @@ export class AdminStoreService {
           const minimal = (value as Product[]).map(p => ({
             ...p,
             images: (p.images || []).map(img => 
-              (typeof img === 'string' && img.startsWith('data:') && img.length > 15000) 
-                ? 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80' 
+              (typeof img === 'string' && (img.includes('photo-1602810318383-e386cc2a3ccf') || (img.startsWith('data:') && img.length > 15000)))
+                ? ''
                 : img
             )
           }));

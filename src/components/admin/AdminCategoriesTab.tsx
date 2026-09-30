@@ -11,10 +11,12 @@ import {
   EyeOff, 
   ArrowUp,
   ArrowDown,
-  Tag
+  Tag,
+  Upload
 } from 'lucide-react';
 import { CategoryInfo, RetailCategoryKey } from '../../types';
 import { AdminStoreService } from '../../services/adminStoreService';
+import { compressImageFile } from '../../utils/imageCompressor';
 
 interface AdminCategoriesTabProps {
   onRefresh: () => void;
@@ -41,6 +43,7 @@ export const AdminCategoriesTab: React.FC<AdminCategoriesTabProps> = ({
   const [badge, setBadge] = useState('');
   const [isUpcoming, setIsUpcoming] = useState(false);
   const [isActive, setIsActive] = useState(true);
+  const [isImageUploading, setIsImageUploading] = useState(false);
 
   const showToast = (msg: string) => {
     setToastMsg(msg);
@@ -53,7 +56,7 @@ export const AdminCategoriesTab: React.FC<AdminCategoriesTabProps> = ({
     setCustomSlug('');
     setName('');
     setNameBn('');
-    setImage('https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80');
+    setImage('');
     setDescription('');
     setDescriptionBn('');
     setBadge('');
@@ -77,9 +80,33 @@ export const AdminCategoriesTab: React.FC<AdminCategoriesTabProps> = ({
     setIsModalOpen(true);
   };
 
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file) return;
+    if (!file.type.startsWith('image/')) {
+      showToast('Please select a valid image file.');
+      return;
+    }
+
+    setIsImageUploading(true);
+    try {
+      const optimizedImage = await compressImageFile(file, 1000, 1000, 0.8);
+      setImage(optimizedImage);
+    } catch {
+      showToast('Failed to process the selected image.');
+    } finally {
+      setIsImageUploading(false);
+    }
+  };
+
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) return;
+    if (!image.trim()) {
+      showToast('Please upload a category image.');
+      return;
+    }
 
     const chosenKey = (customSlug.trim() || key) as RetailCategoryKey;
 
@@ -88,7 +115,7 @@ export const AdminCategoriesTab: React.FC<AdminCategoriesTabProps> = ({
       key: chosenKey,
       name: name.trim(),
       nameBn: nameBn.trim() || name.trim(),
-      image: image.trim() || 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80',
+      image: image.trim(),
       description,
       descriptionBn,
       badge: badge.trim() || undefined,
@@ -310,14 +337,25 @@ export const AdminCategoriesTab: React.FC<AdminCategoriesTabProps> = ({
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-stone-700 mb-1">Banner Image URL</label>
-                <input
-                  type="url"
-                  value={image}
-                  onChange={(e) => setImage(e.target.value)}
-                  placeholder="https://..."
-                  className="w-full px-3 py-2 border border-stone-200 rounded-xl text-xs focus:ring-1 focus:ring-amber-500 focus:outline-none"
-                />
+                <label className="block text-xs font-bold text-stone-700 mb-1">Banner Image *</label>
+                <label className="flex w-full items-center justify-center gap-2 px-3 py-2 border border-stone-200 rounded-xl text-xs font-bold text-stone-700 hover:bg-stone-50 cursor-pointer">
+                  <Upload className="w-4 h-4" />
+                  <span>{isImageUploading ? 'Processing image...' : 'Choose image from device'}</span>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleImageUpload}
+                    disabled={isImageUploading}
+                    className="sr-only"
+                  />
+                </label>
+                {image && (
+                  <img
+                    src={image}
+                    alt="Category banner preview"
+                    className="mt-2 h-24 w-full rounded-lg border border-stone-200 object-cover"
+                  />
+                )}
               </div>
 
               <div>
@@ -363,7 +401,8 @@ export const AdminCategoriesTab: React.FC<AdminCategoriesTabProps> = ({
                 </button>
                 <button
                   type="submit"
-                  className="px-5 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-xs font-bold cursor-pointer"
+                  disabled={isImageUploading}
+                  className="px-5 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-xs font-bold cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Save Category
                 </button>
